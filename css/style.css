@@ -1,0 +1,150 @@
+.theme-color{
+    background-color: #5bccf6 !important;
+}
+.header {
+    margin: 0%;
+}
+
+.header-line {
+    background-color: #87CEEB;
+    color: #ffffff;
+    margin-bottom: 0%;
+    padding: 0.001%;
+    height:0.5%;
+}
+.nav-1 {
+    color: #fff;
+    margin: 0.5%;
+    text-decoration: none;
+}
+.rounded{
+    width:7%;
+}
+.header-mid-center {
+    font-size: xx-large;
+    margin: 2% 0% 2% 0%;
+    text-align: center;
+}
+
+.header-right-writting {
+    font-size: small;
+    text-align: right;
+    margin: 2% 0% 0% 0%;
+    float: right;
+}
+.sliding {
+    padding-top: 32%;
+    width: 100%;
+    animation: slider 20s infinite ease-in-out;
+    background-size: 100% 100%;
+    position: absolute;
+    display: block;
+}
+@keyframes slider{
+    0% {
+        background-image: url("1.jpg");
+    }
+    25% {
+        background-image: url("2.jpg");
+    }
+    50% {
+        background-image: url("3.jpg");
+    }
+    75% {
+        background-image: url("4.jpg");
+    }
+    100% {
+        background-image: url("1.jpg");
+    }
+ }
+.marg{
+    margin-top:32%;
+}
+.right{
+    margin-left:50%;
+}
+.NA-head {
+    text-align:left;
+    color: #87CEEB;
+    font-weight:300;
+    font-size:140%;
+    font-family:'Gill Sans';
+    padding-left:2%;
+}
+.NA-head::after {
+    content:'';
+    width: 28%;
+    height: 2px;
+    background: #87CEEB;
+    display:flex;
+}
+ 
+.Event{
+    color: #87CEEB;
+    font-weight: 300;
+    font-size: 140%;
+    font-family: 'Gill Sans';
+    display:block;
+}
+.Event::after {
+    content: '';
+    width: 8%;
+    height: 2px;
+    background: #87CEEB;
+    display: block;
+    margin: 1%;
+}
+.NA-content {
+    background-color: #696969;
+    color: #ffffff;
+    margin: 2% 2% 2% 1%;
+    display:flex;
+    padding:2%;
+    width:80%;
+}
+.Ev-slider {
+    padding-top: 32%;
+    width: 95%;
+    animation: sliding 20s infinite ease-in-out;
+    background-size: 100% 100%;
+    position: absolute;
+    display: block;
+    border:2px;
+    right:2%;
+}
+
+@keyframes sliding{
+    0% {
+        background-image: url("1.jpg");
+    }
+
+    25% {
+        background-image: url("2.jpg");
+    }
+
+    50% {
+        background-image: url("3.jpg");
+    }
+
+    75% {
+        background-image: url("4.jpg");
+    }
+
+    100% {
+        background-image: url("1.jpg");
+    }
+}
+@media (max-width: 904px) {
+    .header-mid-center {
+       font-size: x-large;
+       margin: 1% 0% 3% 0%;
+       text-align: center;
+ }
+ .header-right-writting {
+       font-size: small;
+       text-align: right;
+       margin: 0% 0% 0% 0%;
+       float: right;
+
+ }
+}
