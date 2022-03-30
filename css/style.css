@@ -2,7 +2,7 @@
     background-color: #5bccf6 !important;
 }
 .bgimg{
-    background-image: url('/img/about2.jpg');
+    background-image: url('../images/aboutus/about2.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
     width: 100%;
