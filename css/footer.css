@@ -1,0 +1,52 @@
+.page-footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    /* background-color: rgb(80, 79, 79); */
+    color: white;
+}
+.bg-color-dark{
+    background-color: rgb(39, 39, 39);
+}
+.bg-color-light{
+    background-color:rgb(63, 63, 63) ;
+}
+.container{
+    display: flex;
+}
+.gecp-logo{
+    background-image: url("../images/gecplogo.jpg");
+    background-size: cover;
+    height: 70px;
+    width:  70px;   
+}   
+.footer-copyright{
+    background-color: rgb(112, 112, 112);
+    padding: 15px;
+}
+.company-name{
+    padding: 5px;
+    margin: 14px;
+    text-align: center;
+}
+/* .fa-google{
+    background-image: url("../images/google.png");
+    background-size: cover;
+    height: 40px;
+}
+.fa-microsoft{
+    background-image: url("../images/microsoft.png");
+    background-size: cover;
+    height: 40px;
+}
+.fa-envato{
+    background-image: url("../images/envato.png");
+    background-size: cover;
+    height: 40px;
+}
+.fa-WooCOMMERCE{
+    background-image: url("../images/woocommerce.png");
+    background-size: cover;
+    height: 40px; 
+} */
