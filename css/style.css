@@ -14,7 +14,7 @@ body{
     } 
 } 
 .bg-image {
-    background-image: url("../images/keyBoard_img.jpg");
+    background-image: url("../images/contactus/css/keyBoard_img.jpg");
     background-size: cover;
     height: 10rem;
     display: flex ;
@@ -113,35 +113,35 @@ a{
     padding: 10px;
 }
 .fa-youtube{
-    background-image: url('../images/youtube.png');
+    background-image: url('../images/contactus/youtube.png');
     width: 25px;
     height: 25px;
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
 .fa-instagram{
-    background-image: url('../images/instagram.png');
+    background-image: url('../images/contactus/instagram.png');
     width: 22px;
     height: 22px;
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
 .fa-facebook{
-    background-image: url('../images/facebook.png');
+    background-image: url('../images/contactus/facebook.png');
     width: 22px;
     height: 22px;
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
 .fa-twiter{
-    background-image: url('../images/twitter.png');
+    background-image: url('../images/contactus/twitter.png');
     width: 25px;
     height: 25px;
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
 .image-map{
-    background-image: url('../images/map.jpg');
+    background-image: url('../images/contactus/map.jpg');
     background-size: cover;
     height: 140px;
     /* height: 8rem; */
