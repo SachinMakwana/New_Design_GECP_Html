@@ -108,3 +108,24 @@ function NavLeft(){
       } 
 
 }
+function a1(){
+      document.getElementById('alumni-image').style.backgroundImage="url(./images/h1.jpg)";
+      document.getElementById('alumni-name').innerHTML="Student-1<br/>Team-Leader";
+      document.getElementById('first-alumni').style.display="block";
+      document.getElementById('second-alumni').style.display="none";
+      document.getElementById('third-alumni').style.display="none";
+}
+function a2(){
+      document.getElementById('alumni-image').style.backgroundImage="url(./images/h2.jpg)";
+      document.getElementById('alumni-name').innerHTML="Student-2<br/>Senior Devloper";
+      document.getElementById('first-alumni').style.display="none";
+      document.getElementById('second-alumni').style.display="block";
+      document.getElementById('third-alumni').style.display="none";
+}
+function a3(){
+      document.getElementById('alumni-image').style.backgroundImage="url(./images/h3.jpg)";
+      document.getElementById('alumni-name').innerHTML="Student-3<br/>Project-Manager";
+      document.getElementById('first-alumni').style.display="none";
+      document.getElementById('second-alumni').style.display="none";
+      document.getElementById('third-alumni').style.display="block";
+}
