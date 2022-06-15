@@ -220,7 +220,10 @@ body{
     position:relative;
     left:0px;
 }
-
+.w-90{
+    width:90%;
+    overflow: hidden;
+}
 .h-name{
     font-size:100%;
     font-weight:500;
@@ -482,6 +485,8 @@ body{
 }
 .mr-t-7{
     margin-top:7%;
+    margin-left:auto;
+    margin-right:auto; 
 }
 .alumnislider{
     border-radius: 20px;
@@ -523,6 +528,51 @@ body{
 .feature:hover .t-150{
     color:white;
 }
+.br-grey{
+    border:solid #aec1b7 5px;
+}
+#bg-s1{
+    background-image:url("../images/h1.jpg");
+}
+#bg-s1, #bg-s2, #bg-s3, #bg-s4, #bg-s5{
+    background-size: cover;
+}
+#bg-s2{
+    background-image:url("../images/h2.jpg");
+}
+#bg-s3{
+    background-image:url("../images/h3.jpg");
+}
+#bg-s4{
+    background-image:url("../images/h4.jpg");
+}
+#bg-s5{
+    background-image:url("../images/h5.jpg");
+}
+.mr-t-30p{
+    margin-top:30px;
+}
+.square-180p{
+    height:180px;
+    width:180px;
+}
+.cursor{
+    cursor:pointer;
+}
+.mr-t-70p{
+    font-family: cursive;  
+    margin-top:70px;
+    margin-left:-6%;
+    margin-right:-6%;
+}
+.mr-t-3{
+    margin-top:3%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#second-council, #third-council, #fourth-council,#fifth-council{
+    display: none;
+}
 @media (max-width: 904px) {
  .header-right-writting {
        font-size: small;
@@ -530,6 +580,11 @@ body{
        margin: 0% 0% 0% 0%;
        float: right;
  }
+}
+@media (max-width: 990px){
+    #bg-s1, #bg-s5{
+        display:contents;
+    }
 }
 @media (max-width: 884px){
     .w-60{
@@ -593,7 +648,9 @@ body{
     .top-left{
 	font-size:70%;
     }
-    
+    #bg-s2, #bg-s4{
+        display:contents;
+    }   
 }
 @media (max-width: 375px){
     .WC-head{

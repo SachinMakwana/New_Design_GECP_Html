@@ -129,3 +129,160 @@ function a3(){
       document.getElementById('second-alumni').style.display="none";
       document.getElementById('third-alumni').style.display="block";
 }
+var CouncilIndex=1;
+function NextSC(){
+      if(CouncilIndex==1){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('Sname').innerHTML="Amit Shah";
+            document.getElementById('Swork').innerHTML="SS";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="none";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="block";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=2;
+      }
+      else  if(CouncilIndex==2){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('Sname').innerHTML="Smriti Irani";
+            document.getElementById('Swork').innerHTML="CS";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="none";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="block";
+            CouncilIndex=3;
+      }
+      else  if(CouncilIndex==3){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('Sname').innerHTML="Nitin Gadkari";
+            document.getElementById('Swork').innerHTML="GS";
+            document.getElementById('first-council').style.display="block";
+            document.getElementById('second-council').style.display="none";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=4;
+      }
+      else  if(CouncilIndex==4){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('Sname').innerHTML="Piyush Goyal";
+            document.getElementById('Swork').innerHTML="Team-Leader";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="block";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=5;
+      }
+      else{
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('Sname').innerHTML="Prakash Javdekar";
+            document.getElementById('Swork').innerHTML="Team-Leader";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="block";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=1;
+      }
+
+}
+function PrevSC(){
+      if(CouncilIndex==1){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('Sname').innerHTML="Piyush Goyal";
+            document.getElementById('Swork').innerHTML="Team-Leader";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="block";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=5;
+      }
+      else  if(CouncilIndex==2){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('Sname').innerHTML="Prakash Javdekar";
+            document.getElementById('Swork').innerHTML="Team-Leader";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="block";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=1;
+      }
+      else  if(CouncilIndex==3){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('Sname').innerHTML="Amit Shah";
+            document.getElementById('Swork').innerHTML="SS";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="none";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="block";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=2;
+      }
+      else  if(CouncilIndex==4){
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('Sname').innerHTML="Smriti Irani";
+            document.getElementById('Swork').innerHTML="CS";
+            document.getElementById('first-council').style.display="none";
+            document.getElementById('second-council').style.display="none";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="block";
+            CouncilIndex=3;
+      }
+      else{
+            document.getElementById('bg-s1').style.backgroundImage="url(./images/h4.jpg)";
+            document.getElementById('bg-s2').style.backgroundImage="url(./images/h5.jpg)";
+            document.getElementById('bg-s3').style.backgroundImage="url(./images/h1.jpg)";
+            document.getElementById('bg-s4').style.backgroundImage="url(./images/h2.jpg)";
+            document.getElementById('bg-s5').style.backgroundImage="url(./images/h3.jpg)";
+            document.getElementById('Sname').innerHTML="Nitin Gadkari";
+            document.getElementById('Swork').innerHTML="GS";
+            document.getElementById('first-council').style.display="block";
+            document.getElementById('second-council').style.display="none";
+            document.getElementById('third-council').style.display="none";
+            document.getElementById('fourth-council').style.display="none";
+            document.getElementById('fifth-council').style.display="none";
+            CouncilIndex=4;
+      }
+
+}
