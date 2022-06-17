@@ -377,6 +377,9 @@ body{
 .pad-4{
     padding:4%;
 }
+.pad-2{
+    padding:2%;
+}
 .pad-rt-6{
     padding: 6% 6% 0% 0%;
 }
@@ -464,9 +467,6 @@ body{
 .t-120{
     font-size: 120%;
 }
-.t-150{
-    font-size: 150%;  
-}
 .nav-l,.nav-r{
     height:25px;
     width:25px;
@@ -490,8 +490,10 @@ body{
 }
 .alumnislider{
     border-radius: 20px;
-    background-color: ghostwhite;
     padding:4%;
+}
+.bg-ghostwhite{
+    background-color: ghostwhite;
 }
 .quotes{
     width:6%;
@@ -573,6 +575,28 @@ body{
 #second-council, #third-council, #fourth-council,#fifth-council{
     display: none;
 }
+.sthead::after{
+    background-color:#87ceeb;
+    content:'';
+    width: 15%;
+    height: 2px;
+    margin:auto;
+    display:block;
+}
+.square-50p{
+    height:50px;
+    width:50px;
+}
+.align-right{
+    text-align: right;
+}
+.vertiline{
+    width:2px;
+    position:inherit;
+    left:50%;
+    vertical-align: middle;
+    height:auto;
+}
 @media (max-width: 904px) {
  .header-right-writting {
        font-size: small;
@@ -598,6 +622,14 @@ body{
     }
     .top-left{
 	font-size:99%;
+    }
+}
+@media (min-width: 768px){
+    .col-md-49{
+        width:49%;
+    }
+    .align-md-right{
+        text-align:right;
     }
 }
 @media (max-width: 700px){
