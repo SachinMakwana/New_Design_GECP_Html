@@ -286,3 +286,21 @@ function PrevSC(){
       }
 
 }
+function act1(){
+      document.getElementById("actd-1").innerHTML="<h6 class='blue'>The First True Genrator On the Internet</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
+      document.getElementById("actd-2").innerHTML="<h6 class='blue'>Versions Have Evolved Over The Years</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
+      document.getElementById("acti-2").style.backgroundImage="url(./images/marathon.webp)";
+      document.getElementById("acti-1").style.backgroundImage="url(./images/camera.jpg)";
+}
+function act2(){
+      document.getElementById("actd-1").innerHTML="<h6 class='blue'>The First True Genrator On the Internet</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
+      document.getElementById("actd-2").innerHTML="<h6 class='blue'>Versions Have Evolved Over The Years</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
+      document.getElementById("acti-2").style.backgroundImage="url(./images/parties.webp)";
+      document.getElementById("acti-1").style.backgroundImage="url(./images/garba.jpg)";
+}
+function act3(){
+      document.getElementById("actd-1").innerHTML="<h6 class='blue'>The First True Genrator On the Internet</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
+      document.getElementById("actd-2").innerHTML="<h6 class='blue'>Versions Have Evolved Over The Years</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
+      document.getElementById("acti-2").style.backgroundImage="url(./images/marathon.webp)";
+      document.getElementById("acti-1").style.backgroundImage="url(./images/camera.jpg)";
+}

@@ -208,6 +208,9 @@ body{
     margin-left:auto !important;
     margin-right: 1% !important;
 }
+.w-70{
+    width:70%;
+}
 .w-285p{
     width:285px;
 }
@@ -569,8 +572,6 @@ body{
 }
 .mr-t-3{
     margin-top:3%;
-    margin-left:auto;
-    margin-right:auto;
 }
 #second-council, #third-council, #fourth-council,#fifth-council{
     display: none;
@@ -597,6 +598,17 @@ body{
     vertical-align: middle;
     height:auto;
 }
+#acti-1,#acti-2,#actd-1,#actd-2{
+    height:200px;
+}
+#acti-1{
+    background-image: url("../images/camera.jpg");
+    background-size: cover;
+}
+#acti-2{
+    background-image: url("../images/marathon.webp");
+    background-size: cover;
+}
 @media (max-width: 904px) {
  .header-right-writting {
        font-size: small;
@@ -608,6 +620,9 @@ body{
 @media (max-width: 990px){
     #bg-s1, #bg-s5{
         display:contents;
+    }
+    #actd-1 p,#actd-2 p{
+        font-size:10px;
     }
 }
 @media (max-width: 884px){
