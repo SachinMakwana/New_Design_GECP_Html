@@ -304,3 +304,50 @@ function act3(){
       document.getElementById("acti-2").style.backgroundImage="url(./images/marathon.webp)";
       document.getElementById("acti-1").style.backgroundImage="url(./images/camera.jpg)";
 }
+let Cindex=1;
+function nextcomp(){
+      if(Cindex==1){
+            document.getElementById("comp-1").style.backgroundImage="url(./images/godrej.png)"; 
+            document.getElementById("compstate-1").innerHTML=" lorem ipsum of godrej ";
+            document.getElementById("comp-2").style.backgroundImage="url(./images/ap.png)"; 
+            document.getElementById("compstate-2").innerHTML=" lorem ipsum of AsianPaints ";
+            Cindex=2;
+      }
+      else if(Cindex==2){
+            document.getElementById("comp-1").style.backgroundImage="url(./images/amazon.jpg)"; 
+            document.getElementById("compstate-1").innerHTML=" lorem ipsum of amazon ";
+            document.getElementById("comp-2").style.backgroundImage="url(./images/byjus.jpg)"; 
+            document.getElementById("compstate-2").innerHTML=" lorem ipsum of byjus ";
+            Cindex=3;
+      }
+      else if(Cindex==3){
+            document.getElementById("comp-1").style.backgroundImage="url(./images/ABB.jpg)"; 
+            document.getElementById("compstate-1").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!";
+            document.getElementById("comp-2").style.backgroundImage="url(./images/AMW.png)"; 
+            document.getElementById("compstate-2").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor accusantium deserunt nihil consectetur nemo esse nesciunt, molestiae vel possimus, accusamus quis doloribus maxime itaque alias totam! Quidem, corrupti asperiores.";
+            Cindex=1;
+      }
+}
+function prevcomp(){
+      if(Cindex==1){
+            document.getElementById("comp-1").style.backgroundImage="url(./images/amazon.jpg)"; 
+            document.getElementById("compstate-1").innerHTML=" lorem ipsum of amazon ";
+            document.getElementById("comp-2").style.backgroundImage="url(./images/byjus.jpg)"; 
+            document.getElementById("compstate-2").innerHTML=" lorem ipsum of byjus ";
+            Cindex=3;
+      }
+      else if(Cindex==2){
+            document.getElementById("comp-1").style.backgroundImage="url(./images/ABB.jpg)"; 
+            document.getElementById("compstate-1").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!";
+            document.getElementById("comp-2").style.backgroundImage="url(./images/AMW.png)"; 
+            document.getElementById("compstate-2").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor accusantium deserunt nihil consectetur nemo esse nesciunt, molestiae vel possimus, accusamus quis doloribus maxime itaque alias totam! Quidem, corrupti asperiores.";
+            Cindex=1;
+      }
+      else if(Cindex==3){
+            document.getElementById("comp-1").style.backgroundImage="url(./images/godrej.png)"; 
+            document.getElementById("compstate-1").innerHTML=" lorem ipsum of godrej ";
+            document.getElementById("comp-2").style.backgroundImage="url(./images/ap.png)"; 
+            document.getElementById("compstate-2").innerHTML=" lorem ipsum of AsianPaints ";
+            Cindex=2;
+      }
+}
