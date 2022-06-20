@@ -1,153 +1,90 @@
-*{
-    margin: auto;
+* {
+    margin: 0;
     padding: 0;
 }
-body{
-    background: rgb(255, 255, 255) ;
-    /* font-size: 14px; */
-    min-width: fit-content;
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
 }
 
-@media only screen and (max-width: 600px) {
-    .contact-box{
-        flex-wrap: wrap;
-    } 
-} 
-.bg-image {
-    background-image: url("../images/contactus/css/keyBoard_img.jpg");
-    background-size: cover;
-    height: 10rem;
-    display: flex ;
+.header-block {
+    width: 100%;
+    position: relative;
 }
-.centered {
-    align-content: center;
+
+.header-block img {
+    width: 100%;
+    height: 30vw;
+    opacity: 0.6;
+}
+
+.text-block {
+    width: 80%;
+    height: 40%;
     color: white;
-    font-size: 4rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5vw;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 30%;
+    left: 10%;
 }
-.container {
-    align-content: center;
-    /* width: 800px;
-    height: 500px;   */
-    /* width: 60vw;
-    height: 75vh; */
-    width: 50rem;
-    height: 30rem;
-    /* padding: 2rem; */
-    padding: 18px;
-    margin: 50px auto;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px 5px rgb(207, 207, 207);
+
+.bg-color {
+    background-color: rgba(0, 0, 0, 0.7);
 }
-h1{
-    font-size: 40px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    color: rgb(29, 130, 245);
-    text-decoration: underline;     
-    text-decoration-color: rgb(29, 130, 245);  
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
-.contact-box{
-    /* width: 800px;
-    height: 400px; */
-    /* width: 55vw;   
-    height: 60vh; */
-    width: 48rem;
-    height: 27em;
-    background: #fff;
-    display: flex;
-    /* align-items: stretch; */
-    /* box-sizing: border-box;  */
+
+.about-college {
+    font-size: 2vw;
+    color: rgb(95, 95, 95);
 }
-.container-left{
-    flex-basis: 50%;
-    padding: 30px;
+
+.headings {
+    width: 10em;
+    border-bottom: 4px solid rgb(92 217 255);
+    padding-bottom: 10px;
 }
-.container-right{
-    margin-top: 30px;
-    flex-basis: 50%;
-    padding: 20px;
+.student-intake-title{
+    /* font-weight: bold; */
+    font-size: 2vw;
 }
-h3{
-    font-size: 20px;
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 7px;
+.icons{
+    font-size: 2vw;
 }
-.input-group{
+.number{
+    font-weight: bold;
+    font-size: 2.2vw;
+}
+.branch{
+    font-size: 1vw;
+}
+.details-block {
+    background-image: url('../images/admission_bg_img.jpg');
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: cover;
     width: 100%;
-    margin: 5px;
 }
-input[type="text"],input[type="email"],textarea{
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    box-sizing: border-box;
-    border-color: rgba(131, 129, 129, 0.616);
-    border-radius: 5px;
-}
-button{
-    background-color: rgb(29, 130, 245);
-    width: 100%;
-    border: none;
-    margin: 10px 10px 0px 5px;
-    padding: 12px 12px;
-    border-radius: 5px;
-    font-size: 20px ;
-    color: white;
-}
-button:hover{
-    background-color: rgb(13, 36, 165);
-}
-.reach-us{
-    margin-top: 6px;
-    padding: 6px;
-    font-size: 19px;
-    /* font-size: 1.2rem; */
-}
-.icon-container{
-    height: 40px;
-    display: flex;
-}
-a{
-    margin: 0px;
-    padding: 10px;
-}
-.fa-youtube{
-    background-image: url('../images/contactus/youtube.png');
-    width: 25px;
-    height: 25px;
+
+.object-block {
+    background-color: rgba(99, 99, 99, 0.9);
     background-size: cover;
-    /* background-repeat: no-repeat; */
 }
-.fa-instagram{
-    background-image: url('../images/contactus/instagram.png');
-    width: 22px;
-    height: 22px;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
+
+.vl {
+    border-left: 4px solid rgb(255, 255, 255);
+    height: 600px;
+    /* width: 2px; */
 }
-.fa-facebook{
-    background-image: url('../images/contactus/facebook.png');
-    width: 22px;
-    height: 22px;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-}
-.fa-twiter{
-    background-image: url('../images/contactus/twitter.png');
-    width: 25px;
-    height: 25px;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-}
-.image-map{
-    background-image: url('../images/contactus/map.jpg');
-    background-size: cover;
-    height: 140px;
-    /* height: 8rem; */
-    margin-top: 48px;
-    border-radius: 5px;
-}
-.image-map:hover{
-    box-shadow: 0 0 10px rgb(143, 137, 137);  
+.doc{
+    font-size: 1.4rem;
 }
