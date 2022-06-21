@@ -51,6 +51,10 @@ body {
     border-bottom: 4px solid rgb(92 217 255);
     padding-bottom: 10px;
 }
+select{
+    width: 100%;
+    border-style: none ;
+}
 .student-intake-title{
     /* font-weight: bold; */
     font-size: 2vw;
@@ -66,7 +70,7 @@ body {
     font-size: 1vw;
 }
 .details-block {
-    background-image: url('../images/admission_bg_img.jpg');
+    background-image: url('../images/admissionProcedure/admission_bg_img.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -83,7 +87,7 @@ body {
 .vl {
     border-left: 4px solid rgb(255, 255, 255);
     height: 600px;
-    /* width: 2px; */
+    width: 2px;
 }
 .doc{
     font-size: 1.4rem;
