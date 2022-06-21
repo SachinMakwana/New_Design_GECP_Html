@@ -307,8 +307,8 @@ function act3(){
 let Cindex=1;
 function nextcomp(){
       if(Cindex==1){
-            document.getElementById("comp-1").style.backgroundImage="url(./images/godrej.png)"; 
-            document.getElementById("compstate-1").innerHTML=" lorem ipsum of godrej ";
+            document.getElementById("comp-1").style.backgroundImage="url(./images/Torrent-power.png)"; 
+            document.getElementById("compstate-1").innerHTML=" lorem ipsum of Torrent-power ";
             document.getElementById("comp-2").style.backgroundImage="url(./images/ap.png)"; 
             document.getElementById("compstate-2").innerHTML=" lorem ipsum of AsianPaints ";
             Cindex=2;
@@ -316,7 +316,7 @@ function nextcomp(){
       else if(Cindex==2){
             document.getElementById("comp-1").style.backgroundImage="url(./images/amazon.jpg)"; 
             document.getElementById("compstate-1").innerHTML=" lorem ipsum of amazon ";
-            document.getElementById("comp-2").style.backgroundImage="url(./images/byjus.jpg)"; 
+            document.getElementById("comp-2").style.backgroundImage="url(./images/byjus.jfif)"; 
             document.getElementById("compstate-2").innerHTML=" lorem ipsum of byjus ";
             Cindex=3;
       }
@@ -332,7 +332,7 @@ function prevcomp(){
       if(Cindex==1){
             document.getElementById("comp-1").style.backgroundImage="url(./images/amazon.jpg)"; 
             document.getElementById("compstate-1").innerHTML=" lorem ipsum of amazon ";
-            document.getElementById("comp-2").style.backgroundImage="url(./images/byjus.jpg)"; 
+            document.getElementById("comp-2").style.backgroundImage="url(./images/byjus.jfif)"; 
             document.getElementById("compstate-2").innerHTML=" lorem ipsum of byjus ";
             Cindex=3;
       }
@@ -344,8 +344,8 @@ function prevcomp(){
             Cindex=1;
       }
       else if(Cindex==3){
-            document.getElementById("comp-1").style.backgroundImage="url(./images/godrej.png)"; 
-            document.getElementById("compstate-1").innerHTML=" lorem ipsum of godrej ";
+            document.getElementById("comp-1").style.backgroundImage="url(./images/Torrent-power.png)"; 
+            document.getElementById("compstate-1").innerHTML=" lorem ipsum of Torrent-power. ";
             document.getElementById("comp-2").style.backgroundImage="url(./images/ap.png)"; 
             document.getElementById("compstate-2").innerHTML=" lorem ipsum of AsianPaints ";
             Cindex=2;
