@@ -18,12 +18,12 @@ a {
     font-size: 1rem;
 }
 .header {
-    /* padding: 0px 20px; */
     align-items: center;
+    /* padding: 0px 20px; */
     /* height: 20vh; */
     /* width: 100%; */
 }
-.gecp-logo-1 {
+.gecp-logo {
     width: 6vw;
 }
 .logo-right {
