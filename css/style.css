@@ -29,13 +29,6 @@ body{
     padding: 0.001%;
     height:0.5%;
 }
-.header-mid-center {
-    font-size: 200%; 
-    margin: auto;
-    text-align: center;
-    width:75%;
-    font-weight:600;
-}
 .sliding {
     padding-top: 32%;
     background-size: 100% 100%;
@@ -103,7 +96,7 @@ body{
     
 }
 .blue{
-   color:#87ceeb;	
+    color:#00b7ff;
 }
 .NA-content {
     margin: 2% 2% 2% 1%;
@@ -144,7 +137,7 @@ body{
     text-align: center;
 }
 .bg-blue{
-    background-color: #87ceeb;
+    background-color: #00b7ff;
 }
 .br-blue{
     border: 4px solid #87CEEB;
@@ -163,7 +156,7 @@ body{
     margin-right:44%;
 }
 .thumbnail{
-    height:80%;
+    height:86%;
     margin:auto;
     margin-top:20%;
 }
@@ -178,8 +171,7 @@ body{
 }
 .h-frame{
     border-radius: 3%;
-    border:solid black 1px;
-    box-shadow: 0px 0px 5px 5px gray;
+    box-shadow: 0px 0px 5px 5px #c5c5c5;
 }
 .img-container{
     margin:auto;
@@ -231,8 +223,8 @@ body{
     font-size:100%;
     font-weight:500;
 }
-.w-310p{
-    width:310px;
+.w-275p{
+    width:275px;
 }
 .circle{
     border-radius: 50%;
@@ -311,8 +303,8 @@ body{
 .left-48{
     left:48%;
 }
-.t-7{
-    top:-7%;
+.t-10{
+    top:10%;
     position: relative;
 }
 .mr-t-23{
@@ -354,8 +346,18 @@ body{
   width:100%;
   height: 14vw;
 }
-.dept img{
-    opacity:0.7;
+.img-container:hover{
+    background-color: #87ceeb;
+}
+.img-container:hover .t-500{
+    color:white;
+}
+.dept{
+    background-image: url("../images/CSE.jpg");
+    padding: 1% 2% 10% 4%;
+    background-size: cover;
+    height:100%;
+    width:100%;
 }
 .centered {
   position: absolute;
@@ -374,7 +376,7 @@ body{
   content:'';
   height:1px;
   width:10%;
-  background-color:red;
+  background-color:#87CEEB;
   display:block;
 }
 .description{
@@ -383,14 +385,14 @@ body{
 .t-80{    
     font-size:80%;
 }
-.t-40{
-    font-size:40%;
+.t-50{
+    font-size:50%;
 }
 .pad-4{
     padding:4%;
 }
-.pad-t-5{
-    padding-top:5% !important;
+.pad-t-60{
+    padding-top:60px !important;
 }
 .pad-2{
     padding:2%;
@@ -417,7 +419,7 @@ body{
     height:200px;
     margin-top: 2%;
     margin-left:5%;
-    border:solid red 7px;
+    border:solid #00b7ff 7px;
 }
 .frame img{
     width:100%;
@@ -459,7 +461,7 @@ body{
     content: '';
     height: 2px;
     width:5%;
-    background-color: red;
+    background-color: #87ceeb;
     display: block;
 }
 .t-150{
@@ -632,7 +634,7 @@ body{
     background-size: cover;
 }
 .num-head::after{
-    background-color:red;
+    background-color:#00b7ff;
     content:'';
     width: 15%;
     height: 2px;
@@ -657,8 +659,16 @@ body{
     background-size: cover;
 }
 #comp-2{
-    background-image: url("../images/AMW.png");
+    background-image: url("../images/AMW.jpg");
     background-size: cover;
+}
+#comp-1 img{
+    width:80px;
+    height:80px;
+    display:inline-block;
+    position: relative;
+    left:15%;
+    top:15%;
 }
 .nav-comp{
     height: 28px;
@@ -693,9 +703,6 @@ body{
     }
 }
 @media (max-width: 862px){
-    .header-mid-center{
-        font-size:150%;
-    }
     .top-left{
 	font-size:99%;
     }
@@ -709,10 +716,6 @@ body{
     }
 }
 @media (max-width: 700px){
-    .header-mid-center{
-        font-size:100%;
-        font-weight: 600;
-    }
     .slogan{
         font-size: 100%;
     }
@@ -766,22 +769,9 @@ body{
     }
     .horline{
         height:3px;
-    }
-    .header-mid-center{
-        font-weight: 400;
-    }
-    
+    }    
 }
 @media (max-width: 320px){
-    .header-mid-center{
-        font-size: 70%;
-    }
-=======
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     width: 100%;
     height: auto;
@@ -866,5 +856,5 @@ body {
 }
 .doc{
     font-size: 1.4rem;
->>>>>>> upstream/main
+}
 }

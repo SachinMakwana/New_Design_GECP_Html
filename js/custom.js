@@ -64,19 +64,19 @@ function morle(){
 let HIndex=1; //min -1240px max 0px
 function NavRight(){
   if(HIndex==1){
-    document.getElementById('w-900').style.left="-310px";
+    document.getElementById('w-900').style.left="-275px";
           HIndex=2;
     }
     else if(HIndex==2){
-    document.getElementById('w-900').style.left="-620px";
+    document.getElementById('w-900').style.left="-550px";
           HIndex=3;
     }
     else if(HIndex==3){
-    document.getElementById('w-900').style.left="-930px";
+    document.getElementById('w-900').style.left="-825px";
           HIndex=4;
     }
     else if(HIndex==4){
-    document.getElementById('w-900').style.left="-1240px";
+    document.getElementById('w-900').style.left="-1100px";
           HIndex=5;
     } 
     else {
@@ -87,7 +87,7 @@ function NavRight(){
 }
 function NavLeft(){
   if(HIndex==1){
-    document.getElementById('w-900').style.left="-1240px";
+    document.getElementById('w-900').style.left="-1100px";
           HIndex=5;
     }
     else if(HIndex==2){
@@ -95,15 +95,15 @@ function NavLeft(){
           HIndex=1;
     }
     else if(HIndex==3){
-    document.getElementById('w-900').style.left="-310px";
+    document.getElementById('w-900').style.left="-275px";
           HIndex=2;
     }
     else if(HIndex==4){
-    document.getElementById('w-900').style.left="-620px";
+    document.getElementById('w-900').style.left="-550px";
           HIndex=3;
     } 
     else {
-      document.getElementById('w-900').style.left="-930px";
+      document.getElementById('w-900').style.left="-825px";
             HIndex=4;
       } 
 
@@ -322,9 +322,9 @@ function nextcomp(){
       }
       else if(Cindex==3){
             document.getElementById("comp-1").style.backgroundImage="url(./images/ABB.jpg)"; 
-            document.getElementById("compstate-1").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!";
-            document.getElementById("comp-2").style.backgroundImage="url(./images/AMW.png)"; 
-            document.getElementById("compstate-2").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor accusantium deserunt nihil consectetur nemo esse nesciunt, molestiae vel possimus, accusamus quis doloribus maxime itaque alias totam! Quidem, corrupti asperiores.";
+            document.getElementById("compstate-1").innerHTML='<p class="blue align-center">Lorem ipsum dolor</p>  sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!';
+            document.getElementById("comp-2").style.backgroundImage="url(./images/AMW.jpg)"; 
+            document.getElementById("compstate-2").innerHTML='<p class="blue align-center">Lorem ipsum dolor</p> sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!';
             Cindex=1;
       }
 }
@@ -338,9 +338,9 @@ function prevcomp(){
       }
       else if(Cindex==2){
             document.getElementById("comp-1").style.backgroundImage="url(./images/ABB.jpg)"; 
-            document.getElementById("compstate-1").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!";
-            document.getElementById("comp-2").style.backgroundImage="url(./images/AMW.png)"; 
-            document.getElementById("compstate-2").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolor accusantium deserunt nihil consectetur nemo esse nesciunt, molestiae vel possimus, accusamus quis doloribus maxime itaque alias totam! Quidem, corrupti asperiores.";
+            document.getElementById("compstate-1").innerHTML='<p class="blue align-center">Lorem ipsum dolor</p>  sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!';
+            document.getElementById("comp-2").style.backgroundImage="url(./images/AMW.jpg)"; 
+            document.getElementById("compstate-2").innerHTML='<p class="blue align-center">Lorem ipsum dolor</p> sit amet consectetur adipisicing elit. Ut corrupti dolorum, aliquid fuga a reiciendis repellendus aliquam dolorem doloribus dolore voluptatem eaque aperiam, quod suscipit iusto esse nostrum amet nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione exercitationem consequuntur est, corrupti nulla cupiditate, odio corporis enim natus officiis beatae repellat consequatur ab rem autem distinctio qui laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam minus, facilis accusantium magni tempore, nobis iure explicabo labore incidunt officiis totam exercitationem animi asperiores quis dolore quas a aspernatur!';
             Cindex=1;
       }
       else if(Cindex==3){
