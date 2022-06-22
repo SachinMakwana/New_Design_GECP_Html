@@ -88,7 +88,8 @@ select{
     font-size: 1.4rem;
 }
 .doc-box{
-    border-left: 3px solid;
+    border-left: 3px solid white;
+
 }
 @media only screen and (max-width: 767px) {
     .doc-box{
