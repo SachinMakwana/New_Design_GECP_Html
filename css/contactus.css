@@ -28,11 +28,8 @@
 }
 .headings{
     width: 7em;
-    border-bottom: 4px solid rgb(92, 182, 255);
+    border-bottom: 4px solid #007bff;
     padding-bottom: 10px;
-}
-.txt-blue{
-    color: rgb(92, 182, 255);
 }
 /* .row{
     margin-right: 0px;
@@ -49,4 +46,11 @@ input[type="text"], input[type="email"], input[type="submit"], textarea {
 }
 .img-map:hover{
     box-shadow: 5px 5px 5px 5px #c2c2c2;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+i.fa:hover{
+    font-size: 25px;    
 }

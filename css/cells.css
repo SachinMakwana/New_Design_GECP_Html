@@ -43,6 +43,10 @@ body{
 .text-blue{
     color: rgb(8, 139, 190);
 }
+div.figure img,
+div.figure div.text-on-image {
+    width: 70%;
+}
 .carousel-indicators{
     left: 0;
     top: auto;
@@ -59,7 +63,7 @@ body{
     background-color: rgb(92 217 255);
 }
 .objectives{
-    background-image: url('../images/studentclass.jpg');
+    background-image: url('../images/cells/studentclass.jpg');
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -67,7 +71,6 @@ body{
     background-size: cover;
     width: 100%;
 }
-
 .object-block{
     background-color: rgb(0,0,0,0.7); 
     background-size: cover; 
