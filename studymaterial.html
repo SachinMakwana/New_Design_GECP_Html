@@ -15,7 +15,7 @@
     <script src="js/bootstrap/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
-    
+
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -27,13 +27,17 @@
         crossorigin="anonymous"></script> -->
 
     <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- <link rel="stylesheet" href="css/bootstrap/all.min.css">
     <link rel="stylesheet" href="css/bootstrap/font-awesome.min.css"> -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/studymaterial.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -78,7 +82,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
-                <li class="nav-item active">
+                <li class="nav-item activeSub">
                     <a class="nav-link" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
@@ -109,22 +113,203 @@
         </div>
     </nav>
 
+<!-- Container  -->
 
-
-     <!-- Contact us  -->
-
-     <div class="header-block row d-flex align-items-center mx-auto">
-        <img src="images/studyMaterial/studymaterial.jpg.jpg" alt="Contact">
-        <div class="text-block mx-auto text-center ">
-        STUDY MATERIAL
+    <!-- Study Material  -->
+    <div class="header-block row d-flex align-items-center mx-auto">
+        <img src="images/studyMaterial/studymaterial.jpg.jpg" alt="Womens">
+        <div class="text-block mx-auto text-block mx-auto d-flex align-items-center justify-content-center">
+            Study Material
         </div>
     </div>
 
 
+    <!-- Department -->
+    <div class="bg-dark text-white">
+
+        <div class="m-5 p-3">
+            <div class="container mx-auto">
+                <div class="text-center d-flex justify-content-center">
+                    <div class="headings h4 text-center font-weight-bold mb-4">DEPARTMENTS</div>
+                </div>
+                <div class="row  align-items-center">
+
+                    <button class="" onclick="openBranch('cse')">
+                        <div class="branch-container col  p-3 text-center activeBranch">
+                            <i class="fa fa-laptop"></i>
+                            <div class="font-weight-bold">
+                                Computer Science
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="" onclick="openBranch('ec')">
+                        <div class="branch-container col p-3 text-center">
+                            <i class="fa fa-microchip"></i>
+                            <div class="font-weight-bold">
+                                Electronics and Communication
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="" onclick="openBranch('mechanical')">
+                        <div class="branch-container col p-3 text-center">
+                            <i class="fa fa-wrench"></i>
+                            <div class="font-weight-bold">
+                                Mechanical
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="" onclick="openBranch('civil')">
+                        <div class="branch-container col p-3 text-center">
+                            <i class="fa fa-hard-hat"></i>
+                            <div class="font-weight-bold">
+                                Civil
+
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="" onclick="openBranch('electrical')">
+                        <div class="branch-container col p-3 text-center">
+                            <i class="fa fa-bolt"></i>
+                            <div class="font-weight-bold">
+                                Electrical
+                            </div>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-     <!-- Footer -->
-     <footer class="bg-color-light page-footer font-small lighten-5">
+    <!-- Semester - CSE -->
+
+    <div class="branch container-fluid mx-auto m-5" id="cse">
+
+        CSE
+        <div class="">
+            <button class="sem-button p-4 activeSub" onclick="openSubject('sem1')">SEM 1</button>
+            <button class="sem-button p-4" onclick="openSubject('sem2')">SEM 2</button>
+            <button class="sem-button p-4" onclick="openSubject('sem3')">SEM 3</button>
+            <button class="sem-button p-4" onclick="openSubject('sem4')">SEM 4</button>
+            <button class="sem-button p-4" onclick="openSubject('sem5')">SEM 5</button>
+            <button class="sem-button p-4" onclick="openSubject('sem6')">SEM 6</button>
+            <button class="sem-button p-4" onclick="openSubject('sem7')">SEM 7</button>
+            <button class="sem-button p-4" onclick="openSubject('sem8')">SEM 8</button>
+        </div>
+
+        <!-- subjects -->
+        <div class="contaier bg-light-1 p-4">
+            <div id="sem1" class="subjects">
+                <h2>SEM 1</h2>
+                <p>London is the capital of England.</p>
+            </div>
+
+            <div id="sem2" class="subjects" style="display:none">
+                <h2>SEM 2</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="sem3" class="subjects" style="display:none">
+                <h2>SEM 3</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="sem4" class="subjects" style="display:none">
+                <h2>SEM 4</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="sem5" class="subjects" style="display:none">
+                <h2>SEM 5</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="sem6" class="subjects" style="display:none">
+                <h2>SEM 6</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="sem7" class="subjects" style="display:none">
+                <h2>SEM 7</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="sem8" class="subjects" style="display:none">
+                <h2>SEM 8</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- semester EC -->
+    <div class="branch container-fluid mx-auto m-5" id="ec" style="display:none">
+        EC
+        <div class="">
+            <button class="sem-button p-4 activeSub" onclick="openSubject('sem1')">SEM 1</button>
+            <button class="sem-button p-4" onclick="openSubject('sem2')">SEM 2</button>
+            <button class="sem-button p-4" onclick="openSubject('sem3')">SEM 3</button>
+            <button class="sem-button p-4" onclick="openSubject('sem4')">SEM 4</button>
+            <button class="sem-button p-4" onclick="openSubject('sem5')">SEM 5</button>
+            <button class="sem-button p-4" onclick="openSubject('sem6')">SEM 6</button>
+            <button class="sem-button p-4" onclick="openSubject('sem7')">SEM 7</button>
+            <button class="sem-button p-4" onclick="openSubject('sem8')">SEM 8</button>
+        </div>
+    </div>
+
+    <!-- semester ME -->
+    <div class="branch container-fluid mx-auto m-5" id="mechanical" style="display:none">
+        Mechanical
+        <div class="">
+            <button class="sem-button p-4 activeSub" onclick="openSubject('sem1')">SEM 1</button>
+            <button class="sem-button p-4" onclick="openSubject('sem2')">SEM 2</button>
+            <button class="sem-button p-4" onclick="openSubject('sem3')">SEM 3</button>
+            <button class="sem-button p-4" onclick="openSubject('sem4')">SEM 4</button>
+            <button class="sem-button p-4" onclick="openSubject('sem5')">SEM 5</button>
+            <button class="sem-button p-4" onclick="openSubject('sem6')">SEM 6</button>
+            <button class="sem-button p-4" onclick="openSubject('sem7')">SEM 7</button>
+            <button class="sem-button p-4" onclick="openSubject('sem8')">SEM 8</button>
+        </div>
+    </div>
+
+    <!-- semester Civil -->
+    <div class="branch container-fluid mx-auto m-5" id="civil" style="display:none">
+        Civil
+        <div class="">
+            <button class="sem-button p-4 activeSub" onclick="openSubject('sem1')">SEM 1</button>
+            <button class="sem-button p-4" onclick="openSubject('sem2')">SEM 2</button>
+            <button class="sem-button p-4" onclick="openSubject('sem3')">SEM 3</button>
+            <button class="sem-button p-4" onclick="openSubject('sem4')">SEM 4</button>
+            <button class="sem-button p-4" onclick="openSubject('sem5')">SEM 5</button>
+            <button class="sem-button p-4" onclick="openSubject('sem6')">SEM 6</button>
+            <button class="sem-button p-4" onclick="openSubject('sem7')">SEM 7</button>
+            <button class="sem-button p-4" onclick="openSubject('sem8')">SEM 8</button>
+        </div>
+    </div>
+
+    <!-- semester electrical -->
+    <div class="branch container-fluid mx-auto m-5" id="electrical" style="display:none">
+        Electrical
+        <div class="">
+            <button class="sem-button p-4 activeSub" onclick="openSubject('sem1')">SEM 1</button>
+            <button class="sem-button p-4" onclick="openSubject('sem2')">SEM 2</button>
+            <button class="sem-button p-4" onclick="openSubject('sem3')">SEM 3</button>
+            <button class="sem-button p-4" onclick="openSubject('sem4')">SEM 4</button>
+            <button class="sem-button p-4" onclick="openSubject('sem5')">SEM 5</button>
+            <button class="sem-button p-4" onclick="openSubject('sem6')">SEM 6</button>
+            <button class="sem-button p-4" onclick="openSubject('sem7')">SEM 7</button>
+            <button class="sem-button p-4" onclick="openSubject('sem8')">SEM 8</button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-color-light page-footer font-small lighten-5">
         <div class="bg-color-dark py-2"></div>
         <div class="container text-center text-md-left mt-5">
             <div class="row mt-3">
@@ -187,15 +372,6 @@
                     <div class="bg-color-light company-name">envato</div>
                     <div class="bg-color-light company-name">WooCOMMERCE</div>
                 </div>
-
-                <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
-                    <div class="client">Our Clients</div>
-                    <div class="bg-color-light company-name fa-google"></div>
-                    <div class="bg-color-light company-name fa-microsoft"></div>
-                    <div class="bg-color-light company-name fa-envato"></div>
-                    <div class="bg-color-light company-name fa-WooCOMMERCE"></div>
-                </div> -->
-
             </div>
         </div>
 
@@ -208,7 +384,25 @@
 
     </footer>
 
-
+ <!-- JS  -->
+    <script>
+        function openSubject(subjectName) {
+            var i;
+            var x = document.getElementsByClassName("subjects");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(subjectName).style.display = "block";
+        }
+        function openBranch(branchName) {
+            var i;
+            var x = document.getElementsByClassName("branch");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(branchName).style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
