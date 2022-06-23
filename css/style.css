@@ -66,9 +66,9 @@ body{
 
 .NA-head {
     text-align:left;
-    font-weight:300;
+    font-weight:500;
     font-size:140%;
-    font-family:'Gill Sans';
+    /* font-family:'Gill Sans'; */
     padding-left:2%;
 }
 .NA-head::after {
@@ -82,9 +82,9 @@ body{
     width:20%;
 }
 .Event{
-    font-weight: 300;
+    font-weight: 500;
     font-size: 140%;
-    font-family: 'Gill Sans';
+    /* font-family: 'Gill Sans'; */
 }
 .Event::after {
     background-color:#87ceeb;
@@ -156,7 +156,7 @@ body{
     margin-right:44%;
 }
 .thumbnail{
-    height:86%;
+    height:85%;
     margin:auto;
     margin-top:20%;
 }
@@ -353,7 +353,7 @@ body{
     color:white;
 }
 .dept{
-    background-image: url("../images/CSE.jpg");
+    background-image: url("../images/p1.jpg");
     padding: 1% 2% 10% 4%;
     background-size: cover;
     height:100%;
@@ -497,8 +497,8 @@ body{
     text-align:center;
     font-family: cursive;    
 }
-.mr-top175p{
-    margin-top: 175px;
+.mr-top215p{
+    margin-top: 215px;
 }
 .h-440p{
     height:440px;
@@ -679,6 +679,12 @@ body{
 }
 .t-500{
     font-size: 500%;
+}
+.thumbnail:hover .hov-blue{
+     color:#00b7ff;
+}
+.yellow{
+    color:yellow;
 }
 @media (max-width: 904px) {
  .header-right-writting {
