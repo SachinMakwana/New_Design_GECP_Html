@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="js/bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
@@ -18,13 +23,14 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.min.css"> -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -39,12 +45,21 @@
 
     <div class="header-line row d-flex justify-content-between">
         <div class="">
-            <a href="#" class="fa fa-solid fa-envelope text-white">
+            <a href="#" class="fa fa-envelope text-white">
                 info@yourdomain.com
             </a>
             <a href="#" class="fa fa-solid fa-phone text-white">
                 +91 xxx xxx xxxx
             </a>
+            
+            <!-- <a href="#" class=" text-white">
+                <i class="fa fa-solid fa-envelope"></i>
+                info@yourdomain.com
+            </a>
+            <a href="#" class=" text-white">
+                <i class="fa fa-solid fa-envelope"></i>
+                +91 xxx xxx xxxx
+            </a> -->
         </div>
         <div class="">
             <a href="#" class="fa fa-sign-in text-white"> Register</a>
@@ -54,11 +69,12 @@
             <a href="#" class="fa fa-brands fa-google text-white"></a>
             <a href="#" class="fa fa-brands fa-youtube text-white"></a>
             <a href="#" class="fa fa-solid fa-wifi text-white"></a>
+            
         </div>
     </div>
 
     <div class="header row">
-        <img src="images/admissionProcedure/gecplogo.jpg" class="gecp-logo-1 col p-2">
+        <img src="images/admissionProcedure/gecplogo.jpg" class="gecp-logo col p-2">
         <div class="header-mid-center col-md-auto p-2 mx-auto">
             Government Engineering College, Patan</div>
         <img src="images/admissionProcedure/rightlogo.png" class="logo-right col  p-2">
@@ -108,12 +124,13 @@
 
     <div class="header-block row d-flex align-items-center mx-auto">
         <img src="images/admissionProcedure/admission_bg_img.jpg" alt="Womens">
-        <div class="text-block mx-auto text-center ">
+        <div class="text-block mx-auto text-block mx-auto d-flex align-items-center justify-content-center">
             Admission Procedure
         </div>
     </div>
 
     <!-- 2. About-college -->
+
     <div class="p-3">
         <div class="about-college container text-center p-4">
             Government Engineering College, Patan(GECP), is government aided educational institution in Katpur, near
@@ -164,32 +181,79 @@
     <!-- 4. Admission Process -->
 
     <div class="m-4">
-        <div>
+        <div class="m-3">
             <div class="headings font-weight-bold h3">Admission Process</div>
         </div>
 
-        <div class=" row align-items-center m-3 mt-3">
-            <div class="img-student d-flex justify-content-center mx-auto  col-lg-6 col-xl-6 col-12 P-4">
+        <div class=" row align-items-center mt-3">
+
+            <!-- Column 1 -->
+            <div class="img-student d-flex justify-content-center mx-auto  col-lg-6 col-xl-6 col-12  ">
                 <img src="images/admissionProcedure/admission_process.jpg" alt="students" class="img-fluid">
             </div>
 
+            <!-- Column 2 -->
             <div class=" col-lg-6 col-xl-6 col-12 mt-3">
                 <div class="mt-4">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="">Obtaining Information Booklet and PIN</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="">Online Registration</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="">Verification of Documents</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="">Publication of Provistional Merit Number/Merit List</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="">Online Choice Filling</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="">Allotment, Confirmation and Reporting</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
 
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 5. Fees Structure & Documents REquired -->
 
+    <!-- 5. Fees Structure & Documents REquired -->
 
     <div class="details-block">
         <div class="object-block  mt-5 p-5 row">
-            <div class="col-md-6">
+            <div class="col-md-6 px-3">
                 <div class="headings h4 font-weight-bold text-white mb-4">Fees Structure</div>
 
-                <div class="p-4">
+                <div class="mt-5 pt-4 pr-4">
                     <table class="table table-striped bg-light">
                         <thead>
                             <tr>
@@ -225,10 +289,10 @@
 
             <!-- <div class="vl col-md-auto"></div> -->
 
-            <div class="col-md-6">
-                <div class="headings h4  font-weight-bold text-white mb-4">Documents Required</div>
+            <div class="doc-box col-md-6 px-5">
+                <div class=" headings h4 font-weight-bold text-white mb-4">Documents Required</div>
 
-                <div class="p-4 text-white doc">
+                <div class=" py-4 text-white doc">
                     <ul>
                         <li class="m-3">Class 10 & 12 Certificate</li>
                         <li class="m-3">Gujcet Marksheet</li>
@@ -254,7 +318,9 @@
         <div class="container text-center text-md-left mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
-                    <div class="gecp-logo-2 rounded-circle mx-auto"></div>
+                    <div class="gecp-logo rounded-circle mx-auto">
+                        <img src="images/contactusBootstrap/gecplogo.jpg" class="rounded-circle gecp-logo-1 col p-2">
+                    </div>
                     <p>Government Engineering College,
                         Patan
                         At. Katpur,
@@ -305,7 +371,7 @@
                 <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
                     <div class="client">Our Clients</div>
                     <div class="bg-color-light company-name">Google</div>
-                    <div class="bg-color-light company-name">Microdoft</div>
+                    <div class="bg-color-light company-name">Microsoft</div>
                     <div class="bg-color-light company-name">envato</div>
                     <div class="bg-color-light company-name">WooCOMMERCE</div>
                 </div>
