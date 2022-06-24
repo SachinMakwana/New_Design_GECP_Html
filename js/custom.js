@@ -3,12 +3,16 @@ function s1(){
     document.getElementById('s-container-2').style.backgroundImage="url(./images/p2.jpg)";
     document.getElementById('s-container-3').style.backgroundImage="url(./images/p3.jpg)";
     document.getElementById('s-container-4').style.backgroundImage="url(./images/p4.jpg)";
+    document.getElementById('p1').style.backgroundColor="white";
+    document.getElementById('p2').style.backgroundColor="transparent";
 } 
 function s2(){
     document.getElementById('s-container-1').style.backgroundImage="url(./images/1.jpg)";
     document.getElementById('s-container-2').style.backgroundImage="url(./images/2.jpg)";
     document.getElementById('s-container-3').style.backgroundImage="url(./images/3.jpg)";
     document.getElementById('s-container-4').style.backgroundImage="url(./images/4.jpg)";
+    document.getElementById('p2').style.backgroundColor="white";
+    document.getElementById('p1').style.backgroundColor="transparent";
 }
 let SlideIndex=1;
 function prev(){
@@ -63,6 +67,29 @@ function morle(){
 }
 let HIndex=1; //min -1240px max 0px
 function NavRight(){
+      if(window.screen.width>=1376){
+            if(HIndex==1){
+                  document.getElementById('w-900').style.left="-25%";
+                        HIndex=2;
+                  }
+                  else if(HIndex==2){
+                  document.getElementById('w-900').style.left="-50%";
+                        HIndex=3;
+                  }
+                  else if(HIndex==3){
+                  document.getElementById('w-900').style.left="-75%";
+                        HIndex=4;
+                  }
+                  else if(HIndex==4){
+                  document.getElementById('w-900').style.left="-100%";
+                        HIndex=5;
+                  } 
+                  else {
+                    document.getElementById('w-900').style.left="0px";
+                          HIndex=1;
+                    } 
+      }
+else{      
   if(HIndex==1){
     document.getElementById('w-900').style.left="-275px";
           HIndex=2;
@@ -83,9 +110,33 @@ function NavRight(){
       document.getElementById('w-900').style.left="0px";
             HIndex=1;
       } 
+}    
 
 }
 function NavLeft(){
+if(window.screen.width>=1376){
+      if(HIndex==1){
+            document.getElementById('w-900').style.left="-100%";
+                  HIndex=5;
+            }
+            else if(HIndex==2){
+            document.getElementById('w-900').style.left="0px";
+                  HIndex=1;
+            }
+            else if(HIndex==3){
+            document.getElementById('w-900').style.left="-25%";
+                  HIndex=2;
+            }
+            else if(HIndex==4){
+            document.getElementById('w-900').style.left="-50%";
+                  HIndex=3;
+            } 
+            else {
+              document.getElementById('w-900').style.left="-75%";
+                    HIndex=4;
+            } 
+}      
+else{      
   if(HIndex==1){
     document.getElementById('w-900').style.left="-1100px";
           HIndex=5;
@@ -106,6 +157,7 @@ function NavLeft(){
       document.getElementById('w-900').style.left="-825px";
             HIndex=4;
       } 
+}      
 
 }
 function a1(){
@@ -114,6 +166,9 @@ function a1(){
       document.getElementById('first-alumni').style.display="block";
       document.getElementById('second-alumni').style.display="none";
       document.getElementById('third-alumni').style.display="none";
+      document.getElementById('a1').style.backgroundColor="#00b7ff";
+      document.getElementById('a2').style.backgroundColor="transparent";
+      document.getElementById('a3').style.backgroundColor="transparent";
 }
 function a2(){
       document.getElementById('alumni-image').style.backgroundImage="url(./images/h2.jpg)";
@@ -121,6 +176,9 @@ function a2(){
       document.getElementById('first-alumni').style.display="none";
       document.getElementById('second-alumni').style.display="block";
       document.getElementById('third-alumni').style.display="none";
+      document.getElementById('a2').style.backgroundColor="#00b7ff";
+      document.getElementById('a1').style.backgroundColor="transparent";
+      document.getElementById('a3').style.backgroundColor="transparent";
 }
 function a3(){
       document.getElementById('alumni-image').style.backgroundImage="url(./images/h3.jpg)";
@@ -128,6 +186,9 @@ function a3(){
       document.getElementById('first-alumni').style.display="none";
       document.getElementById('second-alumni').style.display="none";
       document.getElementById('third-alumni').style.display="block";
+      document.getElementById('a3').style.backgroundColor="#00b7ff";
+      document.getElementById('a2').style.backgroundColor="transparent";
+      document.getElementById('a1').style.backgroundColor="transparent";
 }
 var CouncilIndex=1;
 function NextSC(){
@@ -291,18 +352,27 @@ function act1(){
       document.getElementById("actd-2").innerHTML="<h6 class='blue'>Versions Have Evolved Over The Years</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
       document.getElementById("acti-2").style.backgroundImage="url(./images/marathon.webp)";
       document.getElementById("acti-1").style.backgroundImage="url(./images/camera.jpg)";
+      document.getElementById('a1').style.backgroundColor="#00b7ff";
+      document.getElementById('a2').style.backgroundColor="transparent";
+      document.getElementById('a3').style.backgroundColor="transparent";
 }
 function act2(){
       document.getElementById("actd-1").innerHTML="<h6 class='blue'>The First True Genrator On the Internet</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
       document.getElementById("actd-2").innerHTML="<h6 class='blue'>Versions Have Evolved Over The Years</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
       document.getElementById("acti-2").style.backgroundImage="url(./images/parties.webp)";
       document.getElementById("acti-1").style.backgroundImage="url(./images/garba.jpg)";
+      document.getElementById('a2').style.backgroundColor="#00b7ff";
+      document.getElementById('a3').style.backgroundColor="transparent";
+      document.getElementById('a1').style.backgroundColor="transparent";
 }
 function act3(){
       document.getElementById("actd-1").innerHTML="<h6 class='blue'>The First True Genrator On the Internet</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
       document.getElementById("actd-2").innerHTML="<h6 class='blue'>Versions Have Evolved Over The Years</h6><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>";
       document.getElementById("acti-2").style.backgroundImage="url(./images/marathon.webp)";
       document.getElementById("acti-1").style.backgroundImage="url(./images/camera.jpg)";
+      document.getElementById('a3').style.backgroundColor="#00b7ff";
+      document.getElementById('a2').style.backgroundColor="transparent";
+      document.getElementById('a1').style.backgroundColor="transparent";
 }
 let Cindex=1;
 function nextcomp(){

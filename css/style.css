@@ -74,12 +74,16 @@ body{
 .NA-head::after {
     background-color:#87ceeb;
     content:'';
-    width: 28%;
+    width: 300px;
     height: 2px;
     display:flex;
 }
-.w-20{
-    width:20%;
+.w-132p{
+    width:132px;
+}
+.l-4{
+    position:relative;
+    left:4%;
 }
 .Event{
     font-weight: 500;
@@ -89,7 +93,7 @@ body{
 .Event::after {
     background-color:#87ceeb;
     content: '';
-    width: 8%;
+    width: 80px;
     height: 2px;
     display: block;
     margin-bottom:2%;
@@ -214,6 +218,7 @@ body{
     overflow:hidden;
     position:relative;
     left:0px;
+    height:440px;
 }
 .w-90{
     width:90%;
@@ -253,7 +258,7 @@ body{
 .IP::after{
     background-color:#fff;
     content:'';
-    width: 20%;
+    width: 550px;
     height: 2px;
     display:block;
 }
@@ -272,7 +277,7 @@ body{
     display:block;
 }
 #s-container-1, #s-container-2, #s-container-3, #s-container-4{
-    transition: all 1s cubic-bezier(0,-1.16, 0, 5.46);
+    transition: all 1.5s cubic-bezier(0,-1.16, 0, 5.46);
     width: 23%;
     position: relative;
     margin-right: 2%;
@@ -680,11 +685,34 @@ body{
 .t-500{
     font-size: 500%;
 }
+.h-auto{
+    height:auto;
+}
 .thumbnail:hover .hov-blue{
      color:#00b7ff;
 }
 .yellow{
     color:yellow;
+}
+#p2{
+    background-color: #fff;
+}
+#a1{
+    background-color: #00b7ff;
+}
+.bg-white img:hover{
+    transform: scale(1.3);
+}
+.bg-dblue img:hover{
+    transform: scale(1.3);
+}
+@media(min-width:1376px) {
+    #w-900{
+        width:900%;
+    }
+    .w-275p{
+        width:2.8%;
+    }
 }
 @media (max-width: 904px) {
  .header-right-writting {
@@ -768,6 +796,13 @@ body{
     #bg-s2, #bg-s4{
         display:contents;
     }   
+    .IP::after{
+        background-color:#fff;
+        content:'';
+        width: 200px;
+        height: 2px;
+        display:block;
+    }
 }
 @media (max-width: 375px){
     .WC-head{
