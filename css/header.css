@@ -54,7 +54,7 @@ li.active {
     border-radius: 6px;
 }
 /* color: rgb(255, 255, 255); */
-a.fa:hover {
+a.header-link:hover {
     border-radius: 6px;
     text-decoration: none;
     color: rgb(85, 85, 85) !important;
