@@ -23,6 +23,19 @@
     width: 19em;
     border-bottom: 4px solid rgb(92 217 255);
     padding-bottom: 10px;
+    /* padding-left: 50px; */
+    
+    
+    
+}
+.headings1 {
+    width: 10em;
+    border-bottom: 4px solid rgb(92 217 255);
+    padding-bottom: 10px;
+    /* padding-left: 50px; */
+    
+    
+    
 }
 
 @media screen and (max-width:767px)
@@ -154,6 +167,7 @@ height: 80%;
 padding: 50px;
 max-width: 100%;
 max-height: 80%;
+padding-top: 20px;
 }
 
 .section2 img{
@@ -162,6 +176,9 @@ max-height: 80%;
     padding: 50px;
     max-width: 100%;
     max-height: 80%;
+    padding-top: 20px;
     }
 
-
+.b1{
+    padding-left: 50px;
+}

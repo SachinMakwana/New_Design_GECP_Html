@@ -1,0 +1,170 @@
+.bgimg{
+    background-image: url('../images/aboutus/about2.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 200px;
+}
+.hearderset1{
+    padding-top: 10px;
+   
+}
+.hearderset{
+    padding-top: 50px;
+   
+}
+.hearderset h2{
+    margin: auto;
+    width: 30%;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-bottom: 15px;
+    border-radius: 5%;
+    border-bottom: 10px solid skyblue;
+    
+}
+.hearderset1 h2{
+    margin: auto;
+    width: 30%;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-bottom: 15px;
+    border-radius: 5%;
+    border-bottom: 10px solid skyblue;
+    
+}
+.depart{
+    width: 100;
+    height: 40%;
+    background-color: whitesmoke;
+}
+
+
+.container2
+{
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-top: 30px;
+margin-left: 50px;
+margin-right: 50px;
+background-color: white;
+padding: 30px;
+
+}
+.container2 .col
+{
+flex:0 0 auto;
+width:50%;
+}
+.container2 .col.img
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.container2 .col.content1 .content-containers
+{
+padding:40px 50px;
+}
+.container2 .col.content1 .content-containers h5
+{
+font-weight:700;
+font-size:25px;
+margin-bottom:20px;
+}
+.container2 .col.content1 .content-containers p
+{
+font-weight:400;
+font-size:16px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:justify;
+}
+@media screen and (max-width:767px)
+{
+.container2
+{
+flex-flow:row wrap;
+
+}
+.container2 .col.img{
+display:block;
+order:1;
+width:100%;
+height:250px;
+
+}
+.container2 .col.content1
+{
+display:block;
+order:2;
+width:100%;
+}
+.container2 .col.content1 .content-containers
+{
+padding:20px 35px;
+}
+.container2 .col.content1 .content-containers h5
+{
+margin-bottom:5px;
+}
+}
+
+
+.boxes{
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.box{
+    width: 13%;
+    height: 180px;
+    background: white;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    border-radius: 15px;
+
+
+}
+
+.box img{
+    width: auto;
+    height: auto;
+    max-width: 40%;
+    max-height: 40%;
+    
+    
+}
+.box .box1{
+    width: 100px;
+    height: 30px;
+    background-color: skyblue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    border-radius: 15px;
+}
+h6{
+    text-align: center;
+    padding-top: 3px;
+}
+
+@media screen and (max-width:1200px) {
+    .box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .box{
+        width: 90%;
+    }
+}
