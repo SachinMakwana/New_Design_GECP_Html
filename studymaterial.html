@@ -117,7 +117,7 @@
 
     <!-- Study Material  -->
     <div class="header-block row d-flex align-items-center mx-auto">
-        <img src="images/studyMaterial/studymaterial.jpg.jpg" alt="Womens">
+        <img src="images/studyMaterial/bg-img-2.jpg" alt="Womens">
         <div class="text-block mx-auto text-block mx-auto d-flex align-items-center justify-content-center">
             Study Material
         </div>
@@ -186,10 +186,10 @@
                     <div class="headings h4 text-center font-weight-bold mb-4 text-dark">DEPARTMENTS</div>
                 </div>
 
-                <div class="row d-flex align-items-center justify-content-center">
-  
-                    <button class="d" onclick="openBranch('cse')">
-                        <div class="col box">
+                <div class="row d-flex align-items-center justify-content-center" id="branchId">
+
+                    <button class="department activeBranch" onclick="openBranch('cse')">
+                        <div class="col">
                             <img src="images/studyMaterial/cse-logo-1.png" alt=""
                                 class="department-logos border img-fluid rounded-circle">
                             <div class="d-text font-weight-bold">
@@ -198,7 +198,7 @@
                         </div>
                     </button>
 
-                    <button class="d" onclick="openBranch('ec')">
+                    <button class="department" onclick="openBranch('ec')">
                         <div class="col">
                             <img src="images/studyMaterial/cse-logo-1.png" alt=""
                                 class="department-logos border img-fluid rounded-circle">
@@ -208,7 +208,7 @@
                         </div>
                     </button>
 
-                    <button class="d" onclick="openBranch('mechanical')">
+                    <button class="department" onclick="openBranch('mechanical')">
                         <div class="col">
                             <img src="images/studyMaterial/me-vector-logo.jpg" alt=""
                                 class="department-logos  border img-fluid rounded-circle">
@@ -218,7 +218,7 @@
                         </div>
                     </button>
 
-                    <button class="d" onclick="openBranch('civil')">
+                    <button class="department" onclick="openBranch('civil')">
                         <div class="col ">
                             <img src="images/studyMaterial/civil-vector.jpg" alt=""
                                 class="department-logos  border img-fluid rounded-circle">
@@ -228,7 +228,7 @@
                         </div>
                     </button>
 
-                    <button class="d" onclick="openBranch('electrical')">
+                    <button class="department" onclick="openBranch('electrical')">
                         <div class="col ">
                             <img src="images/studyMaterial/ee-logo.png" alt=""
                                 class="department-logos border img-fluid rounded-circle">
@@ -247,23 +247,23 @@
 
     <!-- Semester - CSE -->
 
-    <div class="branch container-fluid mx-auto m-5" id="cse">
+    <div class="branch container-fluid mx-auto m-5 p-5" id="cse">
 
         <div class="text-center d-flex justify-content-center align-items-center">
             <div class="headings h4 mb-4 font-weight-bold"> COMPUTER</div>
         </div>
-        <div class="d-flex">
-            <button class="sem-button p-4 activeSub" onclick="openSubject('sem1')">SEM 1</button>
-            <button class="sem-button p-4" onclick="openSubject('sem2')">SEM 2</button>
-            <button class="sem-button p-4" onclick="openSubject('sem3')">SEM 3</button>
-            <button class="sem-button p-4" onclick="openSubject('sem4')">SEM 4</button>
-            <button class="sem-button p-4" onclick="openSubject('sem5')">SEM 5</button>
-            <button class="sem-button p-4" onclick="openSubject('sem6')">SEM 6</button>
-            <button class="sem-button p-4" onclick="openSubject('sem7')">SEM 7</button>
-            <button class="sem-button p-4" onclick="openSubject('sem8')">SEM 8</button>
+        <div class="d-flex" id="semId">
+            <button class="sem-button activeSub" onclick="openSubject('sem1')">SEM 1</button>
+            <button class="sem-button" onclick="openSubject('sem2')">SEM 2</button>
+            <button class="sem-button" onclick="openSubject('sem3')">SEM 3</button>
+            <button class="sem-button" onclick="openSubject('sem4')">SEM 4</button>
+            <button class="sem-button" onclick="openSubject('sem5')">SEM 5</button>
+            <button class="sem-button" onclick="openSubject('sem6')">SEM 6</button>
+            <button class="sem-button" onclick="openSubject('sem7')">SEM 7</button>
+            <button class="sem-button" onclick="openSubject('sem8')">SEM 8</button>
         </div>
 
-        <div class="bg-light">
+        <div class="bg-light-1">
             <!-- subjects -->
             <div class="bg-sub contaier p-4">
                 <div id="sem1" class="subjects">
@@ -456,7 +456,20 @@
                 x[i].style.display = "none";
             }
             document.getElementById(subjectName).style.display = "block";
+
+            var btnContainer = document.getElementById("semId");
+    
+            var btns = btnContainer.getElementsByClassName("sem-button");
+    
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("activeSub");
+                    current[0].className = current[0].className.replace(" activeSub", "");
+                    this.className += " activeSub";
+                });
+            }
         }
+
         function openBranch(branchName) {
             var i;
             var x = document.getElementsByClassName("branch");
@@ -464,6 +477,18 @@
                 x[i].style.display = "none";
             }
             document.getElementById(branchName).style.display = "block";
+            
+            var btnContainer = document.getElementById("branchId");
+    
+            var btns = btnContainer.getElementsByClassName("department");
+    
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("activeBranch");
+                    current[0].className = current[0].className.replace(" activeBranch", "");
+                    this.className += " activeBranch";
+                });
+            }
         }
     </script>
 </body>
