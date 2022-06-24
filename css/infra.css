@@ -6,7 +6,7 @@
    
 }
 .hearderset{
-    padding-top: 80px;
+    padding-top: 50px;
    
 }
 .hearderset h2{
@@ -23,6 +23,19 @@
     width: 19em;
     border-bottom: 4px solid rgb(92 217 255);
     padding-bottom: 10px;
+    /* padding-left: 50px; */
+    
+    
+    
+}
+.headings1 {
+    width: 10em;
+    border-bottom: 4px solid rgb(92 217 255);
+    padding-bottom: 10px;
+    /* padding-left: 50px; */
+    
+    
+    
 }
 
 @media screen and (max-width:767px)
@@ -113,7 +126,8 @@ h5{
 
 @media screen and (max-width:600px) {
     .section1{
-        width: 90%;
+        width: 100%;
+        height: 450px;
     }
 }
 
@@ -125,7 +139,8 @@ h5{
 
 @media screen and (max-width:600px) {
     .section2{
-        width: 90%;
+        width: 100%;
+        height: 450px;
     }
 }
 /* 
@@ -149,19 +164,23 @@ h5{
 } */
 
 .section1 img{
-width: 70%;
-height: 80%;
+width: 400px;
+height: 360px;
 padding: 50px;
 max-width: 100%;
 max-height: 80%;
+padding-top: 20px;
 }
 
 .section2 img{
-    width: 70%;
-    height: 80%;
+    width: 400px;
+    height: 360px;
     padding: 50px;
     max-width: 100%;
     max-height: 80%;
+    padding-top: 20px;
     }
 
-
+.b1{
+    padding-left: 50px;
+}

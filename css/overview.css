@@ -4,8 +4,12 @@
     width: 100%;
     height: 200px;
 }
+.hearderset1{
+    padding-top: 10px;
+   
+}
 .hearderset{
-    padding-top: 80px;
+    padding-top: 50px;
    
 }
 .hearderset h2{
@@ -16,6 +20,17 @@
     padding-bottom: 15px;
     border-radius: 5%;
     border-bottom: 10px solid skyblue;
+    
+}
+.hearderset1 h2{
+    margin: auto;
+    width: 20%;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-bottom: 15px;
+    border-radius: 5%;
+    border-bottom: 10px solid skyblue;
+    text-align: center;
     
 }
 .depart{
@@ -109,7 +124,7 @@ margin-bottom:5px;
 }
 .box{
     width: 13%;
-    height: 180px;
+    height: 160px;
     background: white;
     margin: 20px;
     box-sizing: border-box;
@@ -124,6 +139,7 @@ margin-bottom:5px;
     height: auto;
     max-width: 40%;
     max-height: 40%;
+    padding-top: 8px;
     
     
 }
@@ -153,4 +169,7 @@ h6{
     .box{
         width: 90%;
     }
+}
+.box:hover{
+    border: 3px solid skyblue;
 }
