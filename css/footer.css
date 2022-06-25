@@ -33,6 +33,9 @@
     margin: 14px;
     text-align: center;
 }
+.our-client-box{
+    width: fit-content;
+}
 /* .fa-google{
     background-image: url("../images/google.png");
     background-size: cover;
