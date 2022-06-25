@@ -11,24 +11,24 @@ body{
     text-decoration: none;
     display:flex;
 }
-.header {
+/* .header {
     padding-left: 3%;
     padding-right: 3%;
     align-items: center;
-}
-.gecp-logo{
+} */
+/* .gecp-logo{
     width:7%;
     padding:1%;
-}
-.logo-right{
+} */
+/* .logo-right{
     width:15%;
     padding:1%;
-}
-.header-line {
+} */
+/* .header-line {
     margin-bottom: 0%;
     padding: 0.001%;
     height:0.5%;
-}
+} */
 .sliding {
     padding-top: 32%;
     background-size: 100% 100%;
@@ -38,6 +38,9 @@ body{
 .auto{
     animation: slider 20s infinite ease-in-out;
     width:100%;
+}
+.h-85{
+    height:85%;
 }
 #manual{
     background-image:url("../images/1.jpg");
@@ -160,7 +163,7 @@ body{
     margin-right:44%;
 }
 .thumbnail{
-    height:85%;
+    /* height:85%; */
     margin:auto;
     margin-top:20%;
 }
@@ -218,7 +221,7 @@ body{
     overflow:hidden;
     position:relative;
     left:0px;
-    height:440px;
+    height:500px;
 }
 .w-90{
     width:90%;
@@ -312,6 +315,9 @@ body{
     top:10%;
     position: relative;
 }
+.t-90{
+    font-size: 90%;
+}
 .mr-t-23{
     margin-top:23%;
 }
@@ -349,7 +355,7 @@ body{
 }
 .depaprtment img{
   width:100%;
-  height: 14vw;
+  height: 25vw;
 }
 .img-container:hover{
     background-color: #87ceeb;
@@ -685,9 +691,9 @@ body{
 .t-500{
     font-size: 500%;
 }
-.h-auto{
+/* .h-auto{
     height:auto;
-}
+} */
 .thumbnail:hover .hov-blue{
      color:#00b7ff;
 }
@@ -705,6 +711,9 @@ body{
 }
 .bg-dblue img:hover{
     transform: scale(1.3);
+}
+.h-350{
+    height: 350px;
 }
 @media(min-width:1376px) {
     #w-900{
