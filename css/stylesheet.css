@@ -56,27 +56,24 @@
     background: rgb(68, 4, 244);
     margin:auto;
     opacity: 0%;
-
 }
 .effect:hover::before{
     opacity:0.3;
 }
-
 div.effect:hover::before {
     width: 150%;
     height: 80%;
-    color: blue;
+     color: blue;
     -ms-transform: rotate(190deg); 
     transform: rotate(190deg);
     top:15%;
     bottom:8%;
     left:-8%;
-    right: 0%;
-  }
+    right: 0%; 
+}
 .effect {
     position: relative;
     width: 100%;
-
 }
 .mg-glass {
     transition: .5s ease;
@@ -183,9 +180,24 @@ a.icone1:hover{
      font-size: 19px;   
 }
 .ev-name{
-    top:52%;
-    left:32%;
+    top:210px;
+     left:112px;/*
+    -ms-transform: rotate(190deg); 
+    transform: rotate(-11deg);
+    z-index: -100;
+    max-width: 50em;
+    margin:0 auto; */
+    /* top:-51%;
+    right:5.8%; */
 }
+.fa-bar{
+    top:290px;
+    left:38px;
+    /* -ms-transform: rotate(190deg); 
+    transform: rotate(-11deg); 
+    max-width: 50em;
+    margin:0 auto; */
+ }
 .ev-searchheader{
     background-color: #00b7ff;
     height:400px;
@@ -225,6 +237,7 @@ button{
     padding-left:0%;
     border-radius: 4px;
 }
+/* } 
 .overlay2{
     background-color: #00b7ff;
     position: relative;
@@ -237,35 +250,36 @@ button{
 .overlay2:hover{
     width:398px;
     height:49%;
-    opacity: 0.8;
+     opacity: 0.8;
     -ms-transform: rotate(190deg); 
-    transform: rotate(12deg);
+    transform: rotate(12deg); 
     top:-51%;
     right:5.8%;
+} */
+/* Changes on hover */
+.temp:hover>.overlay2 {
+    width: 93%;
+    height: 40%;
+    opacity: 0.8;
+    transform: skewY(11deg);
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #00b7ff;
+    display: block;
+    margin: auto;
+    overflow: hidden;
 }
 
-.fa-bar{
-   bottom:80px;
-   left:38px; 
+.temp:hover>.w-60 >.bg-blue {
+    background-color: #fff !important;
 }
-.f1:hover{
-   background-color:white;
-    
-}
-.icone2:hover::before{
-    color: rgb(252, 5, 108);
-}
-.twit1{
-    color:white;
-}
-.inst1{
-    color:white;
-}
-.gle1{
-    color:white;
-}
-.face1{
-    color:white;
+
+.temp:hover>.w-60 >.bg-blue >.fa {
+    color: rgb(229, 56, 85) !important;
+    font-weight: bolder;
+    text-decoration: none;
 }
 /* media query */
 @media (max-width:700px) {
@@ -277,7 +291,7 @@ button{
         height:10vh;
         border-radius: 3px;;
     }
-    .overlay2:hover{
+    /* .overlay2:hover{
         width:115%;
         height:52.9%;
         opacity: 0.8;
@@ -285,6 +299,20 @@ button{
         transform: rotate(12deg);
         top:-51%;
         right:5.8%;
+    } */
+    .temp:hover>.overlay2 {
+        width: 93%;
+        height: 60%;
+        opacity: 0.8;
+        transform: skewY(11deg);
+        bottom: 15px;
+        left:0;
+        right: 0;
+        position: absolute;
+        background: #00b7ff;
+        display: block;
+        margin: auto;
+        overflow: hidden;
     }
     .ev-searchheader{
         background-color: #00b7ff;
@@ -328,7 +356,6 @@ button{
         color:#87ceeb;
         font-size:20px;
     }
-   
     .ev-searchheader p{
         padding-top: 2%;
         padding-bottom: 2%;
@@ -339,8 +366,12 @@ button{
         font-size:40px ;
     }
     .fa-bar{ 
-        bottom:22px;
-         left:38px; 
+        top:190px;
+        left:59px;
+     }
+     .ev-name{
+        top:110px;
+         left:145px;
      }
      .sp-img{
         /* position:relative; */
