@@ -41,7 +41,6 @@
 .mar-b{
     margin-bottom: 0%;
 }
-
 .effect .mg-glass{
     position:absolute;
     top:50%;
@@ -95,6 +94,13 @@ div.effect:hover::before {
 .overflow{
     overflow: hidden;
 }
+a.icone1:hover{
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(85, 85, 85) !important;
+    font-weight: bolder;
+    transition: 0.3s;
+} 
 .ev-speaker{
    background-color: #00b7ff;
     padding-top: 2%;
@@ -104,7 +110,6 @@ div.effect:hover::before {
     margin-bottom: 0%;
     padding-bottom: 2%;
 }
-
 .ev-speaker h1{
     color:white;
     padding-top: 1%;
@@ -112,7 +117,6 @@ div.effect:hover::before {
     font-weight: 600;
     margin:0%;
 }
-
 .ev-speaker-2{
     background: linear-gradient(180deg,deepskyblue 30%,white 30%);
     width:100%;
@@ -121,7 +125,7 @@ div.effect:hover::before {
 }
 .sp-img{
     /* position:relative; */
-    height: 60vh;
+    height: 420px;
 }
 .pad-4{
     padding:4%;
@@ -171,10 +175,12 @@ div.effect:hover::before {
 }
 .ev-name h6{
     color:white;
+    font-size:14px;
 }
 .ev-name h5{
      color:white; 
-     padding-bottom:4%;    
+     padding-bottom:8px; 
+     font-size: 19px;   
 }
 .ev-name{
     top:52%;
@@ -193,31 +199,31 @@ div.effect:hover::before {
 .ev-searchheader h1{
     padding-top: 3%;
 }
-.mr-t-7{
-   margin-top:-90px;
+.mr-t-5{
+   margin-top:-5%;
 }
 .search{
     margin-top:1%;
     align-items: center;
 }
-input[type=text]{
+input[type=email]{
     padding:7px;
     border:none;
-    font-size:14px;
-    width:20%;
-    height:6vh;
-    border-radius: 3px;;
+    font-size:auto;
+    width:350px;
+    height:45px;
+    border-radius: 4px;;
 }
 button{
-    height:6vh;
-    width:8%;
+    height:45px;
+    width:120px;
     text-align: center;
-    font-size: 15px;
+    font-size: auto;
     background-color: rgb(12, 12, 231);
     color:white;
     border:none;
-    margin-left: 0%;
-    border-radius: 2px;
+    padding-left:0%;
+    border-radius: 4px;
 }
 .overlay2{
     background-color: #00b7ff;
@@ -229,22 +235,25 @@ button{
     opacity:0%;
 }
 .overlay2:hover{
-    width:115%;
-    height:40%;
+    width:398px;
+    height:49%;
     opacity: 0.8;
     -ms-transform: rotate(190deg); 
     transform: rotate(12deg);
     top:-51%;
     right:5.8%;
 }
-.overlay2:hover.pad-2{
-    
-    background-color:white;
-    color: rgb(252, 5, 108);
-}
+
 .fa-bar{
-   bottom:20%;
-   left:12%;
+   bottom:80px;
+   left:38px; 
+}
+.f1:hover{
+   background-color:white;
+    
+}
+.icone2:hover::before{
+    color: rgb(252, 5, 108);
 }
 .twit1{
     color:white;
@@ -258,16 +267,31 @@ button{
 .face1{
     color:white;
 }
-
 /* media query */
 @media (max-width:700px) {
-    input[type=text]{
+    input[type=email]{
         padding:12px;
-        border:none;
+        border:auto;
         font-size:9px;
         width:40%;
         height:10vh;
         border-radius: 3px;;
+    }
+    .overlay2:hover{
+        width:115%;
+        height:52.9%;
+        opacity: 0.8;
+        -ms-transform: rotate(190deg); 
+        transform: rotate(12deg);
+        top:-51%;
+        right:5.8%;
+    }
+    .ev-searchheader{
+        background-color: #00b7ff;
+        height:400px;
+        width:100%;
+        color:white;
+        margin-top:-20px;
     }
 }
 @media (max-width:700px){
@@ -275,11 +299,11 @@ button{
         height:10vh;
         width:25%;
         text-align: center;
-        font-size: 12px;
+        font-size:13px;
         background-color: rgb(12, 12, 231);
         color:white;
         border:none;
-        margin-left: 0%;
+        padding-left: 0%;
         border-radius: 2px;
     }
     .ev-speaker h1{
@@ -298,7 +322,6 @@ button{
         font-weight: bold;
         padding-bottom: 2%;
         font-size:30px;
-    
     }
     .ev-container h3{
         padding-top: 2%;
@@ -315,7 +338,31 @@ button{
         padding-top: 3%;
         font-size:40px ;
     }
-
+    .fa-bar{ 
+        bottom:22px;
+         left:38px; 
+     }
+     .sp-img{
+        /* position:relative; */
+        width:80px;
+        height: 280px;
+    }
+    .ev-speaker{
+        background-color: #00b7ff;
+         padding-top: 2%;
+         /* height:200px; */
+         background: linear-gradient(to right ,deepskyblue,gray);
+         color:white;
+         margin-bottom: 0%;
+         padding-bottom: 8%;
+     }
+     .ev-speaker-2{
+        background: linear-gradient(180deg,deepskyblue 30%,white 30%);
+        width:100%;
+        position:relative;
+        margin-bottom:5%;
+        padding-top:2%;
+    }
 }
 .ev-blog h5{
     margin-top:2%;
