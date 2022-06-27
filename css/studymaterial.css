@@ -38,22 +38,32 @@ body{
     align-items: center;
     justify-content: center;
 }
-.branch-container:hover, .activeBranch{
+.branch-container:hover{
     background-color: rgb(81, 181, 240);
     border-radius: 20px 0px 20px 0px;
     color: white;
 }
 .headings{
-    width: 9em;
+    width: 15em;
     border-bottom: 4px solid rgb(92 217 255);
     padding-bottom: 10px;
 }
 .sem-button{
-    border: none;
+    /* border: none; */
     background-color: white;
+    padding: 10px 35px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 12px 12px 0px 0px;
+    margin: 0px 2px;
+    /* margin-bottom: 1px; */
 }
-.sem-button:hover, .activeSub{
-    background-color: rgb(140, 200, 252);
+.sem-button:hover{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    border-radius: 12px 12px 0px 0px;
+} 
+.activeSub, .activeSem{
+    background-color: lightgray;
     border-radius: 12px 12px 0px 0px;
 }
 button{
@@ -62,9 +72,8 @@ button{
     /* padding: 0; */
     margin: 0;
 }
-
 /* NEw design */
-.d{
+.department{
     width: 200px;
     height: 250px;
     border: 2px solid black;
@@ -72,9 +81,36 @@ button{
     margin: 10px;
     /* padding: 30px */
 }
-
-.d:hover{
+.activeBranch{
+    background-color: rgb(81, 181, 240);
+}
+.department:hover{
     transform: scale(1.09);
-    background-color: #585858;
+    /* background-color: #585858; */
+    border: 3px solid;
     font-size: 18px;
+}
+.bg-light-1{
+    background-color: lightgray;
+}
+.subjects-name{
+    background: rgb(255, 255, 255);
+    /* display:inline; */
+    padding: 5px 15px;
+    /* margin: 5px; */
+    border-radius: 7px;
+    border: 0.5px solid gray;
+    margin: 2px;
+}
+.subjects-name:hover {
+    border: 2px solid;
+}
+.actieSub{
+    background-color: rgb(109, 109, 109);
+    border: 2px solid;
+}
+.sub-container{
+    height: 500px;
+    width: inherit;
+    /* background-color: rgb(190, 190, 190); */
 }
