@@ -1,0 +1,62 @@
+body {
+    max-width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+.header-line {
+    color: rgb(255, 255, 255);
+    background-color: rgb(127 190 255 / 68%);
+    padding: 5px 5px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+a {
+    padding: 2px;
+    margin: 2px 5px;
+    font-size: 1rem;
+}
+.custom-nav{
+    width: 100%;
+}
+.header {
+    align-items: center;
+    /* padding: 0px 20px; */
+    /* height: 20vh; */
+    /* width: 100%; */
+}
+.gecp-logo {
+    width: 6vw;
+}
+.logo-right {
+    width: 15vw;
+}
+.header-mid-center {
+    font-size: 3.5vw;
+    text-align: center;
+    width: 75%;
+}
+/* @media (min-width: 919px) {
+    .navbar-expand-md {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding-right: 0.5rem; 
+        padding-left: 0.5rem; 
+    }
+} */
+a.nav-link:hover,
+li.active {
+    background-color: rgb(81, 181, 240);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+a.header-link:hover {
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(85, 85, 85) !important;
+    font-weight: bolder;
+    transition: 0.3s;
+}
