@@ -71,7 +71,6 @@ body{
     text-align:left;
     font-weight:500;
     font-size:140%;
-    /* font-family:'Gill Sans'; */
     padding-left:2%;
 }
 .NA-head::after {
@@ -91,7 +90,6 @@ body{
 .Event{
     font-weight: 500;
     font-size: 140%;
-    /* font-family: 'Gill Sans'; */
 }
 .Event::after {
     background-color:#87ceeb;
