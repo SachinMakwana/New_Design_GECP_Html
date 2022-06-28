@@ -29,7 +29,7 @@
 
 .ev-container h3 {
     padding-top: 2%;
-    color: #87ceeb;
+    color: #00b7ff;
 }
 
 .align-center {
@@ -267,7 +267,7 @@ button {
     width:120px;
     text-align: center;
     font-size: auto;
-    background-color: rgb(12, 12, 231);
+    background-color:#343a40;
     color: white;
     border: none;
     padding-left:0%;
@@ -455,7 +455,7 @@ button {
 .ev-blog h2 {
     margin-top: 1%;
     margin-bottom: 5%;
-    color: rgb(61, 61, 228);
+    color: #00b7ff;
 }
 
 .h-160 {
@@ -470,7 +470,9 @@ button {
 .blue {
     color: rgb(61, 61, 228);
 }
-
+.gred{
+    color:#00b7ff;
+}
 .mr-right {
     margin-right: 4%;
 }
