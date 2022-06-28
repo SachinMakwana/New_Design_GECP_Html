@@ -36,7 +36,7 @@
     text-align: center;
 }
 
-.col-md-3 img {
+.gallery  img {
     width: 100%;
     /* height: 50vh;  */
     margin: 0%;
@@ -313,11 +313,6 @@ button {
 .temp:hover>.w-60 >.bg-blue {
     background-color: #fff !important;
 }
-
-
-
-
-
 
 .temp:hover>.w-60 >.bg-blue >.fa {
     color: rgb(229, 56, 85) !important;
