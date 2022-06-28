@@ -1,4 +1,30 @@
 /*events*/
+.header-block{
+    width: 100%;
+    position: relative;
+}
+.header-block img{
+    width: 100%;
+    height: 16vw;
+    /* opacity: 0.8; */
+}   
+.text-block {
+    /* width:  80%;
+    height: 40% ; */
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    position: absolute;      
+    /* top: 30%; */
+    /* left: 40%; */
+}
+.object-block {
+    background-color: rgb(32 32 32 / 50%);
+    background-size: cover;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
 .ev-header {
     position: relative;
 }
@@ -6,7 +32,6 @@
 .ev-header img {
     height: 250px;
     width: 100%;
-
 }
 
 .ev-heading {
@@ -38,6 +63,7 @@
 
 .gallery  img {
     width: 100%;
+    /* height: 100%; */
     /* height: 50vh;  */
     margin: 0%;
     padding: 0%;
@@ -262,7 +288,7 @@ input[type=email]{
     ;
 }
 
-button {
+.search > button {
     height:45px;
     width:120px;
     text-align: center;
@@ -294,6 +320,7 @@ button {
     right: 0;
 } */
 /* Changes on hover */
+
 .temp:hover>.overlay2 {
     width: 93%;
     height: 40%;
@@ -363,7 +390,7 @@ button {
 }
 
 @media (max-width:700px) {
-    button {
+    .search > button {
         height: 10vh;
         width: 25%;
         text-align: center;
