@@ -31,3 +31,20 @@ body {
     top: 30%;
     left: 10%;
 }
+.tpo-link{
+    text-decoration: none;
+    /* color: black; */
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 35px;
+}
+.tpo-link:hover{
+    border-bottom: 1px solid;
+}
+.headings{
+    width: 15em;
+    border-bottom: 4px solid rgb(92 217 255);
+    padding-bottom: 10px;
+}
