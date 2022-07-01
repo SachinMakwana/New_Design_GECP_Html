@@ -1,0 +1,28 @@
+.my_page h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0098da;
+    border-bottom: #0098da 2px solid;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    padding-right: 0;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.my_page h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0098da;
+    border-bottom: #0098da 2px solid;
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-right: 0;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+
+.placement-activities-colm3 li {
+    margin-bottom: 25px;
+}
