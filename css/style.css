@@ -220,6 +220,7 @@ body{
     position:relative;
     left:0px;
     height:500px;
+    transition: 1s;
 }
 .w-90{
     width:90%;
@@ -356,7 +357,7 @@ body{
 }
 .depaprtment img{
   width:100%;
-  height: 16vw;
+  height: 200px;;
 }
 .img-container:hover{
     background-color: #87ceeb;
@@ -406,7 +407,16 @@ body{
     background-size: 100% 100%;
     height:100%;
     width:100%;
+}
+.col-md-6 img{
+    height:auto;
+    width:100%;
+}
+.bg-principal{
     background-image: url("../images/aboutus/shipman-northcutt-sgZX15Da8YE-unsplash.jpg");
+}
+.bg-college{
+    background-image:url('../images/4.jpg');
 }
 .t-80{    
     font-size:80%;
@@ -732,6 +742,15 @@ body{
 }
 .h-350{
     height: 350px;
+}
+@media(min-width:1440px){
+    .principal{
+        height:15vw;
+    }
+    .depaprtment img{
+        height:16vw;
+    }
+    
 }
 @media(min-width:1376px) {
     #w-900{
