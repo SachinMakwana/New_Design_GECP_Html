@@ -9,29 +9,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script> -->
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- <link rel="stylesheet" href="css/bootstrap/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap/font-awesome.min.css"> -->
-
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/header.css">
@@ -81,19 +66,58 @@
                     <a class="nav-link" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Vison & Mission</a>
+                            <a class="dropdown-item" href="#">Infrastructure</a>
+                            <a class="dropdown-item" href="#">Principal</a>
+                            <a class="dropdown-item" href="#">Overview</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">ADMINISTRATION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COURSES</a>
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COURSES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Computer Science & Engineering</a>
+                            <a class="dropdown-item" href="#">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="#">Electrical Engineering</a>
+                            <a class="dropdown-item" href="#">Electronics & Communication Engineering</a>
+                            <a class="dropdown-item" href="#">Civil Engineering</a>
+                        </div>
+                    </div>
                 </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">COURSES</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">COMMITTEES</a>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">FACULTY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COMMITTEES</a>
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COMMITTEES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">STUDENT CORNER</a>
@@ -108,6 +132,14 @@
         </div>
     </nav>
 
+    <!-- <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script> -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
 
 </body>
 

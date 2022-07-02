@@ -3,49 +3,40 @@ body {
     margin: auto;
     overflow-x: hidden;
 }
-
 .header-line {
     color: rgb(255, 255, 255);
-    background-color: rgb(92 217 255);
+    background-color: rgb(127 190 255 / 68%);
     padding: 5px 5px;
 }
-
 .row {
     margin-right: 0px;
     margin-left: 0px;
 }
-
 a {
     padding: 2px;
     margin: 2px 5px;
     font-size: 1rem;
 }
-
-.custom-nav {
+.custom-nav{
     width: 100%;
 }
-
 .header {
     align-items: center;
     /* padding: 0px 20px; */
     /* height: 20vh; */
     /* width: 100%; */
 }
-
 .gecp-logo {
     width: 6vw;
 }
-
 .logo-right {
     width: 15vw;
 }
-
 .header-mid-center {
     font-size: 3.5vw;
     text-align: center;
     width: 75%;
 }
-
 /* @media (min-width: 919px) {
     .navbar-expand-md {
         -ms-flex-flow: row nowrap;
@@ -56,36 +47,17 @@ a {
         padding-left: 0.5rem; 
     }
 } */
-.navbar-dark .navbar-nav .nav-link {
-    color: white;
-}
 a.nav-link:hover,
 li.active {
-    /* background-color: rgb(81, 181, 240); */
-    background-color: rgb(92 217 255);
-    /* color: rgb(255, 255, 255); */
+    background-color: rgb(81, 181, 240);
+    color: rgb(255, 255, 255);
     border-radius: 6px;
-    color: black !important;
-    font-weight: bold;
 }
-a.header-link:hover {
+/* color: rgb(255, 255, 255); */
+a.fa:hover {
     border-radius: 6px;
-    /* color: white; */
     text-decoration: none;
     color: rgb(85, 85, 85) !important;
     font-weight: bolder;
-    transition: 0.3s;
-}
-.dropdown-menu{
-    display: none;
-}
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
-.dropdown-item:hover{
-    width: inherit;
-    background-color: rgb(92 217 255);
-    font-weight: bolder;
-    color: white;
     transition: 0.3s;
 }

@@ -144,3 +144,20 @@ margin-bottom:5px;
     border-bottom: 4px solid rgb(92 217 255);
     padding-bottom: 10px;
 }
+.bg-blue{
+  background-color: #00b7ff;
+}
+.verline{
+  width:.40%;
+  height:60px;
+  position: absolute;
+  left:50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .verline {
+    display: none;
+  }
+}
