@@ -18,6 +18,21 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/graph.css">
+    
+
+
+    <style>
+        #chartdiv {
+          width: 100%;
+          height: 500px;
+        }
+        </style>
+        
+        <!-- Resources -->
+        <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+        
 
     <title>GRAPH</title>
 </head>
@@ -147,12 +162,50 @@
 </div>
 
         <!-- <li class="col-xs-12 col-sm-6 col-md-6"> -->
+<<<<<<< Updated upstream
             <!-- <div class="activities-content-main">
                 <img style="width: 500px; height: 416px;" class="lozad"
                     data-src="/images/pie chart_page-0001.jpg" src="/images/pie chart_page-0001.jpg"
                     data-loaded="true">
             </div> -->
+=======
+            <!-- <div class="activities-content-main"> -->
+                <!-- <img style="width: 500px; height: 416px;" class="lozad"
+                    data-src="/images/pie chart_page-0001.jpg" src="/images/pie chart_page-0001.jpg"
+                    data-loaded="true"> -->
+                   <!-- Chart code -->
+            <!-- </div> -->
+>>>>>>> Stashed changes
         <!-- </li> -->
+
+        <div class="years">
+            <li>
+                <!-- <a href="#" onclick="year22()">Placement Record of year 2022</a> -->
+                <!-- <button onclick="year22()">Placement Record of year 2022</button> -->
+                <input type = "button" name="data" onclick="year22();windows.location.reload(true)" value="2022">
+            </li>
+            <li>
+                <!-- <a href="#"  onclick="year21()">Placement Record of year 2021</a> -->
+                <!-- <button onclick="month()">Placement Record of year 2021</button> -->
+                <input type = "button" name="data" onclick="month();windows.location.reload(true)" value="2021">
+            </li>
+            <li>
+                <!-- <a href="#"  onclick="year20()">Placement Record of year 2020</a> -->
+                <button onclick="year20()">Placement Record of year 2020</button>
+            </li>
+            <li>
+                <!-- <a href="#"  onclick="year19()">Placement Record of year 2019</a> -->
+                <button onclick="year21()">Placement Record of year 2019</button>
+            </li>
+        </div>
+
+        <script src="/js/graph.js"></script>
+        <div id="chartdiv"></div>
+           
+
+
+
+
 
 
 
