@@ -69,8 +69,8 @@ body{
 
 .NA-head {
     text-align:left;
-    font-weight:500;
-    font-size:140%;
+    font-weight:700;
+    font-size:1.75rem;
     padding-left:2%;
 }
 .NA-head::after {
