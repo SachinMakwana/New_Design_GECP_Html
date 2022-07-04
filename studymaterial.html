@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Material</title>
 
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="css/studymaterial.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-        
+
+
 </head>
 
 <body>
@@ -220,7 +221,7 @@
     </div>
 
     <!-- Semester - CSE -->
-    
+
     <div class="branch container-fluid mx-auto m-5 p-5" id="cse">
         <div class="text-center d-flex justify-content-center align-items-center">
             <div class="headings h4 mb-4 font-weight-bold"> COMPUTER</div>
@@ -799,7 +800,7 @@
     </div>
 
     <!-- semester electrical -->
-    <div class="branch container-fluid mx-auto m-5 p-5" id="electrical" style="display:none" >
+    <div class="branch container-fluid mx-auto m-5 p-5" id="electrical" style="display:none">
         <div class="text-center d-flex justify-content-center align-items-center">
             <div class="headings h4 mb-4 font-weight-bold">Electrical</div>
         </div>
@@ -1022,15 +1023,15 @@
     <!-- JS  -->
     <script>
 
-        function selection(branch, obj){
+        function selection(branch, obj) {
             var id = $('.activeBranch').attr('name');
             $('.activeBranch').removeClass('activeBranch');
             $(obj).addClass('activeBranch');
-           // $('#'+branch)
-           $("#"+id).attr('style','display:none');
-            $('#'+branch).attr('style','display:block');
+            // $('#'+branch)
+            $("#" + id).attr('style', 'display:none');
+            $('#' + branch).attr('style', 'display:block');
         }
-        
+
         function openSubject(subjectName) {
             var i;
             var x = document.getElementsByClassName("subjects");

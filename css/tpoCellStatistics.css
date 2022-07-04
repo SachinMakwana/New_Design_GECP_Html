@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+.header-block {
+    width: 100%;
+    position: relative;
+}
+.header-block img {
+    width: 100%;
+    height: 20vw;
+    opacity: 0.6;
+}
+.text-block {
+    width: 80%;
+    height: 40%;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.headings{
+    width: fit-content;
+    border-bottom: 4px solid rgb(92 217 255);
+    padding-bottom: 10px;
+}
+.tpo-links{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.tpo-links:hover{
+    color: blue;
+    text-decoration: none;
+}
