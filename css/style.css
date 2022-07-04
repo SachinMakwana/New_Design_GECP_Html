@@ -373,6 +373,7 @@ body{
     background-size: cover;
     height:100%;
     width:100%;
+    margin-top: 10pxs;
     /* max-width: 100%;
     max-height: 100%; */
 }
@@ -393,7 +394,7 @@ body{
 .dept-head:after{
   content:'';
   height:2px;
-  width:50%;
+  width:80%;
   background-color:#87CEEB;
   display:block;
 }
@@ -447,7 +448,7 @@ body{
 }
 .frame{
     height:200px;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left:5%;
     border:solid #00b7ff 7px;
 }
@@ -493,13 +494,15 @@ body{
     width:5%;
     background-color: #87ceeb;
     display: block;
+    
 }
 .t-150{
     font-size: 150%;
 }
 .t-200{
     font-size: 200%;
-    word-wrap: normal
+    word-wrap: normal;
+    margin-top: 58px;  
 }
 .mesdean{
     width:70%;
@@ -512,7 +515,7 @@ body{
 }
 .H-head{
     margin-left: 5%;
-    margin-top:2%;
+    margin-top:5%;
     font-weight:500;
 }
 .t-120{
