@@ -448,7 +448,7 @@ body{
 }
 .frame{
     height:200px;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left:5%;
     border:solid #00b7ff 7px;
 }
@@ -491,7 +491,7 @@ body{
 .dean-head::after{
     content: '';
     height: 2px;
-    width:5%;
+    width:400px;
     background-color: #87ceeb;
     display: block;
     
@@ -502,7 +502,7 @@ body{
 .t-200{
     font-size: 200%;
     word-wrap: normal;
-    margin-top: 58px;  
+    margin-top: 5%;  
 }
 .mesdean{
     width:70%;
