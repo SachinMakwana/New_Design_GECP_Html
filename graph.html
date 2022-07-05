@@ -24,7 +24,7 @@
     <style>
         #chartdiv {
           width: 100%;
-          height: 500px;
+          height: 30vw;
         }
         </style>
         
@@ -115,7 +115,7 @@
         <img src="images\placement.jpg">
         <div class="centered white">PLACEMENTS</div>
     </div>
-
+<!-- 
     <div class="main my_page ph-new">
         <div class="top-requter18  col-sm-12">
             <h3>
@@ -125,7 +125,7 @@
                 src="/images/campusplacement.jpg"
                 data-loaded="true">
         </div>
-   </div>
+   </div> -->
    <div class="main my_page ph-new">
     <div class="top-requter18  col-sm-12 branch">
         <h4>
@@ -133,46 +133,36 @@
     </div>
 </div>
 
-        <!-- <li class="col-xs-12 col-sm-6 col-md-6"> -->
-            <!-- <div class="activities-content-main"> -->
-                <!-- <img style="width: 500px; height: 416px;" class="lozad"
-                    data-src="/images/pie chart_page-0001.jpg" src="/images/pie chart_page-0001.jpg"
-                    data-loaded="true"> -->
-                   <!-- Chart code -->
-            <!-- </div> -->
-        <!-- </li> -->
-
         <div class="years">
             <li>
                 <!-- <a href="#" onclick="year22()">Placement Record of year 2022</a> -->
-                <!-- <button onclick="year22()">Placement Record of year 2022</button> -->
-                <input type = "button" name="data" onclick="year22();windows.location.reload(true)" value="2022">
+                <button onclick="year22()" class="button">Placement Record of year 2022</button>
+                <!-- <input type = "button" name="data" onclick="year22();windows.location.reload(true)" value="2022"> -->
             </li>
             <li>
                 <!-- <a href="#"  onclick="year21()">Placement Record of year 2021</a> -->
-                <!-- <button onclick="month()">Placement Record of year 2021</button> -->
-                <input type = "button" name="data" onclick="month();windows.location.reload(true)" value="2021">
+                <button onclick="month()" class="button">Placement Record of year 2021</button>
+                <!-- <input type = "button" name="data" onclick="month();windows.location.reload(true)" value="2021"> -->
             </li>
             <li>
                 <!-- <a href="#"  onclick="year20()">Placement Record of year 2020</a> -->
-                <button onclick="year20()">Placement Record of year 2020</button>
+                <button onclick="year20()" class="button">Placement Record of year 2020</button>
             </li>
             <li>
                 <!-- <a href="#"  onclick="year19()">Placement Record of year 2019</a> -->
-                <button onclick="year21()">Placement Record of year 2019</button>
+                <button onclick="year21()" class="button">Placement Record of year 2019</button>
             </li>
+            <script src="/js/graph.js"></script>
+           <div id="chartdiv"></div>
+           
         </div>
 
-        <script src="/js/graph.js"></script>
-        <div id="chartdiv"></div>
-           
-
-
-
-
-
-
-
+        <div class="main my_page ph-new">
+            <div class="top-requter18  col-sm-12 branch">
+                <h4>
+                    GEC Patan YEARWISE SELECTION</h4>
+            </div>
+        </div>
 
         <footer class="bg-color-light page-footer font-small lighten-5">
             <div class="bg-color-dark py-2"></div>
