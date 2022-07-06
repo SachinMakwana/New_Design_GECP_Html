@@ -308,17 +308,9 @@ button {
     margin: auto;
     overflow: hidden;
 }
-
-
 .temp:hover>.w-60 >.bg-blue {
     background-color: #fff !important;
 }
-
-
-
-
-
-
 .temp:hover>.w-60 >.bg-blue >.fa {
     color: rgb(229, 56, 85) !important;
     font-weight: bolder;
@@ -333,8 +325,7 @@ button {
         width: 40%;
         height: 10vh;
         border-radius: 3px;
-        ;
-    }
+        }
     /* .overlay2:hover{
         width:115%;
         height:52.9%;
@@ -496,3 +487,4 @@ button {
     height: 150px;
 
 }
+

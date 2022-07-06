@@ -12,10 +12,15 @@ body {
     margin-right: 0px;
     margin-left: 0px;
 }
-a {
+/* a {
     padding: 2px;
     margin: 2px 5px;
     font-size: 1rem;
+}   */
+.xv{
+    padding: 2px;
+    margin: 2px 5px;
+    font-size: 1rem; 
 }
 .custom-nav{
     width: 100%;
@@ -27,6 +32,9 @@ a {
     /* width: 100%; */
 }
 .gecp-logo {
+    width: 6vw;
+} 
+.gecp-logo{
     width: 6vw;
 }
 .logo-right {
@@ -59,4 +67,25 @@ a.header-link:hover {
     color: rgb(85, 85, 85) !important;
     font-weight: bolder;
     transition: 0.3s;
+}
+@media (max-width:700px){
+    .xv{
+        padding-left: 7px;
+        padding-bottom:2px;
+        /* margin: 2px 5px; */
+        font-size: 12px; 
+
+    }
+    .xv1{
+        padding-left:15px;
+    }
+    /* .gecp-logo{
+        width: 25px;
+    } */
+    .header-mid-center {
+        font-size: 3.6vw;
+        text-align: center;
+        width: 75%;
+    }
+    
 }
