@@ -35,38 +35,12 @@ body{
     display: block;
     border:solid black 1px;
 }
-.auto{
-    animation: slider 20s infinite ease-in-out;
-    width:100%;
+.h-30vw{
+    height:300px;
 }
-.h-85{
-    height:85%;
+.mr-t-15vw{
+    margin-top:135px;
 }
-#manual{
-    background-image:url("../images/1.jpg");
-    width:90%;
-}
-@keyframes slider{
-    0% {
-        background-image: url("../images/1.jpg");
-    }
-    25% {
-        background-image: url("../images/2.jpg");
-    }
-    50% {
-        background-image: url("../images/3.jpg");
-    }
-    75% {
-        background-image: url("../images/4.jpg");
-    }
-    100% {
-        background-image: url("../images/1.jpg");
-    }
- }
-.marg{
-    margin-top:32%;
-}
-
 .NA-head {
     text-align:left;
     font-weight:700;
@@ -88,8 +62,8 @@ body{
     left:4%;
 }
 .Event{
-    font-weight: 500;
-    font-size: 140%;
+    font-weight: 700;
+    font-size: 1.75rem;
 }
 .Event::after {
     background-color:#87ceeb;
@@ -279,30 +253,38 @@ body{
     height: 5px;
     display:block;
 }
-#s-container-1, #s-container-2, #s-container-3, #s-container-4{
+#s-container-1, #s-container-2, #s-container-3, #s-container-4, #s-container-5, #s-container-6, #s-container-7, #s-container-8{
     transition: all 1.5s cubic-bezier(0,-1.16, 0, 5.46);
     width: 23%;
     position: relative;
     margin-right: 2%;
     float: left;
-    margin-top:8%;
     padding:7%;
+    background-size:cover;
 }
 #s-container-4{
-    background: url("../images/4.jpg");
-    background-size:cover;
+    background-image: url("../images/4.jpg");
 }
 #s-container-3{
-    background: url("../images/3.jpg");
-    background-size:cover;
+    background-image: url("../images/3.jpg");
 }
 #s-container-2{
-    background: url("../images/2.jpg");
-    background-size:cover;
+    background-image: url("../images/2.jpg");
 }
 #s-container-1{
-    background: url("../images/1.jpg");
-    background-size:cover;
+    background-image: url("../images/1.jpg");
+}
+#s-container-5{
+    background-image: url("../images/p1.jpg");
+}
+#s-container-6{
+    background-image: url("../images/p2.jpg");
+}
+#s-container-7{
+    background-image: url("../images/p3.jpg");
+}
+#s-container-8{
+    background-image: url("../images/p4.jpg");
 }
 .nav-manual{
     position:relative;
@@ -348,7 +330,6 @@ body{
 .ReadMore{
     border:solid 1px #87CEEB;
     border-radius:10px;
-    
 }
 .depaprtment{
   position:relative;
@@ -413,9 +394,10 @@ body{
     width:100%;
 }
 .col-md-6 img{
-    height:auto;
+    height:200px;
     width:100%;
 }
+
 .bg-principal{
     background-image: url("../images/aboutus/shipman-northcutt-sgZX15Da8YE-unsplash.jpg");
 }
@@ -754,7 +736,6 @@ body{
     .depaprtment img{
         height:16vw;
     }
-    
 }
 @media(min-width:1376px) {
     #w-900{
@@ -763,6 +744,16 @@ body{
     .w-275p{
         width:2.8%;
     }
+    .h-30vw{
+        height:30vw;
+    }
+    .mr-t-15vw{
+        margin-top:15vw;
+    }
+    .h-15vw{
+        height: 15vw !important;
+    }
+
 }
 @media (max-width: 904px) {
  .header-right-writting {

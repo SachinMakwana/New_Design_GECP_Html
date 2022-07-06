@@ -6,17 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js\custom.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <!--owl crousel css starts-->
-     <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css" />
-     <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css">
-     <script src="js/owlcarousel/assets/owl.carousel.js"></script>
-<!--owl crousel css end-->    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+     <!--   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js\custom.js"></script>
+    <script type="text/javascript" src="js\custom.js"></script> -->
+
+    <!-- JS for crousel -->
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css">
+    <script src="js/owlcarousel/assets/owl.carousel.js"></script>
 
     <link rel="stylesheet" href="css/cells.css">
     <link rel="stylesheet" href="css/header.css">
@@ -26,8 +37,7 @@
     <title>DEPARTMENT</title>
 </head>
 
-<body>
-
+<body id="deptPage">
     <!--   Header   -->
     <!-- 
     <div class="header-line row d-flex justify-content-between">
@@ -49,20 +59,17 @@
             <a href="#" class="header-link fa fa-solid fa-wifi text-white"></a>
         </div>
     </div>
-
     <div class="header row">
         <img src="images/contactusBootstrap/gecplogo.jpg" class="gecp-logo col p-2">
         <div class="header-mid-center col-md-auto p-2 mx-auto">
             Government Engineering College, Patan</div>
         <img src="images/contactusBootstrap/rightlogo.png" class="logo-right col  p-2">
     </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fullwidth">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
@@ -96,6 +103,7 @@
         </div>
     </nav> -->
 
+    <!--   Header   -->
 
     <div class="header-line row d-flex justify-content-between">
         <div class="">
@@ -109,9 +117,10 @@
         <div class="">
             <a href="#" class="header-link fa fa-sign-in text-white"> Register</a>
             <a href="#" class="header-link fa fa-solid fa-lock text-white"> Login</a>
-            <a href="#" class="header-link fa fa-brands fa-facebook-f text-white"></a>
+            <a href="https://www.facebook.com/GEC-PATAN-2004-Official-104917512281223/"
+                class="header-link fa fa-brands fa-facebook-f text-white"></a>
             <a href="#" class="header-link fa fa-brands fa-twitter text-white"></a>
-            <a href="#" class="header-link fa fa-brands fa-google text-white"></a>
+            <a href="https://gecpatan.ac.in/" class="header-link fa fa-brands fa-google text-white"></a>
             <a href="#" class="header-link fa fa-brands fa-youtube text-white"></a>
             <a href="#" class="header-link fa fa-solid fa-wifi text-white"></a>
         </div>
@@ -132,46 +141,96 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="vision.html">Vison & Mission</a>
+                            <a class="dropdown-item" href="infrastructure.html">Infrastructure</a>
+                            <a class="dropdown-item" href="principal.html">Principal</a>
+                            <a class="dropdown-item" href="overview.html">Overview</a>
+                        </div>
+                    </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#">ADMINISTRATION</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="admission.html">ADMISSION</a>
+                </li>
+                <li class="nav-item active-link">
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COURSES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item active-item" href="department.html">Computer Science &
+                                Engineering</a>
+                            <a class="dropdown-item" href="department.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="department.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="department.html">Electronics & Communication Engineering</a>
+                            <a class="dropdown-item" href="department.html">Civil Engineering</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">COURSES</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">COMMITTEES</a>
+                </li> -->
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COMMITTEES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cells.html">Women cell</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COURSES</a>
+                    <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">EVENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Placements.html">TPO CELL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">CONTACT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">FACULTY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COMMITTEES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">STUDENT CORNER</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#">GALLERY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="depaprtment">
-        <img src="images\department.jpg">
+        <img src="images/mansur-omar-VTOWhN3-yFU-unsplash.jpg">
         <div class="centered blue">DEPARTMENT</div>
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-6">
             <div class="dept pad-b-120">
-                <div class="t-150 dept-head">About<br />
-                    Faculty of IT & Computer Science</div>
+                <div class="t-150 dept-head">About
+                    <!-- <br /> -->
+                    Faculty of IT & Computer Science
+                </div>
             </div>
         </div>
         <div class="col-md-6 col-sm-6">
@@ -182,18 +241,18 @@
                 Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
                 undoubtable source. Lorem Ipsum comes
                 <!-- <span id="compro"> -->
-                     from sections 1.10.32 and 1.10.33 of "de Finibus
-                    Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
-                    treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
-                    Ipsum, "Lorem ipsum dolor sit amet", comes from a line in sectionThere are many variations of
-                    passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
-                    injected humour, or randomised words which don't look even slightly believable. If you are going to
-                    use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-                    middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                    necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
-                    Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
-                    looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
-                    humour, or non-characteristic words etc.
+                from sections 1.10.32 and 1.10.33 of "de Finibus
+                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+                treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                Ipsum, "Lorem ipsum dolor sit amet", comes from a line in sectionThere are many variations of
+                passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even slightly believable. If you are going to
+                use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
+                humour, or non-characteristic words etc.
                 <!-- </span><span onClick="morle()" id="morle">...more</span> -->
             </div>
         </div>
@@ -203,7 +262,10 @@
             <img src="images\dean.jpg">
         </div>
         <div class="mesdean">
-            <div class="dean-head t-200">Message from<br /> the Dean</div>
+            <div class="dean-head t-200">Message from
+                <!-- <br />  -->
+                the Dean
+            </div>
             <div class="description t-80">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                 Latin literature from 45 BC, making it over 2000 years old.Richard McClintock, a Latin professor at
@@ -224,8 +286,7 @@
 
 
     <div class="row justi-center">
-        <div class="nav-l circle mr-top215p bg-brown" onclick="NavLeft()"><
-            </div>
+        <div class="nav-l circle mr-top215p bg-brown" onclick="NavLeft()"><</div>
                 <div class="w-80">
                     <div class="row" id="w-900">
                         <div class="w-275p">
@@ -319,8 +380,122 @@
                 <div class="nav-r circle mr-top215p bg-brown" onclick="NavRight()">></div>
         </div>
 
-        <!--crousel starts-->
-        <!-- <ul id="autoWidth" class="cs-hidden">
+<!-- SLIDER USING OWL CROUSEL --- NOT WORKING -->
+    <!-- <div class="row justi-center">
+        <div class="nav-l circle mr-top215p bg-brown" onclick="NavLeft()"> </div>
+        <div class="w-80">
+            <div class="row" id="w-900">
+                <div class="owl-carousel" id="owl1">
+                    <div class="item p-2">
+                        <div class="w-275p">
+                        <div class="thumbnail h-frame h-350 w-80">
+                            <img src="images/h1.jpg" class="img-container w-99 h-200">
+                            <div class="caption">
+                                <div class="h-name">Nitin Gadkari</div>
+                                <div class="hdept">HOD of E.C. department</div>
+                                <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                        <div class="thumbnail h-frame h-350 w-80">
+                            <img src="images/h2.jpg" class="img-container w-99 h-200">
+                            <div class="caption">
+                                <div class="h-name">Harikrishna Jethva</div>
+                                <div class="hdept">HOD of C.S.E. depaprtment</div>
+                                <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h3.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Prakash Javdekar</div>
+                                    <div class="hdept">HOD of Electrical depaprtment</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h5.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Smriti Irani</div>
+                                    <div class="hdept">HOD of Mechanical department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h4.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Amit Shah</div>
+                                    <div class="hdept">HOD of Civil department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h1.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Nitin Gadkari</div>
+                                    <div class="hdept">HOD of E.C. department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h2.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Harikrishna Jethva</div>
+                                    <div class="hdept">HOD of C.S.E. depaprtment</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h3.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Prakash Javdekar</div>
+                                    <div class="hdept">HOD of Electrical department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="nav-r circle mr-top215p bg-brown" onclick="NavRight()">></div>
+    </div> -->
+
+
+
+
+
+
+    <!--crousel starts-->
+    <!-- <ul id="autoWidth" class="cs-hidden">
             <li class="item-a">
                 <div class="w-275p">
                     <div class="thumbnail h-frame h-350 w-80">
@@ -382,46 +557,99 @@
                 </div>
             </li>
           </ul> -->
-        <!--crousel ends-->
+    <!--crousel ends-->
 
-        <div class="row justi-center mr-t-7">
-            <div class="w-80 row">
-                <div class="w-285p">
-                    <h1>Placements</h1>
-                    <p class="h-name blue t-200">Stories That Speaks Truth</p>
-                    <p class="brown">What our students and parents <br> say about our institute</p>
-                    <div class="row col-6 justi-saround">
-                        <div class="nav-r circle bg-brown"></div>
-                        <div class="nav-r circle bg-brown"></div>
-                    </div>
+    <div class="row justi-center mr-t-7">
+        <div class="w-80 row">
+            <div class="w-285p">
+                <h1>Placements</h1>
+                <p class="h-name blue t-200">Stories That Speaks Truth</p>
+                <p class="brown">What our students and parents <br> say about our institute</p>
+                <div class="row col-6 justi-saround">
+                    <div class="nav-r circle bg-brown"></div>
+                    <div class="nav-r circle bg-brown"></div>
                 </div>
-                <div class="w-60">
-                    <div class="alumnislider bg-ghostwhite">
-                        <img src="images/qoutes.png" class="quotes">
-                        <p id="first-alumni" class="brown">Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                            text used in laying out print, graphic or web designs. The passage is attributed to an
-                            unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De
-                            Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
-                        <p id="second-alumni" class="brown">The purpose of lorem ipsum is to create a natural looking
-                            block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A
-                            practice not without controversy, laying out pages with meaningless filler text can be very
-                            useful when the focus is meant to be on design, not content.</p>
-                        <p id="third-alumni" class="brown">The passage experienced a surge in popularity during the
-                            1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as
-                            desktop publishers bundled the text with their software. Today it's seen all around the web;
-                            on templates, websites, and stock designs. Use our generator to get your own, or read on for
-                            the authoritative history of lorem ipsum.</p>
-                        <div class="row">
+            </div>
+
+            <div class="w-60">
+                <div class="alumnislider bg-ghostwhite">
+                    <img src="images/qoutes.png" class="quotes">
+                    <div class="owl-carousel owl-theme" id="owl-carousel-2">
+                        <div class="item">
+                            <p id="first-alumni" class="brown">Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                                text used in laying out print, graphic or web designs. The passage is attributed to an
+                                unknown typesetter in the 15th century who is thought to have scrambled parts of
+                                Cicero's De
+                                Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
+                            <div class="row">
+                                <div id="alumni-image"></div>
+                                <div id="alumni-name">Student-1<br>Senior devloper</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p id="second-alumni" class="brown">The purpose of lorem ipsum is to create a natural
+                                looking
+                                block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A
+                                practice not without controversy, laying out pages with meaningless filler text can be
+                                very
+                                useful when the focus is meant to be on design, not content.</p>
+                            <div class="row">
+                                <div id="alumni-image"></div>
+                                <div id="alumni-name">Student-2<br>Senior devloper</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p id="third-alumni" class="brown">The passage experienced a surge in popularity during the
+                                1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as
+                                desktop publishers bundled the text with their software. Today it's seen all around the
+                                web;
+                                on templates, websites, and stock designs. Use our generator to get your own, or read on
+                                for
+                                the authoritative history of lorem ipsum.</p>
+                            <div class="row">
+                                <div id="alumni-image"></div>
+                                <div id="alumni-name">Student-3<br>Senior devloper</div>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
                             <div id="alumni-image"></div>
                             <div id="alumni-name">Student-1<br>Senior devloper</div>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="nav-manual mr-l-50">
+                    <!-- <div class="nav-manual mr-l-50">
                         <div class="nav-btn blue-border" onClick="a1()" id="a1"></div>
                         <div class="nav-btn blue-border" onClick="a2()" id="a2"></div>
                         <div class="nav-btn blue-border" onClick="a3()" id="a3"></div>
+                    </div> -->
+                </div>
+                <!-- <div class="w-60">
+                <div class="alumnislider bg-ghostwhite">
+                    <img src="images/qoutes.png" class="quotes">
+                    <p id="first-alumni" class="brown">Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                        text used in laying out print, graphic or web designs. The passage is attributed to an
+                        unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De
+                        Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
+                        
+                    <p id="second-alumni" class="brown">The purpose of lorem ipsum is to create a natural looking
+                        block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A
+                        practice not without controversy, laying out pages with meaningless filler text can be very
+                        useful when the focus is meant to be on design, not content.</p>
+                    <p id="third-alumni" class="brown">The passage experienced a surge in popularity during the
+                        1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as
+                        desktop publishers bundled the text with their software. Today it's seen all around the web;
+                        on templates, websites, and stock designs. Use our generator to get your own, or read on for
+                        the authoritative history of lorem ipsum.</p>
+                    <div class="row">
+                        <div id="alumni-image"></div>
+                        <div id="alumni-name">Student-1<br>Senior devloper</div>
                     </div>
                 </div>
+                <div class="nav-manual mr-l-50">
+                    <div class="nav-btn blue-border" onClick="a1()" id="a1"></div>
+                    <div class="nav-btn blue-border" onClick="a2()" id="a2"></div>
+                    <div class="nav-btn blue-border" onClick="a3()" id="a3"></div>
+                </div>
+            </div> -->
 
             </div>
         </div>
@@ -569,15 +797,56 @@
             </div>
 
         </footer>
+
         <!--crousel js starts-->
-        <script src="jquery.min.js"></script>
-        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <!-- <script src="jquery.min.js"></script>
+        <script src="js/owlcarousel/assets/owl.carousel.min.js"></script> -->
+        
         <!--crousel js end-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+        
+        <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+        <!-- <script src="js/bootstrap/bootstrap.bundle.min.js"></script> -->
+
+        <script>
+            $(document).ready(function () {
+                $('#owl1').owlCarousel({
+                    loop: true,
+                    margin: 10
+                })
+          
+                $('#owl-carousel-2').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            //nav: true
+                        },
+                        600: {
+                            items: 1,
+                            //nav: false
+                        },
+                        1000: {
+                            items: 1,
+                            //nav: true,
+                            loop: false,
+                            margin: 20
+                        },
+                        3000: {
+                            items: 1,
+                            //nav: true,
+                            loop: false,
+                            margin: 20
+                        }
+                    }
+                })
+            })
+        </script>
 </body>
 
 </html>
