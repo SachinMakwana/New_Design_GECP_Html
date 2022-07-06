@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
@@ -16,23 +17,20 @@
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" href="css/bootstrap/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap/font-awesome.min.css"> -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/admission.css">
+    <link rel="stylesheet" href="css/contactus.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-
-    <title>Admission Procedure</title>
 
 </head>
 
 <body>
-
-    <!--   Header   -->
-
-    <div class="header-line row d-flex justify-content-between">
+     <!--   Header   -->
+     <div class="header-line row d-flex justify-content-between">
         <div class="">
             <a href="#" class="header-link fa fa-solid fa-envelope text-white">
                 info@yourdomain.com
@@ -88,7 +86,7 @@
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#">ADMINISTRATION</a>
                 </li> -->
-                <li class="nav-item active-link">
+                <li class="nav-item">
                     <a class="nav-link" href="admission.html">ADMISSION</a>
                 </li>
                 <li class="nav-item">
@@ -98,11 +96,11 @@
                             COURSES
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="cseDepartment.html">Computer Science & Engineering</a>
-                            <a class="dropdown-item" href="mechDeapartment.html">Mechanical Engineering</a>
-                            <a class="dropdown-item" href="electricalDepartment.html">Electrical Engineering</a>
-                            <a class="dropdown-item" href="ecDepartment.html">Electronics & Communication Engineering</a>
-                            <a class="dropdown-item" href="civilDepartment.html">Civil Engineering</a>
+                            <a class="dropdown-item" href="department.html">Computer Science & Engineering</a>
+                            <a class="dropdown-item" href="department.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="department.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="department.html">Electronics & Communication Engineering</a>
+                            <a class="dropdown-item" href="department.html">Civil Engineering</a>
                         </div>
                     </div>
                 </li>
@@ -133,7 +131,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Placements.html">TPO CELL</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active-link">
                     <a class="nav-link" href="contactus.html">CONTACT</a>
                 </li>
                 <li class="nav-item">
@@ -146,189 +144,91 @@
         </div>
     </nav>
 
-    <!-- 1. Admission Procedure-header  -->
+
+    <!-- Contact us  -->
+
     <div class="header-block row d-flex align-items-center mx-auto">
-        <img src="images/admissionProcedure/admission_bg_img.jpg" alt="Womens">
-        <!-- <div class="text-block mx-auto text-center "> -->
-        <div class="text-block text-block mx-auto d-flex align-items-center justify-content-center">
-            Admission Procedure
+        <img src="images/contactusBootstrap/keyBoard_img.jpg" alt="Contact">
+        <div class="text-block mx-auto text-center ">
+            CONTACT US
         </div>
     </div>
 
-    <!-- 2. About-college -->
-    <div class="p-3">   
-        <div class="about-college container text-center p-4">
-            Government Engineering College, Patan(GECP), is government aided educational institution in Katpur, near
-            Patan,
-            Gujarat. The institute offers undergraduate level engineering courses. The college was founded in April
-            2004
-            and
-            is affiliated to Gujarat Technological University(GTU).
-        </div>
-    </div>
+    <div class="my-5">
+<<<<<<< HEAD
+        <div class="main-container shadow container mx-auto col-md-8">
 
-    <!-- 3. student intake -->
-    <div class="bg-color mx-auto p-2">
-        <div class="text-center text-light student-intake-title mb-3">
-            Student Intake
-        </div>
-        <div class="mx-auto">
-            <div class="row text-center text-light p-2">
-                <div class="col">
-                    <i class="icons fa fa-microchip text-info"></i>
-                    <div class="number">30</div>
-                    <p class="branch"> EC</p>
-                </div>
-                <div class="col">
-                    <i class="icons fa fa-laptop text-info"></i>
-                    <div class="number">120</div>
-                    <p class="branch">COMPUTER</p>
-                </div>
-                <div class="col">
-                    <i class="icons fa fa-bolt text-info"></i>
-                    <div class="number">60</div>
-                    <p class="branch">ELECTRICAL</p>
-                </div>
-                <div class="col">
-                    <i class="icons fa fa-hard-hat text-info"></i>
-                    <div class="number">60</div>
-                    <p class="branch">CIVIL</p>
-                </div>
-                <div class="col">
-                    <i class="icons fa fa-wrench text-info"></i>
-                    <div class="number">90</div>
-                    <p class="branch">MECHANICAL</p>
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="d-flex justify-content-center p-3">
+                <div class=" headings text-center text-primary h1 font-weight-bold justify-content-center">
+=======
+        <div class="main-container shadow container mx-auto py-3">
 
-    <!-- 4. Admission Process -->
-    <div class="m-4">
-        <div class="m-3">
-            <div class="headings font-weight-bold h3">Admission Process</div>
-        </div>
-
-        <div class=" row align-items-center mt-3">
-
-            <!-- Column 1 -->
-            <div class="img-student d-flex justify-content-center mx-auto  col-lg-6 col-xl-6 col-12  ">
-                <img src="images/admissionProcedure/admission_process.jpg" alt="students" class="img-fluid">
-            </div>
-
-            <!-- Column 2 -->
-            <div class=" col-lg-6 col-xl-6 col-12 mt-3">
-                <div class="mt-4">
-                    <table class="table">
-                        <tr>
-                            <td>
-                                <select>
-                                    <option value="">Obtaining Information Booklet and PIN</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select>
-                                    <option value="">Online Registration</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select>
-                                    <option value="">Verification of Documents</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select>
-                                    <option value="">Publication of Provistional Merit Number/Merit List</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select>
-                                    <option value="">Online Choice Filling</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select>
-                                    <option value="">Allotment, Confirmation and Reporting</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </table>
+            <div class="d-flex justify-content-center p-1">
+                <div class=" headings text-center text-primary h2 font-weight-bold">
+>>>>>>> upstream/main
+                    Get In Touch
                 </div>
             </div>
 
-        </div>
-    </div>
+            <div class="p-2">
 
+                <div class="ml-4 h4">Leave us a message</div>
+                <div class="row m-2">
 
-    <!-- 5. Fees Structure & Documents REquired -->
+                    <div class="container mx-auto col-xl-6 col-md-6 col-12">
+                        <form action="">
+                            <div>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
 
-    <div class="details-block">
-        <div class="object-block  mt-5 py-5 row">
+                            <div>
+                                <input type="email" placeholder="Email Address">
+                            </div>
 
-            <!-- fees structure block -->
-            <div class="container mx-auto col-md-6 px-5">
-                <div class="headings h4 font-weight-bold text-white mb-5">Fees Structure</div>
-                <div class="">
-                    <table class="table table-striped bg-light">
-                        <thead>
-                            <tr>
-                                <th>Courses</th>
-                                <th>Annual Fees</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-info">B.E.(ELECTRICAL ENGINEERING)</td>
-                                <td>1500</td>
-                            </tr>
-                            <tr>
-                                <td class="text-info">B.E.(COMPUTER SCIENCE AND ENGINEERING)</td>
-                                <td>1500</td>
-                            </tr>
-                            <tr>
-                                <td class="text-info">B.E.(CIVIL ENGINEERING)</td>
-                                <td>1500</td>
-                            </tr>
-                            <tr>
-                                <td class="text-info">B.E.(ELECTRONICS AND COMMUNICATION ENGINEERING)</td>
-                                <td>1500</td>
-                            </tr>
-                            <tr>
-                                <td class="text-info">B.E.(MECHANICAL ENGINEERING)</td>
-                                <td>1500</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <div>
+                                <textarea name="" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
+                            </div>
+
+                            <div>
+                                <input type="submit" value="Send" class="font-weight-bold btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="container mx-auto col-xl-6 col-md-6 col-12">
+
+                        <div class="m-2">Government Engineering College, Patan</div>
+
+                        <div class="m-2">+91 081-1236-4568</div>
+
+                        <div class="m-2">help@gec.gtu.edu</div>
+
+                        <div class="m-2">
+                            <a href="#" class="text-dark mr-2">
+                                <i class="fa fa-youtube-play fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-dark">
+                                <i class="fa fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-dark">
+                                <i class="fa fa-facebook fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-dark">
+                                <i class="fa fa-twitter fa-lg"></i>
+                            </a>
+                        </div>
+
+                        <div class="m-2 py-4">
+                            <a href="https://www.google.com/maps/place/Government+Engineering+College,+Patan/@23.809343,72.1012097,17z/data=!3m1!4b1!4m5!3m4!1s0x395c7d0db6c534b3:0x34c9aef47a82f519!8m2!3d23.8093381!4d72.1033984"
+                                target="_blank">
+                                <img src="images/contactusBootstrap/map.jpg" alt=""
+                                    class="img-map rounded-lg img-fluid">
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-
-            <!-- documents block -->
-            <div class="doc-box container mx-auto col-md-6 px-5">
-                <div class=" headings h4 font-weight-bold text-white mb-5">Documents Required</div>
-                <div class=" text-white doc">
-                    <ul>
-                        <li class="m-3">Class 10 & 12 Certificate</li>
-                        <li class="m-3">Gujcet Marksheet</li>
-                        <li class="m-3">TC(Transfer Certificate)</li>
-                        <li class="m-3">Passport Size Pictures</li>
-                        <li class="m-3">Caste Certificate (if required)</li>
-                        <li class="m-3">Income Certificate (if required)</li>
-                        <li class="m-3">Domicile Certificate (if required)</li>
-                        <li class="m-3">Printout of Registration Form</li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -397,12 +297,12 @@
                 </div>
 
                 <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
-                <div class="client">Our Clients</div>
-                <div class="bg-color-light company-name fa-google"></div>
-                <div class="bg-color-light company-name fa-microsoft"></div>
-                <div class="bg-color-light company-name fa-envato"></div>
-                <div class="bg-color-light company-name fa-WooCOMMERCE"></div>
-            </div> -->
+                    <div class="client">Our Clients</div>
+                    <div class="bg-color-light company-name fa-google"></div>
+                    <div class="bg-color-light company-name fa-microsoft"></div>
+                    <div class="bg-color-light company-name fa-envato"></div>
+                    <div class="bg-color-light company-name fa-WooCOMMERCE"></div>
+                </div> -->
 
             </div>
         </div>
@@ -415,7 +315,6 @@
         </div>
 
     </footer>
-
 
 </body>
 

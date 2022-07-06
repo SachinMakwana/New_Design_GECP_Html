@@ -54,3 +54,35 @@ a:hover, a:visited, a:link, a:active
 i.fa:hover{
     font-size: 25px;    
 }
+/* changes */
+.ml-5{
+    margin-left: 2.5rem!important;
+}
+/* @media (max-width:768px){
+    .main-container{
+       width: 91%;
+    }
+    /* .header-block img{
+        width: 100%;
+        height: 37vw;
+        opacity: 0.9;
+    }  
+    .headings{
+        font-size: 26px;
+        width: 7em;
+        border-bottom: 4px solid #007bff;
+        padding-bottom: 10px;
+    }
+    .h4{
+        font-size: 17px;
+    }
+    .ml-5{
+        margin-left: -10% !important;
+    }
+    input[type="text"], input[type="email"], input[type="submit"], textarea {
+        width: 181%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left:-42%;
+    }  
+}*/
