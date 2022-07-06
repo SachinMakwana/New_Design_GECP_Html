@@ -59,8 +59,15 @@ a {
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
-a.nav-link:hover,
-li.active {
+a.nav-link:hover{
+     /* background-color: rgb(81, 181, 240); */
+     background-color: rgb(92 217 255);
+     /* color: rgb(255, 255, 255); */
+     border-radius: 6px;
+     /* color: black !important; */
+     font-weight: bold;
+}
+.active-link {
     /* background-color: rgb(81, 181, 240); */
     background-color: rgb(92 217 255);
     /* color: rgb(255, 255, 255); */
@@ -83,9 +90,22 @@ a.header-link:hover {
     display: block;
 }
 .dropdown-item:hover{
-    width: inherit;
+    width: initial;
     background-color: rgb(92 217 255);
     font-weight: bolder;
     color: white;
     transition: 0.3s;
+}
+.active-item{
+    width: initial;
+    background-color: rgb(92 217 255);
+    font-weight: bolder;
+    color: white;
+    transition: 0.3s;
+}
+.dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    width: fit-content;
+    background-color: #e9ecef;
 }

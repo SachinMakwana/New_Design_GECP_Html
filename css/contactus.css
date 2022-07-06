@@ -27,7 +27,7 @@
     width: 70%;
 }
 .headings{
-    width: 7em;
+    width: fit-content;
     border-bottom: 4px solid #007bff;
     padding-bottom: 10px;
 }
@@ -42,7 +42,7 @@ input[type="text"], input[type="email"], input[type="submit"], textarea {
 }  
 .img-map{
     width: 100%;
-    height: 10vw;
+    height: 100%;
 }
 .img-map:hover{
     box-shadow: 5px 5px 5px 5px #c2c2c2;
