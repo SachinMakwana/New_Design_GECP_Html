@@ -398,10 +398,13 @@ body{
 .img-container:hover .t-500{
     color:white;
 }
+.m-custom{
+    margin-left: 3%;
+}
 .dept{
     background-image: url("../images/p1.jpg");
     padding-top: 1%;
-    padding-left: 4%;
+    padding-left: 5%;
     padding-right:2%;
     background-size: cover;
     height:100%;
@@ -412,6 +415,7 @@ body{
 }
 
 .centered {
+    width: fit-content;
   position: absolute;
   top: 50%;
   left: 50%;
