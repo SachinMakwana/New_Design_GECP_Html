@@ -14,7 +14,12 @@ body {
     margin-right: 0px;
     margin-left: 0px;
 }
+<<<<<<< HEAD
 /* a {
+=======
+
+a {
+>>>>>>> upstream/main
     padding: 2px;
     margin: 2px 5px;
     font-size: 1rem;
@@ -39,9 +44,10 @@ body {
 .gecp-logo {
     width: 6vw;
 } 
-
+.gecp-logo{
     width: 6vw;
 }
+
 .logo-right {
     width: 15vw;
 }
@@ -89,6 +95,7 @@ a.header-link:hover {
     font-weight: bolder;
     transition: 0.3s;
 }
+<<<<<<< HEAD
 @media (max-width:700px){
     .xv{
         padding-left: 7px;
@@ -109,9 +116,31 @@ a.header-link:hover {
         width: 75%;
     }
     
+=======
+.dropdown-menu{
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-item:hover{
+    width: initial;
+    background-color: rgb(92 217 255);
+    font-weight: bolder;
+    color: white;
+    transition: 0.3s;
+}
+.active-item{
+    width: initial;
+    background-color: rgb(92 217 255);
+    font-weight: bolder;
+    color: white;
+    transition: 0.3s;
+}
 .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
     width: fit-content;
     background-color: #e9ecef;
+>>>>>>> upstream/main
 }

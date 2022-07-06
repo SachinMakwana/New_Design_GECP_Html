@@ -5,10 +5,10 @@
     height: 200px;
    
 }
-.hearderset{
+/* .hearderset{
     padding-top: 50px;
    
-}
+} */
 .hearderset h2{
     margin: auto;
     width: 30%;
@@ -91,7 +91,7 @@ h5{
     
     font-weight: bolder;
     padding-top: 10px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 .imgstu{
     padding: 50px;
@@ -164,7 +164,7 @@ h5{
 } */
 
 .section1 img{
-width: 400px;
+width: 90%;
 height: 360px;
 padding: 50px;
 max-width: 100%;
@@ -173,7 +173,7 @@ padding-top: 20px;
 }
 
 .section2 img{
-    width: 400px;
+    width: 90%;
     height: 360px;
     padding: 50px;
     max-width: 100%;

@@ -19,7 +19,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<<<<<<< HEAD
+     <!--   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+=======
     <!--   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+>>>>>>> upstream/main
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js\custom.js"></script> -->
@@ -151,7 +155,11 @@
                             ABOUT US
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+<<<<<<< HEAD
+                            <a class="dropdown-item" href="vision.html">Vison & Mission</a>
+=======
                             <a class="dropdown-item" href="vision.html">Vision & Mission</a>
+>>>>>>> upstream/main
                             <a class="dropdown-item" href="infrastructure.html">Infrastructure</a>
                             <a class="dropdown-item" href="principal.html">Principal</a>
                             <a class="dropdown-item" href="overview.html">Overview</a>
@@ -224,13 +232,43 @@
         <img src="images/mansur-omar-VTOWhN3-yFU-unsplash.jpg">
         <div class="centered blue">DEPARTMENT</div>
     </div>
+<<<<<<< HEAD
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            <div class="dept pad-b-120">
+                <div class="t-150 dept-head">About
+                    <!-- <br /> -->
+                    Faculty of IT & Computer Science
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="description t-80 pad-4">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making it over 2000 years old.Richard McClintock, a Latin professor at
+                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+                Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+                undoubtable source. Lorem Ipsum comes
+                <!-- <span id="compro"> -->
+                from sections 1.10.32 and 1.10.33 of "de Finibus
+                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+                treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                Ipsum, "Lorem ipsum dolor sit amet", comes from a line in sectionThere are many variations of
+                passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even slightly believable. If you are going to
+                use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
+                humour, or non-characteristic words etc.
+                <!-- </span><span onClick="morle()" id="morle">...more</span> -->
+=======
     <div class="p-2 m-custom">
         <div class=" headings h2 m-3" >About Faculty of Computer Science </div>
         <div class="row mt-4">
             <div class="col-md-6 col-sm-6">
-                <div class="dept pad-b-120">  
-                    Faculty of IT & Computer Science
-                </div>
+                <div class="dept pad-b-120">   </div>
             </div>
             <div class="col-md-6 col-sm-6">
                 <div class="description t-80 pad-4">
@@ -243,19 +281,20 @@
                     undoubtable source. Lorem Ipsum comes
                     <!-- <span id="compro"> -->
                     from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
-                treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
-                Ipsum, "Lorem ipsum dolor sit amet", comes from a line in sectionThere are many variations of
-                passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even slightly believable. If you are going to
-                use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-                middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
-                necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
-                Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
-                looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
-                humour, or non-characteristic words etc.
+                    Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+                    treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
+                    Ipsum, "Lorem ipsum dolor sit amet", comes from a line in sectionThere are many variations of
+                    passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                    injected humour, or randomised words which don't look even slightly believable. If you are going to
+                    use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                    middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                    necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                    Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                    looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
+                    humour, or non-characteristic words etc.
                     <!-- </span><span onClick="morle()" id="morle">...more</span> -->
                 </div>
+>>>>>>> upstream/main
             </div>
         </div>
     </div>
@@ -265,10 +304,14 @@
             <img src="images\dean.jpg">
         </div>
         <div class="mesdean">
-            <div class="headings h2 t-200">Message from the Dean </div>
+<<<<<<< HEAD
+            <div class="dean-head t-200">Message from
                 <!-- <br />  -->
                 the Dean
             </div>
+=======
+            <div class="headings h2 t-200">Message from the Dean </div>
+>>>>>>> upstream/main
             <div class="description t-80">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                 Latin literature from 45 BC, making it over 2000 years old.Richard McClintock, a Latin professor at
@@ -291,7 +334,12 @@
 
 
     <div class="row justi-center">
+<<<<<<< HEAD
         <div class="nav-l circle mr-top215p bg-brown" onclick="NavLeft()"><</div>
+                <div class="w-80">
+                    <div class="row" id="w-900">
+=======
+        <div class="nav-l circle mr-top215p bg-brown" onclick="NavLeft()"> </div>
         <div class="w-80">
             <div class="row" id="w-900">
                 <div class="w-275p">
@@ -386,6 +434,117 @@
     </div>
 
     <!-- SLIDER USING OWL CROUSEL --- NOT WORKING -->
+    <!-- <div class="row justi-center">
+        <div class="nav-l circle mr-top215p bg-brown" onclick="NavLeft()"> </div>
+        <div class="w-80">
+            <div class="row" id="w-900">
+                <div class="owl-carousel" id="owl1">
+                    <div class="item p-2">
+>>>>>>> upstream/main
+                        <div class="w-275p">
+                        <div class="thumbnail h-frame h-350 w-80">
+                            <img src="images/h1.jpg" class="img-container w-99 h-200">
+                            <div class="caption">
+                                <div class="h-name">Nitin Gadkari</div>
+                                <div class="hdept">HOD of E.C. department</div>
+                                <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                        <div class="thumbnail h-frame h-350 w-80">
+                            <img src="images/h2.jpg" class="img-container w-99 h-200">
+                            <div class="caption">
+                                <div class="h-name">Harikrishna Jethva</div>
+                                <div class="hdept">HOD of C.S.E. depaprtment</div>
+                                <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h3.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Prakash Javdekar</div>
+                                    <div class="hdept">HOD of Electrical depaprtment</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h5.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Smriti Irani</div>
+                                    <div class="hdept">HOD of Mechanical department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h4.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Amit Shah</div>
+                                    <div class="hdept">HOD of Civil department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h1.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Nitin Gadkari</div>
+                                    <div class="hdept">HOD of E.C. department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h2.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Harikrishna Jethva</div>
+                                    <div class="hdept">HOD of C.S.E. depaprtment</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item p-2">
+                        <div class="w-275p">
+                            <div class="thumbnail h-frame h-350 w-80">
+                                <img src="images/h3.jpg" class="img-container w-99 h-200">
+                                <div class="caption">
+                                    <div class="h-name">Prakash Javdekar</div>
+                                    <div class="hdept">HOD of Electrical department</div>
+                                    <div class="h-qual">M.Tech(IISC), B.Tech(IIT)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="nav-r circle mr-top215p bg-brown" onclick="NavRight()">></div>
+    </div> -->
+
+<<<<<<< HEAD
+<!-- SLIDER USING OWL CROUSEL --- NOT WORKING -->
     <!-- <div class="row justi-center">
         <div class="nav-l circle mr-top215p bg-brown" onclick="NavLeft()"> </div>
         <div class="w-80">
@@ -494,6 +653,8 @@
         <div class="nav-r circle mr-top215p bg-brown" onclick="NavRight()">></div>
     </div> -->
 
+=======
+>>>>>>> upstream/main
 
 
 
@@ -806,13 +967,21 @@
         <!--crousel js starts-->
         <!-- <script src="jquery.min.js"></script>
         <script src="js/owlcarousel/assets/owl.carousel.min.js"></script> -->
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> upstream/main
         <!--crousel js end-->
         <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> upstream/main
         <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
         <!-- <script src="js/bootstrap/bootstrap.bundle.min.js"></script> -->
 
@@ -822,7 +991,11 @@
                     loop: true,
                     margin: 10
                 })
+<<<<<<< HEAD
+          
+=======
 
+>>>>>>> upstream/main
                 $('#owl-carousel-2').owlCarousel({
                     loop: true,
                     margin: 10,

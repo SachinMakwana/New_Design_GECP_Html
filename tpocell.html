@@ -88,10 +88,7 @@
         </div>
     </nav>
 
-
-
     <!--  Cell container   -->
-
 
     <!-- 1 - background image with title -->
     <div class="header-block row d-flex align-items-center mx-auto">
@@ -101,10 +98,53 @@
         </div>
     </div>
 
+    <div class="container mx-auto py-4 text-center ">
 
-    
+        <div class="d-inline">
+            <button class="tpo-link active-tpo-link mx-5 text-center" onclick="openContent('about')">ABOUT</button>
+            <button class="tpo-link mx-5 text-center" onclick="openContent('companies')">COMPANIES</button>
+            <button class="tpo-link mx-5 text-center" onclick="openContent('gallery')">GALLERY</button>
+
+            <!-- <a href="#" class="tpo-link active-tpo-link mx-5 text-center" onclick="openContent('about')">ABOUT</a>
+            <a href="#" class="tpo-link mx-5 text-center" onclick="openContent('companies')">COMPANIES</a>
+            <a href="#" class="tpo-link mx-5 text-center" onclick="openContent('gallery')">GALLERY</a> -->
+        </div>
+
+        <!-- ABOUT  - top recruiters, top packages-->
+        <div class="container">
+
+            <div id="about" class="tpo-content">
+                about
+                <!-- top recruiters -->
+                <div class="headings font-weight-bold h4">Top Recruiters</div>
+                
 
 
+            </div>
+
+            <!-- COMPANIES - feedback from company -->
+            <div id="companies" class="tpo-content" style="display: none">
+                companies
+            </div>
+
+            <!-- GALLERY - images of placement drive-->
+            <div id="gallery" class="tpo-content" style="display: none">
+                gallery or charts
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function openContent(cityName) {
+            var i;
+            var x = document.getElementsByClassName("tpo-content");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
 
     <!-- Footer -->
     <footer class="bg-color-light page-footer font-small lighten-5">
@@ -124,7 +164,7 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                     <p>
                         <a class="text-white" href="#!">About US</a>
-                    </p>    
+                    </p>
                     <p>
                         <a class="text-white" href="#!">Contact US</a>
                     </p>
@@ -191,5 +231,6 @@
     </footer>
 
 
-  </body>
-  </html>
+</body>
+
+</html>

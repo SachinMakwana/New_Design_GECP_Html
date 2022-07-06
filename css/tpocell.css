@@ -2,24 +2,20 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
 }
-
 .header-block {
     width: 100%;
     position: relative;
 }
-
 .header-block img {
     width: 100%;
     height: 30vw;
     opacity: 0.6;
 }
-
 .text-block {
     width: 80%;
     height: 40%;
@@ -31,6 +27,7 @@ body {
     top: 30%;
     left: 10%;
 }
+<<<<<<< HEAD
 /* placmeant & cell */
 
 .plac-card{
@@ -215,3 +212,38 @@ select{
     }
 }
 
+=======
+.tpo-link{
+    text-decoration: none;
+    /* color: black; */
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 35px;
+}
+.tpo-link:hover{
+    border-bottom: 1px solid;
+}
+.headings{
+    width: 15em;
+    border-bottom: 4px solid rgb(92 217 255);
+    padding-bottom: 10px;
+}
+.tpo-section-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+/* .img-vision{
+    width: 100%;
+    height: 50%;
+} */
+>>>>>>> upstream/main

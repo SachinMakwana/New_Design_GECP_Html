@@ -8,10 +8,10 @@
     padding-top: 10px;
    
 }
-.hearderset{
+/* .hearderset{
     padding-top: 50px;
    
-}
+} */
 .hearderset h2{
     margin: auto;
     width: 30%;
@@ -24,14 +24,21 @@
 }
 .hearderset1 h2{
     margin: auto;
-    width: 20%;
     font-weight: bold;
     font-size: xx-large;
     padding-bottom: 15px;
-    border-radius: 5%;
+    /* border-radius: 5%;
     border-bottom: 10px solid skyblue;
-    text-align: center;
+    text-align: center; */
     
+}
+.hearderset1 h2::after{
+    content:'';
+    display:block;
+    margin: auto;
+    width:240px;
+    height:5px;
+    background-color: skyblue;
 }
 .depart{
     width: 100;
