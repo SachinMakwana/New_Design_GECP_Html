@@ -18,21 +18,21 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/graph.css">
-    
+
 
 
     <style>
         #chartdiv {
-          width: 100%;
-          height: 30vw;
+            width: 100%;
+            height: 30vw;
         }
-        </style>
-        
-        <!-- Resources -->
-        <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-        <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-        
+    </style>
+
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
 
     <title>GRAPH</title>
 </head>
@@ -115,7 +115,7 @@
         <img src="images\placement.jpg">
         <div class="centered white">PLACEMENTS</div>
     </div>
-<!-- 
+    <!-- 
     <div class="main my_page ph-new">
         <div class="top-requter18  col-sm-12">
             <h3>
@@ -126,108 +126,153 @@
                 data-loaded="true">
         </div>
    </div> -->
-   <div class="main my_page ph-new">
-    <div class="top-requter18  col-sm-12 branch">
-        <h4>
-            GEC Patan Branchwise Placement</h4>
+    <div class="main my_page ph-new">
+        <div class="top-requter18  col-sm-12 branch">
+            <h4>
+                GEC Patan Branchwise Placement</h4>
+        </div>
     </div>
-</div>
 
-        <div class="years">
-            <li>
-                <!-- <a href="#" onclick="year22()">Placement Record of year 2022</a> -->
-                <button onclick="year22()" class="button">Placement Record of year 2022</button>
-                <!-- <input type = "button" name="data" onclick="year22();windows.location.reload(true)" value="2022"> -->
-            </li>
-            <li>
-                <!-- <a href="#"  onclick="year21()">Placement Record of year 2021</a> -->
-                <button onclick="month()" class="button">Placement Record of year 2021</button>
-                <!-- <input type = "button" name="data" onclick="month();windows.location.reload(true)" value="2021"> -->
-            </li>
-            <li>
-                <!-- <a href="#"  onclick="year20()">Placement Record of year 2020</a> -->
-                <button onclick="year20()" class="button">Placement Record of year 2020</button>
-            </li>
-            <li>
-                <!-- <a href="#"  onclick="year19()">Placement Record of year 2019</a> -->
-                <button onclick="year21()" class="button">Placement Record of year 2019</button>
-            </li>
-            <script src="/js/graph.js"></script>
-           <div id="chartdiv"></div>
-           
+    <div class="years">
+        <li>
+            <!-- <a href="#" onclick="year22()">Placement Record of year 2022</a> -->
+            <button onclick="year22()" class="button">Placement Record of year 2022</button>
+            <!-- <input type = "button" name="data" onclick="year22();windows.location.reload(true)" value="2022"> -->
+        </li>
+        <li>
+            <!-- <a href="#"  onclick="year21()">Placement Record of year 2021</a> -->
+            <button onclick="month()" class="button">Placement Record of year 2021</button>
+            <!-- <input type = "button" name="data" onclick="month();windows.location.reload(true)" value="2021"> -->
+        </li>
+        <li>
+            <!-- <a href="#"  onclick="year20()">Placement Record of year 2020</a> -->
+            <button onclick="year20()" class="button">Placement Record of year 2020</button>
+        </li>
+        <li>
+            <!-- <a href="#"  onclick="year19()">Placement Record of year 2019</a> -->
+            <button onclick="year21()" class="button">Placement Record of year 2019</button>
+        </li>
+        <script src="/js/graph.js"></script>
+        <div id="chartdiv"></div>
+
+    </div>
+
+    <div class="main my_page ph-new">
+        <div class="top-requter18  col-sm-12 branch">
+            <h4>
+                GEC Patan YEARWISE SELECTION</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        
+
+    </div>
+
+    <div class="g1 col-lg-4 col-sm-6">
+        <div class="graph-pnl text-center">
+            <h5>Campus Placements during COVID-19 times</h5>
+            <a id="highest-package" href="#animatedModal"
+                onclick="window.open('g1.html')">
+                <img src="images/bargraph.png" width="289" height="241">
+                <br>
+                <span>Click to View Graph</span></a>
         </div>
 
-        <div class="main my_page ph-new">
-            <div class="top-requter18  col-sm-12 branch">
-                <h4>
-                    GEC Patan YEARWISE SELECTION</h4>
-            </div>
-        </div>
+    </div>
 
-        <footer class="bg-color-light page-footer font-small lighten-5">
-            <div class="bg-color-dark py-2"></div>
-            <div class="container text-center text-md-left mt-5">
-                <div class="row mt-3">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
-                        <div class="gecp-logo rounded-circle mx-auto">
-                            <img src="images/gecplogo.jpg" alt="" class="rounded-circle gecp-logo col p-2">
-                        </div>
-                        <p>Government Engineering College,
-                            Patan
-                            At. Katpur,
-                            Pincode: 384265
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
-                        <p>
-                            <a class="text-white" href="#!">About US</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Contact US</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Grievance</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Student Corner</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Placement</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Scholarship</a>
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
-                        <p>
-                            <a class="text-white" href="#!">About US</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Contact US</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Grievance</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Student Corner</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Placement</a>
-                        </p>
-                        <p>
-                            <a class="text-white" href="#!">Scholarship</a>
-                        </p>
-                    </div>
 
-                    <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
-                        <div class="client">Our Clients</div>
-                        <div class="bg-color-light company-name">Google</div>
-                        <div class="bg-color-light company-name">Microsoft</div>
-                        <div class="bg-color-light company-name">envato</div>
-                        <div class="bg-color-light company-name">WooCOMMERCE</div>
-                    </div>
 
-                    <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-color-light page-footer font-small lighten-5">
+        <div class="bg-color-dark py-2"></div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <div class="gecp-logo rounded-circle mx-auto">
+                        <img src="images/gecplogo.jpg" alt="" class="rounded-circle gecp-logo col p-2">
+                    </div>
+                    <p>Government Engineering College,
+                        Patan
+                        At. Katpur,
+                        Pincode: 384265
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+                    <p>
+                        <a class="text-white" href="#!">About US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Contact US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Grievance</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Student Corner</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Placement</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Scholarship</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+                    <p>
+                        <a class="text-white" href="#!">About US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Contact US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Grievance</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Student Corner</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Placement</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Scholarship</a>
+                    </p>
+                </div>
+
+                <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <div class="client">Our Clients</div>
+                    <div class="bg-color-light company-name">Google</div>
+                    <div class="bg-color-light company-name">Microsoft</div>
+                    <div class="bg-color-light company-name">envato</div>
+                    <div class="bg-color-light company-name">WooCOMMERCE</div>
+                </div>
+
+                <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
                     <div class="client">Our Clients</div>
                     <div class="bg-color-light company-name fa-google"></div>
                     <div class="bg-color-light company-name fa-microsoft"></div>
@@ -235,17 +280,17 @@
                     <div class="bg-color-light company-name fa-WooCOMMERCE"></div>
                 </div> -->
 
-                </div>
             </div>
+        </div>
 
-            <div class="footer-copyright">
-                <div class="row d-flex justify-content-between">
-                    <div>Copyright © 2004 GEC Patan. All rights reserved.</div>
-                    <div>Terms of Use | Privacy Policy</div>
-                </div>
+        <div class="footer-copyright">
+            <div class="row d-flex justify-content-between">
+                <div>Copyright © 2004 GEC Patan. All rights reserved.</div>
+                <div>Terms of Use | Privacy Policy</div>
             </div>
+        </div>
 
-        </footer>
+    </footer>
 </body>
 
 </html>
