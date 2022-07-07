@@ -14,9 +14,9 @@
     <script type="text/javascript" src="js\custom.js"></script>
 
     <!-- JS for crousel -->
-    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css" />
-    <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css">
-    <script src="js/owlcarousel/assets/owl.carousel.js"></script>
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css"> -->
+    <script src="js/owlcarousel/assets/owl.carousel.min.js"></script>
 
     <link rel="stylesheet" href="css/cells.css">
     <link rel="stylesheet" href="css/header.css">
@@ -163,14 +163,37 @@
     </p>
 
     <div class="sthead align-center mr-t-7 t-150">STUDENT COUNCIL-2021-2022</div>
-    <div class="mr-t-7 w-90 justi-saround row mx-auto">
-        <div class="circle square-120p mr-t-30p br-grey" id="bg-s1"></div>
-        <div class="circle square-120p mr-t-30p br-grey" id="bg-s2"></div>
+    <!-- <div class="mr-t-7 w-90 justi-saround row mx-auto">
+        <div class="circle square-120p mr-t-30p br-grey bg-s"></div>
+        <div class="circle square-120p mr-t-30p br-grey bg-s"></div>
         <div class="t-200 cursor mr-t-70p" onClick="PrevSC()"> &lt; </div>
-        <div class="circle square-180p br-grey" id="bg-s3"></div>
+        <div class="circle square-180p br-grey bg-s"></div>
         <div class="t-200 cursor mr-t-70p" onClick="NextSC()"> &gt;</div>
-        <div class="circle square-120p mr-t-30p br-grey" id="bg-s4"></div>
-        <div class="circle square-120p mr-t-30p br-grey" id="bg-s5"></div>
+        <div class="circle square-120p mr-t-30p br-grey bg-s"></div>
+        <div class="circle square-120p mr-t-30p br-grey bg-s"></div>
+    </div> -->
+    <div class="slider">
+        <div class="owl-carousel">
+            <div class="circle square-120p br-grey bg-s mx-auto">
+                <img src="images/h1.jpg" class="circle">
+            </div>
+            
+            <div class="circle square-120p br-grey bg-s mx-auto">
+                <img src="images/h2.jpg" class="circle">
+            </div>
+            
+            <div class="circle square-120p br-grey bg-s mx-auto">
+                <img src="images/h3.jpg" class="circle h-110">
+            </div>
+            
+            <div class="circle square-120p br-grey bg-s mx-auto">
+                <img src="images/h4.jpg" class="circle h-110">
+            </div>
+            
+            <div class="circle square-120p br-grey bg-s mx-auto">
+                <img src="images/h5.jpg" class="circle">
+            </div>
+        </div>
     </div>
 
     <div class="h-name brown align-center t-150" id="Sname">Prakash Javdekar</div>
@@ -555,19 +578,21 @@
                 loop: true,
                 margin: 10,
                 responsiveClass: true,
+                center: true,
+                nav: true,
                 responsive: {
                     0: {
                         items: 1,
-                        //nav: true
+                        nav: true
                     },
                     600: {
-                        items: 1,
-                        //nav: false
+                        items: 3,
+                        nav: true
                     },
                     1000: {
-                        items: 1,
-                        //nav: true,
-                        loop: false,
+                        items: 5,
+                        nav: true,
+                        // loop: false,
                         margin: 20
                     }
                 }
