@@ -81,7 +81,9 @@ p {
     color: rgb(72, 72, 72);
     text-align: justify;
 }
-
+span{
+   color: brown;
+}
 
   </style>
 
@@ -112,6 +114,8 @@ p {
         wheelY: "zoomX",
         pinchZoomX: true
       }));
+
+      
 
 
       var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
@@ -191,22 +195,25 @@ p {
       xAxis.data.setAll(data);
       series.data.setAll(data);
 
-
+      
 
       series.appear(1000);
       chart.appear(1000, 100);
 
     }); 
+    
+    
   </script>
   
     <div id="chartdiv"></div>
     <div class="details">
      
       <table>
-        <tr>
+        <!-- <tr>
           <td colspan="4" class="placement-title">YEARLY PLACEMENT RECORDS : STUDENT PLACED 2014-2022
           </td>
-        </tr>
+        </tr> -->
+        <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>STUDENT PLACED 2016-2022</span> </h3>
 
         <tr>
           <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
@@ -215,53 +222,43 @@ p {
         <td style="width:80%;background-color:#E6F7FF"><strong>STUDENT PLACED</strong></td>
       </tr>
 
-<tr>
-        <td align="left" bgcolor="#afd8f8">&nbsp;</td>
-        <td align="left">&nbsp;</td>
-        <td align="left" bgcolor="#F7F7F7">2014</td>
-        <td bgcolor="#F7F7F7">2410</td>
-      </tr>
-<tr>
-        <td align="left" bgcolor="#f6bd0f">&nbsp;</td>
-        <td align="left">&nbsp;</td>
-        <td align="left" bgcolor="#F7F7F7">2015</td>
-<td bgcolor="#F7F7F7">4690</td></tr>
+
       <tr>
-        <td align="left" bgcolor="#8bba00">&nbsp;</td>
+        <td align="left" bgcolor="#5DCCDA">&nbsp;</td>
         <td align="left">&nbsp;</td>
         <td align="left" bgcolor="#F7F7F7">2016</td>
-        <td bgcolor="#F7F7F7">4690</td>
+        <td bgcolor="#F7F7F7">150</td>
       </tr>
         <tr>
-         <td align="left" bgcolor="#ff8e46">&nbsp;</td>
+         <td align="left" bgcolor="#5D97DA">&nbsp;</td>
         <td align="left">&nbsp;</td>
         <td align="left" bgcolor="#F7F7F7">2017</td>
-    <td bgcolor="#F7F7F7">5134 </td></tr>
+    <td bgcolor="#F7F7F7">200 </td></tr>
      <tr>
-         <td align="left" bgcolor="#008e8e">&nbsp;</td>
+         <td align="left" bgcolor="#5D6CDA">&nbsp;</td>
         <td align="left">&nbsp;</td>
         <td align="left" bgcolor="#F7F7F7">2018</td>
-    <td bgcolor="#F7F7F7">6314</td></tr>
+    <td bgcolor="#F7F7F7">280</td></tr>
    <tr>
-         <td align="left" bgcolor="#d64646">&nbsp;</td>
+         <td align="left" bgcolor="#7B5DDA">&nbsp;</td>
         <td align="left">&nbsp;</td>
         <td align="left" bgcolor="#F7F7F7">2019</td>
-    <td bgcolor="#F7F7F7">6617</td></tr>
+    <td bgcolor="#F7F7F7">350</td></tr>
    <tr>
-         <td align="left" bgcolor="#8e468e">&nbsp;</td>
+         <td align="left" bgcolor="#975DDA">&nbsp;</td>
         <td align="left">&nbsp;</td>
         <td align="left" bgcolor="#F7F7F7">2020</td>
-    <td bgcolor="#F7F7F7">7412</td></tr>
+    <td bgcolor="#F7F7F7">390</td></tr>
         <tr>
-         <td align="left" bgcolor="#588526">&nbsp;</td>
+         <td align="left" bgcolor="#BF5DDA">&nbsp;</td>
         <td align="left">&nbsp;</td>
         <td align="left" bgcolor="#F7F7F7">2021</td>
-    <td bgcolor="#F7F7F7">7500</td></tr>
+    <td bgcolor="#F7F7F7">413</td></tr>
         <tr>
-         <td align="left" bgcolor="#b3aa00">&nbsp;</td>
+         <td align="left" bgcolor="#DA5DCC">&nbsp;</td>
         <td align="left">&nbsp;</td>
         <td align="left" bgcolor="#F7F7F7">2022</td>
-    <td bgcolor="#F7F7F7">9500+</td></tr>				  
+    <td bgcolor="#F7F7F7">500</td></tr>				  
       
     <tr>
       <td colspan="4" align="left">
@@ -289,6 +286,13 @@ p {
       
     </div>
   
+
+
+
+
+
+
+    
 
 </body>
 
