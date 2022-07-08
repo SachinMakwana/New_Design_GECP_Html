@@ -21,28 +21,128 @@
     text-transform: uppercase;
     margin-top: 15px;
 }
-
-
-.placement-activities-colm3 li {
-    margin-bottom: 25px;
-}
-
-.button {
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 5px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
-
-
   .g1{
     border: 1px solid lightgray;
     margin-bottom: 20px;
     margin-top: 30px;
     margin-left: 50px;
   }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    flex-direction: row;
+    display: flex;
+    justify-content:space-around;
+    
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+   #chartdiv {
+        width: 50%;
+        height: 500px;
+        float: left;
+      }
+  
+      .details{
+        width: 50%;
+        float: right;
+        
+      }
+      tbody {
+      display: table-row-group;
+      vertical-align: middle;
+      border-color: inherit;
+  }
+  .placement-tb {
+      display: inline-block;
+      margin-left: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      width: 45% !important;
+  }
+  table {
+      border-collapse: separate;
+      text-indent: initial;
+      white-space: normal;
+      line-height: normal;
+      font-weight: normal;
+      font-size: medium;
+      font-style: normal;
+      color: -internal-quirk-inherit;
+      text-align: start;
+      border-spacing: 2px;
+      font-variant: normal;
+  }
+  tr {
+      display: table-row;
+      vertical-align: inherit;
+      border-color: inherit;
+  }
+  td {
+      display: table-cell;
+      vertical-align: inherit;
+  }
+  .placement-title span {
+      color: rgb(214, 70, 70);
+  }
+  
+  .placement-title {
+      font-size: 13px;
+      font-weight: 600;
+  }
+  
+  td {
+      display: table-cell;
+      vertical-align: inherit;
+      width: 53px;
+      height: 29px;  
+  }
+  strong {
+      font-weight: bold;
+  }
+  p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+  .placement-text p {
+      color: rgb(72, 72, 72);
+      text-align: justify;
+  }
+  span{
+     color: brown;
+  }  
