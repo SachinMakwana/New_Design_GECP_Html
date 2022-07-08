@@ -37,3 +37,12 @@
     display: inline-block;
     font-size: 16px;
   }
+
+
+
+  .g1{
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }

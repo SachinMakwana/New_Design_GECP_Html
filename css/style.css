@@ -333,7 +333,20 @@ body{
     padding: 7px;
     background: #00b7ff;
 }
+#placementOwl .owl-theme .owl-dots .owl-dot span{
+    padding:7px;
+    border-radius:50%;
+    cursor:pointer;
+    margin-right:2px;
+    background: white;
+    border: 2px solid #00b7ff;
+} 
 
+#placementOwl .owl-theme .owl-dots .owl-dot.active span
+{
+    padding: 7px;
+    background: #00b7ff;
+}
 .nav-btn{
   padding:5px;
   border-radius:50%;
