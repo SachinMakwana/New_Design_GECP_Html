@@ -13,11 +13,22 @@
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/tpocell.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 
-    <title>plac&cell</title>
+    <!--table css-->
+     <link rel ="stylesheet" href="css/jquery.dataTables.min.css">
+     <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+    <!--scripte-->
+    <!-- <script src="js\DataTabels\dataTables.responsive.min.js"></script>
+    <script src="js\DataTabels\jquery.dataTables.min.js"></script>
+    <script src="js\DataTabels\jquery-3.5.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+
+     <title>plac&cell</title>
 </head>
 
 <body>
@@ -107,76 +118,78 @@
             <div class="text-center d-flex justify-content-center ">
                 <div class="headings h4 text-center font-weight-bold text-white mb-4 plac-title"><h1>Placmeant  <span> Info </span></h1></div>
             </div>
-       
-        <form>
-        <table>
-            <tr>
-            <td>
-                <div class="text-white M-1">
-            <h2>SelectYear</h2></td></div>
-             <td>
-                <div class="menu2">
-            <select  name="year"class="my-menu">
-            <option value="2018" size="40">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            </select>
-            </div>
-             </td>
-             </tr>
-              <tr>
-              <td>
-              <div class="text-white M-1">
-              <h2>Departmeant</h2></td>
-              </div>
-               <td> 
-                <div class="menu2">
-               <select class="my-menu mx-auto justify-content-center">
-               <option value="Computer">Computer</option>
-               <option value="Civil">Civil</option>
-               <option value="Electerical">Electrical</option>
-               <option value="Mechanical">Mechanical</option>
-               <option value="EC">EC</option>
-               <option value="all">All</option>
-               </select>
-               </div>
-               </td>
-               </tr>
-               <tr>
-               <td>
-                <div class="text-white M-1">
-               <h2>Company</h2></td>
-                </div>
-               <td> 
-                <div class="menu2">
-                <select class="my-menu mx-auto justify-content-center">
-                <option value="TCS">TCS</option>
-                <option value="TATV SOFT">TATV SOFT</option>
-                <option value="SHALIGRAM">SHALIGRAM</option>
-                <option value="INFOSIS">INFOSYS</option>
-                <option value="RLOGICAL">RLOGICAL</option>
-                <option value="all">All</option>
-             </select>
-             </div>
-            </td>
-        </tr>
-           <tr>
-        <td><div class="form-button mx-auto justify-content-center"> <button type="sumbit" value="serach">serach</button></div></td>
-        
-         </tr>
-        </table>
-         </form>
-    </div>
-</div> 
 
-      <!--stduent-info-->
-      <div class="heading1"></div>          
+           <form>
+                <table>
+                    <tr>
+                    <td>
+                        <div class="text-white M-1">
+                    <h2>Year</h2></td></div>
+                     <td>
+                        <div class="menu2">
+                    <select  name="year"class="my-menu4">
+                    <option value="2018" size="40">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="all">all</option>
+                    </select>
+                    </div>
+                     </td>
+                     </tr>
+                      <tr>
+                      <td>
+                      <div class="text-white M-1">
+                      <h2>Department</h2></td>
+                      </div>
+                       <td> 
+                        <div class="menu2">
+                       <select class="my-menu mx-auto justify-content-center">
+                       <option value="Computer">Computer</option>
+                       <option value="Civil">Civil</option>
+                       <option value="Electerical">Electrical</option>
+                       <option value="Mechanical">Mechanical</option>
+                       <option value="EC">EC</option>
+                       <option value="all">All</option>
+                       </select>
+                       </div>
+                       </td>
+                       </tr>
+                       <tr>
+                       <td>
+                        <div class="text-white M-1">
+                       <h2>Company</h2></td>
+                        </div>
+                       <td> 
+                        <div class="menu2">
+                        <select class="my-menu mx-auto justify-content-center">
+                        <option value="TCS">TCS</option>
+                        <option value="TATV SOFT">TATV SOFT</option>
+                        <option value="SHALIGRAM">SHALIGRAM</option>
+                        <option value="INFOSIS">INFOSYS</option>
+                        <option value="RLOGICAL">RLOGICAL</option>
+                        <option value="all">All</option>
+                     </select>
+                     </div>
+                    </td>
+                </tr>
+                   <tr>
+                <td><div class="form-button mx-auto justify-content-center"> <button type="sumbit" value="serach">serach</button></div></td>
+                
+                 </tr>
+                </table>
+                 </form>
+            </div>
+        </div> 
+</div>
+       <!--stduent-info-->
+     <div class="heading1"></div>          
     <div class="student-info mx-auto justify-content-center h4 text-center font-weight-bold text-white mb-4 "><h1>Student <span> Info</span></h1></div>
+</div>
    
      <!---student gallery-->
-     <div class="plac-header-2">
+    <!-- <div class="plac-header-2">
         <div class="row t-7 pos-rel mx-auto pad-0">
             <div class="col-md-2 overflow">
                 <img class="cell-img pos-rel" src="images/plac&cell/b1.jpg">
@@ -283,7 +296,600 @@
                             </div>
                             </div>
                 </div>
+                </div>-->
+
+
+                <!--table data-->
+            <div class="dtable mx-auto justify-content-center">
+            <table id="example" class="display responsive nowrap justify-content-center mx-auto" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Middle name</th>
+                            <th>Last name</th>
+                            <th>Department</th>
+                            <th>company-name</th>
+                            <th>Salary</th>
+                            <th>E-mail</th>
+                            <th>photo</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krutwa</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>RLOGICAL</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krutwa@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/g1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>krupalu</td>
+                            <td>nikhil</td>
+                            <td>vora</td>
+                            <td>computer</td>
+                            <td>INFOSYS</td>
+                            <td>4 to 4,50 lakh</td>
+                            <td>krupalu@gmail.com</td>
+                            <td><img class="t-img"src="images/plac&cell/b1.jpg"></td>
+                        </tr>
+                    </tbody>
+                </table>
                 </div>
+     
     <!-- Footer -->
     <footer class="bg-color-light page-footer font-small lighten-5">
         <div class="bg-color-dark py-2"></div>
@@ -361,6 +967,11 @@
         </div>
 
     </footer>
+    <script>
+     $(document).ready(function() {
+     $('#example').DataTable();
+    } );
+    </script>
 
 
   </body>
