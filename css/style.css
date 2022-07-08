@@ -202,10 +202,6 @@ body{
     width:90%;
     overflow: hidden;
 }
-.h-name{
-    font-size:100%;
-    font-weight:500;
-}
 .w-275p{
     /* width: fit-content; */
     width:275px;
@@ -631,24 +627,6 @@ body{
 .br-grey{
     border:solid #aec1b7 5px;
 }
-#bg-s1{
-    background-image:url("../images/h1.jpg");
-}
-#bg-s1, #bg-s2, #bg-s3, #bg-s4, #bg-s5{
-    background-size: cover;
-}
-#bg-s2{
-    background-image:url("../images/h2.jpg");
-}
-#bg-s3{
-    background-image:url("../images/h3.jpg");
-}
-#bg-s4{
-    background-image:url("../images/h4.jpg");
-}
-#bg-s5{
-    background-image:url("../images/h5.jpg");
-}
 .mr-t-30p{
     margin-top:30px;
 }
@@ -781,6 +759,59 @@ body{
 .h-350{
     height: 350px;
 }
+.slider{
+    margin-bottom: 20px;
+    position:relative;
+}
+.h-110{
+    height:110px;
+}
+.bg-s{
+    /* background-image:url("../images/h1.jpg"); */
+    margin: 60px;
+    transform: scale(0.9);
+    transition: all .3s;
+}
+.slider .owl-item.active.center .bg-s{
+    transform: scale(1.30);
+}
+.owl-nav .owl-next{
+    position:absolute;
+    opacity: 1;
+    right:calc(50% - 98px);
+    top:40%;
+    /* display: block !important; */
+}
+.owl-nav .owl-prev{
+    position:absolute;
+    opacity: 1;
+    left:calc(50% - 98px);
+    top:40%;
+    /* display: inline !important; */
+}
+.owl-stage-outer{
+    height:425px;
+}
+.owl-caption{
+    position: relative;
+    width: 400%;
+    left: -140%;
+    display: none;
+}
+.slider .owl-item.active.center .owl-caption{
+    display: block;
+}
+.h-name{
+    font-size:100%;
+    font-weight:500;
+    width:200%;
+    position:relative;
+    left:-50%;
+    display: none;
+}
+.slider .owl-item.active.center .h-name{
+    display:block;
+}
 @media(min-width:1440px){
     .principal{
         height:15vw;
@@ -816,9 +847,6 @@ body{
  }
 }
 @media (max-width: 990px){
-    #bg-s1, #bg-s5{
-        display:contents;
-    }
     #actd-1 p,#actd-2 p{
         font-size:10px;
     }
@@ -853,6 +881,13 @@ body{
     .WC-head{
         font-size:150%;
     }
+    .owl-stage-outer{
+        height:550px;
+    }
+    .owl-caption{
+        width: 200%;
+        left: -50%;
+    }
 }
 @media (max-width: 764px){
     .mesdean{
@@ -886,9 +921,6 @@ body{
     .top-left{
 	font-size:70%;
     }
-    #bg-s2, #bg-s4{
-        display:contents;
-    }   
     .IP::after{
         background-color:#fff;
         content:'';
