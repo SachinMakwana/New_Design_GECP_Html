@@ -22,10 +22,10 @@
     margin-top: 15px;
 }
   .g1{
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     margin-bottom: 20px;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .modal {
@@ -54,6 +54,7 @@
     justify-content:space-around;
     
   }
+  
   
   /* The Close Button */
   .close {
@@ -146,3 +147,44 @@
   span{
      color: brown;
   }  
+
+  .rows {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+@media (min-width: 992px){
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+}
+
+@media (min-width: 576px){
+  .col-sm-4 {
+    /* flex: 0 0 auto;
+    width: 50%; */
+}
+}
+
+.rows>* {
+  /* flex-shrink: 0;
+  width: 100%; */
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.graph-pnl {
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  min-height: 350px;
+}
