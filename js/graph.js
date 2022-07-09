@@ -1,121 +1,106 @@
-function year22(){
-    am5.ready(function() {
-                
-        // Create root element
-        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-        var root = am5.Root.new("chartdiv");
-        
-        // Set themes
-        // https://www.amcharts.com/docs/v5/concepts/themes/
-        root.setThemes([
-          am5themes_Animated.new(root)
-        ]);
-        
-        // Create chart
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-        var chart = root.container.children.push(
-          am5percent.PieChart.new(root, {
-            endAngle: 270
-          })
-        );
-        
-        // Create series
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-        var series = chart.series.push(
-          am5percent.PieSeries.new(root, {
-            valueField: "value",
-            categoryField: "category",
-            endAngle: 270
-          })
-        );
-        
-        series.states.create("hidden", {
-          endAngle: -90
-        });
-        
-        // Set data
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-        
-        
-            series.data.setAll([{
-                category: "civil",
-                value: 501.9
-              }, {
-                category: "EC",
-                value: 301.9
-              }, {
-                category: "EE",
-                value: 201.1
-              }, {
-                category: "cse",
-                value: 165.8
-              }, {
-                category: "MECHANICAL",
-                value: 139.9
-              }]);
-              series.appear(1000, 100);
-        
-        
-        });
-}
+am5.ready(function () {
+
+
+  var root = am5.Root.new("chartdiv");
+
+
+  root.setThemes([
+    am5themes_Animated.new(root)
+  ]);
+
+
+
+  var chart = root.container.children.push(am5xy.XYChart.new(root, {
+    panX: true,
+    panY: true,
+    wheelX: "panX",
+    wheelY: "zoomX",
+    pinchZoomX: true
+  }));
+
   
-function month(){
-    am5.ready(function() {
-                
-        // Create root element
-        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-        var root = am5.Root.new("chartdiv");
-        
-        // Set themes
-        // https://www.amcharts.com/docs/v5/concepts/themes/
-        root.setThemes([
-          am5themes_Animated.new(root)
-        ]);
-        
-        // Create chart
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-        var chart = root.container.children.push(
-          am5percent.PieChart.new(root, {
-            endAngle: 270
-          })
-        );
-        
-        // Create series
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-        var series = chart.series.push(
-          am5percent.PieSeries.new(root, {
-            valueField: "value",
-            categoryField: "category",
-            endAngle: 270
-          })
-        );
-        
-        series.states.create("hidden", {
-          endAngle: -90
-        });
-        
-        // Set data
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-        
-        
-            series.data.setAll([{
-                category: "NISHIKA",
-                value: 501.9
-              }, {
-                category: "EC",
-                value: 301.9
-              }, {
-                category: "EE",
-                value: 201.1
-              }, {
-                category: "NAMRATA",
-                value: 165.8
-              }, {
-                category: "MECHANICAL",
-                value: 139.9
-              }]);
-              series.appear(1000, 100);
-        
-        
-        });
-}
+
+
+  var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+  cursor.lineY.set("visible", false);
+
+
+
+  var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+  xRenderer.labels.template.setAll({
+    rotation: -90,
+    centerY: am5.p50,
+    centerX: am5.p100,
+    paddingRight: 15
+  });
+
+  var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+    maxDeviation: 0.3,
+    categoryField: "country",
+    renderer: xRenderer,
+    tooltip: am5.Tooltip.new(root, {})
+  }));
+
+  var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+    maxDeviation: 0.3,
+    renderer: am5xy.AxisRendererY.new(root, {})
+  }));
+
+
+
+  var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+    name: "Series 1",
+    xAxis: xAxis,
+    yAxis: yAxis,
+    valueYField: "value",
+    sequencedInterpolation: true,
+    categoryXField: "country",
+    tooltip: am5.Tooltip.new(root, {
+      labelText: "{valueY}"
+    })
+  }));
+
+  series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5 });
+  series.columns.template.adapters.add("fill", function (fill, target) {
+    return chart.get("colors").getIndex(series.columns.indexOf(target));
+  });
+
+  series.columns.template.adapters.add("stroke", function (stroke, target) {
+    return chart.get("colors").getIndex(series.columns.indexOf(target));
+  });
+
+
+  // Set data
+  var data = [{
+    country: "2016",
+    value: 150
+  }, {
+    country: "2017",
+    value: 200
+  }, {
+    country: "2018",
+    value: 280
+  }, {
+    country: "2019",
+    value: 350
+  }, {
+    country: "2020",
+    value: 390
+  }, {
+    country: "2021",
+    value: 413
+  }, {
+    country: "2022",
+    value: 500
+  
+  }];
+
+  xAxis.data.setAll(data);
+  series.data.setAll(data);
+
+  
+
+  series.appear(1000);
+  chart.appear(1000, 100);
+
+});
