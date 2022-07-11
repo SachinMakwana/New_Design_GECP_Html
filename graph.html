@@ -23,52 +23,7 @@
   <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
-  <script>
-    window.document.onkeydown = function (e) {
- if (!e) {
-     e = event;
- }
-
- if (e.keyCode == 27) {
-     lightbox_close();
- }
-}
-
-// Note that the function is receiving the clicked element reference.
-function lightbox_open(el) {        
- window.scrollTo(0,0);
-
- // All the anchors that have a class lightbox.
- var anchors = document.querySelectorAll('a.lightbox');
- // All the elements with class light.
- var light = document.querySelectorAll('.light');
- // All the elements with class fade.
- var fade = document.querySelectorAll('.fade');
-
- // Iterate over the anchors elements.
- for (var i = 0; i < anchors.length; i++) {
-     // If the anchor matches the clicked one.
-     if (anchors[i] == el) {
-         // Look for the light and fade with the same index
-         // and display them.
-         light[i].style.display = 'block';
-         fade[i].style.display = 'block';
-     }
- }
-}
-
-function lightbox_close() {
- // All the elements with class light or fade.
- var els = document.querySelectorAll('.light, .fade');
-
- // Loop through the list.
- for (var i = 0; i < els.length; i++) {
-     // Hide them.
-     els[i].style.display = 'none';
- }
-}
- </script>
-
+  
 
     <title>GRAPH</title>
 </head>
@@ -204,17 +159,13 @@ function lightbox_close() {
   <div class="g1 col-lg-2 col-sm-4">
     <div class="graph-pnl text-center">
         <h5>STUDENT PLACED</h5>
-        <a id="myBtn" href="#animatedModal" class="lightbox" onclick="lightbox_open(this)">
+        <a id="myBtn" href="#animatedModal">
             <img src="images/Screenshot 1.png" width="289" height="241">
             <br>
             <span>Click to View Graph</span></a>
     </div>
 
 </div>
-
-<div class="light">
-      
-
 
 <div id="myModal" class="modal">
 
@@ -440,188 +391,18 @@ window.onclick = function(event) {
 }
 </script>
 
-</div>
+
 
 <div class="g1 col-lg-2 col-sm-4">
   <div class="graph-pnl text-center">
       <h5>HIGHEST PACKAGE OFFERED</h5>
-      <a id="myBtn" href="#animatedModal" class="lightbox" onclick="lightbox_open(this)">
+      <a id="myBtn" href="#animatedModal">
           <img src="images/Screenshot 1.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
   </div>
   </div>
-  <div class="light">
-    <div id="myModal" class="modal">
     
-   
-      <div class="modal-content">
-        <span class="close">&times;</span>
-       
-        <script>
-        am5.ready(function() {
-    
-    
-    var root = am5.Root.new("chartdiv");
-    
-  
-    root.setThemes([
-      am5themes_Animated.new(root)
-    ]);
-    
-    
-    var chart = root.container.children.push(
-      am5percent.PieChart.new(root, {
-        endAngle: 270
-      })
-    );
-    
-    
-    var series = chart.series.push(
-      am5percent.PieSeries.new(root, {
-        valueField: "value",
-        categoryField: "category",
-        endAngle: 270
-      })
-    );
-    
-    series.states.create("hidden", {
-      endAngle: -90
-    });
-    
-    
-    series.data.setAll([{
-      category: "Lithuania",
-      value: 501.9
-    }, {
-      category: "Czechia",
-      value: 301.9
-    }, {
-      category: "Ireland",
-      value: 201.1
-    }, {
-      category: "Germany",
-      value: 165.8
-    }, {
-      category: "Australia",
-      value: 139.9
-    }, {
-      category: "Austria",
-      value: 128.3
-    }, {
-      category: "UK",
-      value: 99
-    }]);
-    
-    series.appear(1000, 100);
-    
-    }); 
-        
-      </script>
-      
-        <div id="chartdiv"></div>
-        <div class="details">
-         
-          <table>
-            
-            <h3 style="text-align: center;"> <span>NISHIKA</span> </h3>
-    
-            <tr>
-              <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
-              <td width="4" align="left">&nbsp;</td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>STUDENT PLACED</strong></td>
-          </tr>
-    
-    
-          <tr>
-            <td align="left" bgcolor="#5DCCDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2016</td>
-            <td bgcolor="#F7F7F7">150</td>
-          </tr>
-            <tr>
-             <td align="left" bgcolor="#5D97DA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2017</td>
-        <td bgcolor="#F7F7F7">200 </td></tr>
-         <tr>
-             <td align="left" bgcolor="#5D6CDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2018</td>
-        <td bgcolor="#F7F7F7">280</td></tr>
-       <tr>
-             <td align="left" bgcolor="#7B5DDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2019</td>
-        <td bgcolor="#F7F7F7">350</td></tr>
-       <tr>
-             <td align="left" bgcolor="#975DDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2020</td>
-        <td bgcolor="#F7F7F7">390</td></tr>
-            <tr>
-             <td align="left" bgcolor="#BF5DDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2021</td>
-        <td bgcolor="#F7F7F7">413</td></tr>
-            <tr>
-             <td align="left" bgcolor="#DA5DCC">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2022</td>
-        <td bgcolor="#F7F7F7">500</td></tr>				  
-          
-        <tr>
-          <td colspan="4" align="left">
-            <p>&nbsp;</p>
-          </td>
-        </tr>
-    
-    <tr>
-    <td colspan="4" align="left" class="placement-text">
-      <p>Chanelit. Ratione, voluptates?
-         
-         
-    
-    </p></td>
-    </tr>
-            
-          </table>
-          
-        </div>
-      </div>
-    
-    </div>
-    
-    <script>
- 
-    var modal = document.getElementById("myModal");
-    
-  
-    var btn = document.getElementById("myBtn");
-    
-   
-    var span = document.getElementsByClassName("close")[0];
-    
- 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
- 
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>
-    
-    </div>
 
     <div class="g1 col-lg-2 col-sm-4">
       <div class="graph-pnl text-center">
