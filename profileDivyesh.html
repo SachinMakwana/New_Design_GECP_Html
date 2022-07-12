@@ -19,7 +19,7 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="css/faculty.css">
+    <link rel="stylesheet" href="css/facultyProfile.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -161,114 +161,95 @@
         </div>
     </nav>
 
-
     <!-- Faculty container starts -->
 
-    <div class="header-block row d-flex align-items-center mx-auto">
-        <img src="images/faculty/cse2.jpg">
-        <div class="text-block mx-auto d-flex align-items-center justify-content-center"> Faculty of Computer Science </div>
-    </div>
+    <div class="py-5 container">
+        <div class="nopadding  border">
 
-    <!-- Main DEsign -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12 ">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/cseHoD.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Dr. HARIKRISHNA JETHVA</h5>
-                        <span>Head of Department</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileHod.html" class="text-white">view</a>
-                    </div>
+            <div class="p-3 row align-items-center bg-dark text-white">
+                <div class="col-md-auto ">
+                    <img src="images/faculty/cseDivyesh.jpg" class="img-thumbnail ">
+                </div>
+                <div class="col">
+                    <h3>Mr. DIVYESHKUMAR BAVISA</h3>
+                    <p>ASSISTANT PROFESSOR</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csepinesh.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. PINESH DARJI</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profilePinesh.html" class="text-white">view</a>
+
+            <div class="p-4 bg-light"></div>
+
+            <div class="p-4">
+                <div class="d-inline" id="profile">
+                    <button class="faculty-tabs" onclick="openProfile('PersonalDetail')">PERSIONAL DETAIL</button>
+                    <button class="faculty-tabs" onclick="openProfile('educatinalQualification')">EDUCATIONAL
+                        QUALIFICATION</button>
+                    <button class="faculty-tabs" onclick="openProfile('publication')">PUBLICATION</button>
+                    <button class="faculty-tabs" onclick="openProfile('portfolios')">PORTFOLIOS</button>
+                </div>
+
+                <div id="PersonalDetail" class="faculty-profile mt-4">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PERSIONAL DETAIL</p>
+                        <table class="table table-borderless font-italic">
+                            <tr>
+                                <td>Name</td>
+                                <td>Mr. DIVYESHKUMAR BAVISA</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>
+                                    <a href="mailto:payalprajapati2808@gmail.com" class="nopadding">payalprajapati2808@gmail.com</a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/cseAdesh.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. ADESH PANCHAL</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileAdesh.html" class="text-white">view</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csesachin.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. SACHIN MAKWANA</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileSachin.html" class="text-white">view</a>
+
+                <div id="educatinalQualification" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">EDUCATIONAL QUALIFICATION</p>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th>Degree</th>
+                                <th>Year</th>
+                                <th>Specialization</th>
+                            </tr>
+                            <tr>
+                                <td>B. E.</td>
+                                <td>2001</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>M. E.</td>
+                                <td>2009</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csejay.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. JAY PATEL</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileJay.html" class="text-white">view</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csepayal.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Miss. PAYAL PRAJAPATI</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profilePayal.html" class="text-white">view</a>
+
+                <div id="publication" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PUBLICATION</p>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Title</th>
+                            </tr>
+                           
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/cseDivyesh.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. DIVYESHKUMAR BAVISA</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileDivyesh.html" class="text-white">view</a>
+
+                <div id="portfolios" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PORTFOLIOS</p>
+                        <table class="table table-borderless">
+                            
+                        </table>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -359,7 +340,16 @@
 
     </footer>
 
-
+    <script>
+        function openProfile(profile) {
+            var i;
+            var x = document.getElementsByClassName("faculty-profile");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(profile).style.display = "block";
+        }
+    </script>
 </body>
 
 </html>

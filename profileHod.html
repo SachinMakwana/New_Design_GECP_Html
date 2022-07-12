@@ -19,7 +19,7 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="css/faculty.css">
+    <link rel="stylesheet" href="css/facultyProfile.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -164,111 +164,170 @@
 
     <!-- Faculty container starts -->
 
-    <div class="header-block row d-flex align-items-center mx-auto">
-        <img src="images/faculty/cse2.jpg">
-        <div class="text-block mx-auto d-flex align-items-center justify-content-center"> Faculty of Computer Science </div>
-    </div>
+    <div class="py-5 container">
+        <div class="nopadding  border">
 
-    <!-- Main DEsign -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12 ">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/cseHoD.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Dr. HARIKRISHNA JETHVA</h5>
-                        <span>Head of Department</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileHod.html" class="text-white">view</a>
-                    </div>
+            <div class="p-3 row align-items-center bg-dark text-white">
+                <div class="col-md-auto ">
+                    <img src="images/faculty/cseHoD.jpg" class="img-thumbnail ">
+                </div>
+                <div class="col">
+                    <h3>Dr. HARIKRISHNA JETHVA</h3>
+                    <p>Head of Department</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csepinesh.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. PINESH DARJI</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profilePinesh.html" class="text-white">view</a>
+
+            <div class="p-4 bg-light"></div>
+
+            <div class="p-4">
+                <div class="d-inline" id="profile">
+                    <button class="faculty-tabs" onclick="openProfile('PersonalDetail')">PERSIONAL DETAIL</button>
+                    <button class="faculty-tabs" onclick="openProfile('educatinalQualification')">EDUCATIONAL
+                        QUALIFICATION</button>
+                    <button class="faculty-tabs" onclick="openProfile('publication')">PUBLICATION</button>
+                    <button class="faculty-tabs" onclick="openProfile('portfolios')">PORTFOLIOS</button>
+                </div>
+
+                <div id="PersonalDetail" class="faculty-profile mt-4">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PERSIONAL DETAIL</p>
+                        <table class="table table-borderless font-italic">
+                            <tr>
+                                <td>Name</td>
+                                <td>JETHVA HARIKRISHNA B</td>
+                            </tr>
+                            <tr>
+                                <td>Date of birth</td>
+                                <td>30th July 1979</td>
+                            </tr>
+                            <tr>
+                                <td>Marital status</td>
+                                <td>Married</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>4 Shrinagar society, Patan(N.G.)</td>
+                            </tr>
+                            <tr>
+                                <td>Contact No</td>
+                                <td>02766297736</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td><a href="mailTo:hbjethva@gmail.com" class="nopadding">hbjethva@gmail.com</a></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/cseAdesh.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. ADESH PANCHAL</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileAdesh.html" class="text-white">view</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csesachin.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. SACHIN MAKWANA</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileSachin.html" class="text-white">view</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csejay.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. JAY PATEL</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileJay.html" class="text-white">view</a>
+
+                <div id="educatinalQualification" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">EDUCATIONAL QUALIFICATION</p>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th>Degree</th>
+                                <th>Year</th>
+                                <th>Specialization</th>
+                            </tr>
+                            <tr>
+                                <td>B. E.</td>
+                                <td>2001</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>M. E.</td>
+                                <td>2009</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>Ph. D.</td>
+                                <td>2015</td>
+                                <td>“Performance Improvement of Backpropagation Algorithm in Artificial Neural Network”
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/csepayal.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Miss. PAYAL PRAJAPATI</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profilePayal.html" class="text-white">view</a>
+
+                <div id="publication" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PUBLICATION</p>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Title</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Paper Presented on “High Performance Computing” at National Conference at IMS
+                                    Ahmadabad on March-2005.</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>My paper entitled “Improving Backpropagation Learning Algorithm Using Modified
+                                    Gradient” selected in IEEE international conference ICACCT-2011, ISBN:
+                                    81-87885-03-3.</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>My paper entitled “Improving Backpropagation Learning Algorithm Using Adaptive
+                                    Gradient” selected in published in international journal of information and
+                                    computing technology. ISSN: 0976 – 5999 Volume 2 Issue 1Nov 2011.</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>My paper entitled “Neural Networks” published in international journal IJ-CA-ETS Apr-Sept- 2011.</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Our (Bhavesh Kataria & Prof. H.B.Jethva) paper entitled “ISSUES IN GRAIN ANALYSIS” published in national conference on “Advanced trends in Applied Sciences and Technology” ISSN: 978-81-923514-0-7 27 Jan 2012.</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Our (Bhavesh Kataria & Prof. H.B.Jethva) paper entitled “Characterization and Identification of Rice Grains Through Digital Image Analysis” published in international conference on ELEVATING LEARNING ON 3 Dec 2011 at Prabuddhan, Ahmedabad.</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>Our (Arvind Meniya & Prof. H.B.Jethva) paper entitled “Single-Sign-On(SSO) across open cloud computing federation” published in IJERA (International Journal of Engineering Research and Application) www.ijera.com Vol. 2, Issue 1,Jan-Feb 2012, pp.891-895 ISSN: 2248-9622</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>Our (Arvind Meniya & Prof. H.B.Jethva) paper entitled “Next Generation Mobile Application in Cloud Computing using RESTful Web Service” published in IJCTA (International Journal of Computer Technology & Application) www.ijcta.com May-June 2012 Vol 3 (3), 949-952 ISSN:2229-6093</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>Our (Shital Solanki & Prof. H.B.Jethva) paper “A review on Back propagation algorithm for feed forward network” published in Volume : 2 | Issue : 1 | Jan 2013 • ISSN No 2277 – 8160 International index journalglobal research analysis http://theglobaljournals.com</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>Our (Advait bhatt & Prof. H.B.Jethva) paper “Comparative Analysis of Attribute Selection Measures Used for attribute selection in Decision Tree Induction” ICRCC 2012 (SKP Engineering College) ISBN No.- 978-1-4673-2758-9</td>
+                            </tr>
+                            <tr>
+                                <td>11.</td>
+                                <td>Our (Advait bhatt & Prof. H.B.Jethva) paper “A Review on Types of Learning Techniques and Importance of Learning Rate in Neural Networks” COCSS-2013 SVIT, VASAD ISBN No: 978-81-923462-0-5</td>
+                            </tr>
+                            <tr>
+                                <td>12.</td>
+                                <td>Our (Advait bhatt & Prof. H.B.Jethva) paper “Improvement in the Speed Of Training a Neural Network using Sampled Training” IJAIEM ISSN: 2319-4847 Vol-2, Issue-4,April 2013 www.ijaiem.org</td>
+                            </tr>
+                            <tr>
+                                <td>13.</td>
+                                <td>	Our (Bhadresh Prajapati & Prof. H. B. Jethva) paper “Privacy Preserving Distributed k-Means Clustering” COCSS-2013 SVIT, VASAD ISBN No: 978-81-923462-0-5</td>
+                            </tr>
+                            
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="row ourTeam-box text-center shadow">
-                    <div class="col-md-12 section1">
-                        <img src="images/faculty/cseDivyesh.jpg">
-                    </div>
-                    <div class="col-md-12 section2 pb-3">
-                        <h5>Mr. DIVYESHKUMAR BAVISA</h5>
-                        <span>Assistant Professor</span>
-                    </div>
-                    <div class="col-md-12 section3">
-                        <a href="profileDivyesh.html" class="text-white">view</a>
+
+                <div id="portfolios" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PORTFOLIOS</p>
+                        <table class="faculty-tab-header">
+
+                        </table>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -359,7 +418,16 @@
 
     </footer>
 
-
+    <script>
+        function openProfile(profile) {
+            var i;
+            var x = document.getElementsByClassName("faculty-profile");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(profile).style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
