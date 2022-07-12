@@ -1,7 +1,7 @@
 am5.ready(function () {
 
 
-  var root = am5.Root.new("chartdiv");
+  var root = am5.Root.new("chartdiv1");
 
 
   root.setThemes([
@@ -77,9 +77,6 @@ am5.ready(function () {
   }, {
     country: "2017",
     value: 200
-  }, {
-    country: "2018",
-    value: 280
   }, {
     country: "2019",
     value: 350
