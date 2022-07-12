@@ -463,47 +463,9 @@
   <div id="popup1" class="popup">
     <div class="popup-text">
       <div id="chartdiv1">
-        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+        <div id="chartContainer1" style="width: 100%; height: 300px;display: inline-block;"></div> 
       </div>
-
-     
-      <script>
-        window.onload = function () {
-
-          CanvasJS.addColorSet("greenShades",
-                [//colorSet Array
-
-                "#C71585",
-                "#66CDAA",
-                "#663399",
-                "#2E8B57",
-                "#FF6347"                
-                ]);
-
-          var chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            // title: {
-            //   text: "Desktop"
-            // },
-            colorSet: "greenShades",
-            data: [{
-              type: "pie",
-              startAngle: 240,
-              yValueFormatString: "##0.00\"%\"",
-              indexLabel: "{label} {y}",
-              dataPoints: [
-                { y: 35.5, label: "CSE" },
-                { y: 29.87, label: "EE" },
-                { y: 18.65, label: "ME" },
-                { y: 8.0, label: "EC" },
-                { y: 7.98, label: "CIVIL" }
-              ]
-            }]
-          });
-          chart.render();
-
-        }
-      </script>
       <div class="details">
 
         <table>
@@ -587,11 +549,183 @@
 
 
 
-  
+
   <div id="popup2" class="popup">
-    <div class="popup-text">This is my popup 2</div>
+    <div class="popup-text">
+      <!-- This is my popup 2 -->
+      <div id="chartdiv2">
+        <!-- <div id="chartContainer2" style="height: 300px; width: 100%;"></div> -->
+        <div id="chartContainer2" style="width: 100%; height: 300px;display: inline-block;"></div> 
+      </div>
+      <div class="details">
+
+        <table>
+
+          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>STUDENT PLACED 2016-2022</span> </h3>
+
+          <tr>
+            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
+            <td width="4" align="left">&nbsp;</td>
+            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
+            <td style="width:80%;background-color:#E6F7FF"><strong>STUDENT PLACED</strong></td>
+          </tr>
+
+
+          <tr>
+            <td align="left" bgcolor="#5DCCDA">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2016</td>
+            <td bgcolor="#F7F7F7">150</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#5D97DA">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2017</td>
+            <td bgcolor="#F7F7F7">200 </td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#5D6CDA">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2018</td>
+            <td bgcolor="#F7F7F7">280</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#7B5DDA">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2019</td>
+            <td bgcolor="#F7F7F7">350</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#975DDA">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2020</td>
+            <td bgcolor="#F7F7F7">390</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#BF5DDA">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2021</td>
+            <td bgcolor="#F7F7F7">413</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#DA5DCC">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2022</td>
+            <td bgcolor="#F7F7F7">500</td>
+          </tr>
+
+          <tr>
+            <td colspan="4" align="left">
+              <p>&nbsp;</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4" align="left" class="placement-text">
+              <p>Ratione, voluptates?
+
+
+
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+    </div>
     <span class="popup-btn-close">&times;</span>
   </div>
+
+<script>
+
+    var chart = new CanvasJS.Chart("chartContainer2", {
+  theme: "light2",
+  animationEnabled: true,
+  title: {
+    text: "Shares"
+  },
+  subtitles: [{
+    text: "United Kingdom, 2016",
+    fontSize: 16
+  }],
+  data: [{
+    type: "pie",
+    indexLabelFontSize: 18,
+    radius: 80,
+    indexLabel: "{label} - {y}",
+    yValueFormatString: "###0.0'%'",
+    click: explodePie,
+    dataPoints: [{
+        y: 42,
+        label: "Gas"
+      },
+      {
+        y: 21,
+        label: "Nuclear"
+      },
+      {
+        y: 24.5,
+        label: "Renewable"
+      },
+      {
+        y: 9,
+        label: "Coal"
+      },
+      {
+        y: 3.1,
+        label: "Other Fuels"
+      }
+    ]
+  }]
+});
+chart.render();
+
+function explodePie(e) {
+  for (var i = 0; i < e.dataSeries.dataPoints.length; i++) {
+    if (i !== e.dataPointIndex)
+      e.dataSeries.dataPoints[i].exploded = false;
+  }
+}
+chart.render();
+
+
+window.onload = function () {
+  CanvasJS.addColorSet("greenShades",
+        [//colorSet Array
+
+        "#C71585",
+        "#66CDAA",
+        "#663399",
+        "#2E8B57",
+        "#FF6347"                
+        ]);
+var chart = new CanvasJS.Chart("chartContainer1", {
+  colorSet: "greenShades",
+  animationEnabled: true,
+  title: {
+    text: "Pie Chart",
+  },
+  data: [{
+    type: "pie",
+    startAngle: 240,
+    showInLegend: true,
+    dataPoints: [
+        { y: 35.5, label: "CSE" },
+        { y: 29.87, label: "EE" },
+        { y: 18.65, label: "ME" },
+        { y: 8.0, label: "EC" },
+        { y: 7.98, label: "CIVIL" }
+      ]
+  }, ]
+});
+chart.render();
+
+}
+</script>
+
+
+
 
   <script>
     function popupOpenClose(popup) {

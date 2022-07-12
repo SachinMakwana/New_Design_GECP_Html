@@ -101,3 +101,86 @@ am5.ready(function () {
   chart.appear(1000, 100);
 
 });
+
+
+
+
+
+
+
+var chart = new CanvasJS.Chart("chartContainer2", {
+  theme: "light2",
+  animationEnabled: true,
+  title: {
+    text: "Shares"
+  },
+  subtitles: [{
+    text: "United Kingdom, 2016",
+    fontSize: 16
+  }],
+  data: [{
+    type: "pie",
+    indexLabelFontSize: 18,
+    radius: 80,
+    indexLabel: "{label} - {y}",
+    yValueFormatString: "###0.0'%'",
+    click: explodePie,
+    dataPoints: [
+      { y: 42, label: "Gas" },
+      { y: 21, label: "Nuclear" },
+      { y: 24.5, label: "Renewable" },
+      { y: 9, label: "Coal" },
+      { y: 3.1, label: "Other Fuels" }
+    ]
+  }]
+});
+chart.render();
+
+function explodePie(e) {
+  for (var i = 0; i < e.dataSeries.dataPoints.length; i++) {
+    if (i !== e.dataPointIndex)
+      e.dataSeries.dataPoints[i].exploded = false;
+  }
+}
+
+
+
+
+     
+<script>
+window.onload = function () {
+
+  CanvasJS.addColorSet("greenShades",
+        [//colorSet Array
+
+        "#C71585",
+        "#66CDAA",
+        "#663399",
+        "#2E8B57",
+        "#FF6347"                
+        ]);
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    // title: {
+    //   text: "Desktop"
+    // },
+    colorSet: "greenShades",
+    data: [{
+      type: "pie",
+      startAngle: 240,
+      yValueFormatString: "##0.00\"%\"",
+      indexLabel: "{label} {y}",
+      dataPoints: [
+        { y: 35.5, label: "CSE" },
+        { y: 29.87, label: "EE" },
+        { y: 18.65, label: "ME" },
+        { y: 8.0, label: "EC" },
+        { y: 7.98, label: "CIVIL" }
+      ]
+    }]
+  });
+  chart.render();
+
+}
+</script>
