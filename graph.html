@@ -107,47 +107,6 @@
     <img src="images\placement.jpg">
     <div class="centered white">PLACEMENTS</div>
   </div>
-  <!-- 
-    <div class="main my_page ph-new">
-        <div class="top-requter18  col-sm-12">
-            <h3>
-                Year on Year Offers</h3>
-            <img class="img-fluid w-100 imggg award1 lozad" style="width: 1230px; height: 701px;"
-                data-src="/images/campusplacement.jpg"
-                src="/images/campusplacement.jpg"
-                data-loaded="true">
-        </div>
-   </div> -->
-  <!-- <div class="main my_page ph-new">
-        <div class="top-requter18  col-sm-12 branch">
-            <h4>
-                GEC Patan Branchwise Placement</h4>
-        </div>
-    </div> -->
-
-  <!-- <div class="years">
-        <li> -->
-  <!-- <a href="#" onclick="year22()">Placement Record of year 2022</a> -->
-  <!-- <button onclick="year22()" class="button">Placement Record of year 2022</button> -->
-  <!-- <input type = "button" name="data" onclick="year22();windows.location.reload(true)" value="2022"> -->
-  <!-- </li>
-        <li> -->
-  <!-- <a href="#"  onclick="year21()">Placement Record of year 2021</a> -->
-  <!-- <button onclick="month()" class="button">Placement Record of year 2021</button> -->
-  <!-- <input type = "button" name="data" onclick="month();windows.location.reload(true)" value="2021"> -->
-  <!-- </li>
-        <li> -->
-  <!-- <a href="#"  onclick="year20()">Placement Record of year 2020</a> -->
-  <!-- <button onclick="year20()" class="button">Placement Record of year 2020</button>
-        </li>
-        <li> -->
-  <!-- <a href="#"  onclick="year19()">Placement Record of year 2019</a> -->
-  <!-- <button onclick="year21()" class="button">Placement Record of year 2019</button>
-        </li>
-        <script src="/js/graph.js"></script>
-        <div id="chartdiv"></div>
-
-    </div> -->
 
   <div class="main my_page ph-new">
     <div class="top-requter18  col-sm-12 branch">
@@ -161,7 +120,7 @@
       <div class="graph-pnl text-center">
         <h5>STUDENT PLACED</h5>
         <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup">
-          <img src="images/Screenshot 1.png" width="289" height="241">
+          <img src="images/bargraph1.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
       </div>
@@ -571,48 +530,36 @@
 
 
           <tr>
-            <td align="left" bgcolor="#5DCCDA">&nbsp;</td>
+            <td align="left" bgcolor="#C71585">&nbsp;</td>
             <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2016</td>
-            <td bgcolor="#F7F7F7">150</td>
+            <td align="left" bgcolor="#F7F7F7">COMPUTER SCIENCE</td>
+            <td bgcolor="#F7F7F7">35.5%</td>
           </tr>
           <tr>
-            <td align="left" bgcolor="#5D97DA">&nbsp;</td>
+            <td align="left" bgcolor="#66CDAA">&nbsp;</td>
             <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2017</td>
-            <td bgcolor="#F7F7F7">200 </td>
+            <td align="left" bgcolor="#F7F7F7">ELECTRICAL</td>
+            <td bgcolor="#F7F7F7">29.87%</td>
           </tr>
           <tr>
-            <td align="left" bgcolor="#5D6CDA">&nbsp;</td>
+            <td align="left" bgcolor="#663399">&nbsp;</td>
             <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2018</td>
-            <td bgcolor="#F7F7F7">280</td>
+            <td align="left" bgcolor="#F7F7F7">MECHANICAL</td>
+            <td bgcolor="#F7F7F7">18.65%</td>
           </tr>
           <tr>
-            <td align="left" bgcolor="#7B5DDA">&nbsp;</td>
+            <td align="left" bgcolor="#2E8B57">&nbsp;</td>
             <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2019</td>
-            <td bgcolor="#F7F7F7">350</td>
+            <td align="left" bgcolor="#F7F7F7">ELECTRONICS AND COMMUNICATION</td>
+            <td bgcolor="#F7F7F7">8.00%</td>
           </tr>
           <tr>
-            <td align="left" bgcolor="#975DDA">&nbsp;</td>
+            <td align="left" bgcolor="#FF6347">&nbsp;</td>
             <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2020</td>
-            <td bgcolor="#F7F7F7">390</td>
+            <td align="left" bgcolor="#F7F7F7">CIVIL</td>
+            <td bgcolor="#F7F7F7">7.98%</td>
           </tr>
-          <tr>
-            <td align="left" bgcolor="#BF5DDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2021</td>
-            <td bgcolor="#F7F7F7">413</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#DA5DCC">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2022</td>
-            <td bgcolor="#F7F7F7">500</td>
-          </tr>
-
+          
           <tr>
             <td colspan="4" align="left">
               <p>&nbsp;</p>
@@ -745,12 +692,14 @@ window.onload = function () {
         colorSet: "greenShades",
         animationEnabled: true,
         title: {
-          text: "Pie Chart",
+          text: "BRANCHWISE PLACEMENT",
         },
         data: [{
           type: "pie",
           startAngle: 240,
           showInLegend: true,
+          indexLabel: "{label} {y}",
+          yValueFormatString: "##0.00'%'",
           dataPoints: [
             { y: 35.5, label: "CSE" },
             { y: 29.87, label: "EE" },
@@ -769,55 +718,46 @@ window.onload = function () {
 
 
 //popup 2
-    var chart = new CanvasJS.Chart("chartContainer2", {
-      theme: "light2",
-      animationEnabled: true,
-      title: {
-        text: "Shares"
-      },
-      subtitles: [{
-        text: "United Kingdom, 2016",
-        fontSize: 16
-      }],
-      data: [{
-        type: "pie",
-        indexLabelFontSize: 18,
-        radius: 80,
-        indexLabel: "{label} - {y}",
-        yValueFormatString: "###0.0'%'",
-        click: explodePie,
-        dataPoints: [{
-          y: 42,
-          label: "Gas"
-        },
-        {
-          y: 21,
-          label: "Nuclear"
-        },
-        {
-          y: 24.5,
-          label: "Renewable"
-        },
-        {
-          y: 9,
-          label: "Coal"
-        },
-        {
-          y: 3.1,
-          label: "Other Fuels"
-        }
-        ]
-      }]
-    });
-    chart.render();
+CanvasJS.addColorSet("greenShades",
+        [//colorSet Array
 
-    function explodePie(e) {
-      for (var i = 0; i < e.dataSeries.dataPoints.length; i++) {
-        if (i !== e.dataPointIndex)
-          e.dataSeries.dataPoints[i].exploded = false;
-      }
-    }
-    chart.render();
+          "blue",
+          "pink",
+          "yellow",
+          "green",
+          "#D2D80D",
+          "#0D65AB",
+          "#D8880D"
+        ]);
+      var chart = new CanvasJS.Chart("chartContainer2", {
+        animationEnabled: true,
+        colorSet: "greenShades",
+        theme: "light1", // "light1", "light2", "dark1", "dark2"
+        title: {
+          text: "HIGHEST PACKAGE OFFERED"
+        },
+        axisY: {
+          title: "Highest Package"
+        },
+        axisX: {
+          title: "BATCH"
+        },
+        width: 450,
+        data: [{
+          type: "column",
+          dataPoints: [
+            { y: 150, label: "2016" },
+            { y: 200, label: "2017" },
+            { y: 280, label: "2018" },
+            { y: 350, label: "2019" },
+            { y: 390, label: "2020" },
+            { y: 413, label: "2021" },
+            { y: 500, label: "2022" }
+          ]
+        }]
+      });
+      chart.render();
+
 
       // popup 3
 
