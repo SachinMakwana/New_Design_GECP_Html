@@ -80,6 +80,11 @@
         height: 500px;
         float: left;
       }
+      #chartdiv2 {
+        width: 50%;
+        height: 500px;
+        float: left;
+      }
       
   
       .details{
@@ -254,6 +259,8 @@ p {
   width: 100%;
   left: 0;
   top: 0;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 .popup>div {
