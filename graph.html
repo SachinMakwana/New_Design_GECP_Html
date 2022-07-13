@@ -376,7 +376,7 @@
       <div class="graph-pnl text-center">
         <h5>HIGHEST PACKAGE OFFERED</h5>
         <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup2">
-          <img src="images/Screenshot 1.png" width="289" height="241">
+          <img src="images/bargraph2.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
       </div>
@@ -519,7 +519,7 @@
 
         <table>
 
-          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>STUDENT PLACED 2016-2022</span> </h3>
+          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>BRANCHWISE PLACEMENT</span> </h3>
 
           <tr>
             <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
@@ -559,7 +559,7 @@
             <td align="left" bgcolor="#F7F7F7">CIVIL</td>
             <td bgcolor="#F7F7F7">7.98%</td>
           </tr>
-          
+
           <tr>
             <td colspan="4" align="left">
               <p>&nbsp;</p>
@@ -598,13 +598,13 @@
 
         <table>
 
-          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>STUDENT PLACED 2016-2022</span> </h3>
+          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>HIGHEST PACKAGE</span> </h3>
 
           <tr>
             <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
             <td width="4" align="left">&nbsp;</td>
             <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>STUDENT PLACED</strong></td>
+            <td style="width:80%;background-color:#E6F7FF"><strong>HIGHEST PACKAGE</strong></td>
           </tr>
 
 
@@ -612,43 +612,43 @@
             <td align="left" bgcolor="#5DCCDA">&nbsp;</td>
             <td align="left">&nbsp;</td>
             <td align="left" bgcolor="#F7F7F7">2016</td>
-            <td bgcolor="#F7F7F7">150</td>
+            <td bgcolor="#F7F7F7">5 LPA</td>
           </tr>
           <tr>
             <td align="left" bgcolor="#5D97DA">&nbsp;</td>
             <td align="left">&nbsp;</td>
             <td align="left" bgcolor="#F7F7F7">2017</td>
-            <td bgcolor="#F7F7F7">200 </td>
+            <td bgcolor="#F7F7F7">9 LPA</td>
           </tr>
           <tr>
             <td align="left" bgcolor="#5D6CDA">&nbsp;</td>
             <td align="left">&nbsp;</td>
             <td align="left" bgcolor="#F7F7F7">2018</td>
-            <td bgcolor="#F7F7F7">280</td>
+            <td bgcolor="#F7F7F7">13 LPA</td>
           </tr>
           <tr>
             <td align="left" bgcolor="#7B5DDA">&nbsp;</td>
             <td align="left">&nbsp;</td>
             <td align="left" bgcolor="#F7F7F7">2019</td>
-            <td bgcolor="#F7F7F7">350</td>
+            <td bgcolor="#F7F7F7">18 LPA</td>
           </tr>
           <tr>
             <td align="left" bgcolor="#975DDA">&nbsp;</td>
             <td align="left">&nbsp;</td>
             <td align="left" bgcolor="#F7F7F7">2020</td>
-            <td bgcolor="#F7F7F7">390</td>
+            <td bgcolor="#F7F7F7">22 LPA</td>
           </tr>
           <tr>
             <td align="left" bgcolor="#BF5DDA">&nbsp;</td>
             <td align="left">&nbsp;</td>
             <td align="left" bgcolor="#F7F7F7">2021</td>
-            <td bgcolor="#F7F7F7">413</td>
+            <td bgcolor="#F7F7F7">27 LPA</td>
           </tr>
           <tr>
             <td align="left" bgcolor="#DA5DCC">&nbsp;</td>
             <td align="left">&nbsp;</td>
             <td align="left" bgcolor="#F7F7F7">2022</td>
-            <td bgcolor="#F7F7F7">500</td>
+            <td bgcolor="#F7F7F7">30 LPA</td>
           </tr>
 
           <tr>
@@ -676,9 +676,10 @@
 
   <script>
 
-//popup 1
+    //popup 1
 
-window.onload = function () {
+    window.onload = function () {
+
       CanvasJS.addColorSet("greenShades",
         [//colorSet Array
 
@@ -688,18 +689,18 @@ window.onload = function () {
           "#2E8B57",
           "#FF6347"
         ]);
+
       var chart = new CanvasJS.Chart("chartContainer1", {
         colorSet: "greenShades",
         animationEnabled: true,
         title: {
-          text: "BRANCHWISE PLACEMENT",
+          text: "BRANCHWISE PLACEMENT"
         },
         data: [{
           type: "pie",
           startAngle: 240,
-          showInLegend: true,
-          indexLabel: "{label} {y}",
           yValueFormatString: "##0.00'%'",
+          indexLabel: "{label} {y}",
           dataPoints: [
             { y: 35.5, label: "CSE" },
             { y: 29.87, label: "EE" },
@@ -707,7 +708,7 @@ window.onload = function () {
             { y: 8.0, label: "EC" },
             { y: 7.98, label: "CIVIL" }
           ]
-        },]
+        }]
       });
       chart.render();
 
@@ -717,94 +718,94 @@ window.onload = function () {
 
 
 
-//popup 2
-CanvasJS.addColorSet("greenShades",
-        [//colorSet Array
+    //popup 2
+    CanvasJS.addColorSet("greenShades",
+      [//colorSet Array
 
-          "blue",
-          "pink",
-          "yellow",
-          "green",
-          "#D2D80D",
-          "#0D65AB",
-          "#D8880D"
-        ]);
-      var chart = new CanvasJS.Chart("chartContainer2", {
-        animationEnabled: true,
-        colorSet: "greenShades",
-        theme: "light1", // "light1", "light2", "dark1", "dark2"
-        title: {
-          text: "HIGHEST PACKAGE OFFERED"
-        },
-        axisY: {
-          title: "Highest Package"
-        },
-        axisX: {
-          title: "BATCH"
-        },
-        width: 450,
-        data: [{
-          type: "column",
-          dataPoints: [
-            { y: 150, label: "2016" },
-            { y: 200, label: "2017" },
-            { y: 280, label: "2018" },
-            { y: 350, label: "2019" },
-            { y: 390, label: "2020" },
-            { y: 413, label: "2021" },
-            { y: 500, label: "2022" }
-          ]
-        }]
-      });
-      chart.render();
+        "#5DCCDA",
+        "#5D97DA",
+        "#5D6CDA",
+        "#7B5DDA",
+        "#975DDA",
+        "#BF5DDA",
+        "#DA5DCC"
+      ]);
+    var chart = new CanvasJS.Chart("chartContainer2", {
+      animationEnabled: true,
+      colorSet: "greenShades",
+      theme: "light1", // "light1", "light2", "dark1", "dark2"
+      title: {
+        text: "HIGHEST PACKAGE OFFERED"
+      },
+      axisY: {
+        title: "Highest Package"
+      },
+      axisX: {
+        title: "BATCH"
+      },
+      width: 450,
+      data: [{
+        type: "column",
+        dataPoints: [
+          { y: 5, label: "2016" },
+          { y: 9, label: "2017" },
+          { y: 13, label: "2018" },
+          { y: 18, label: "2019" },
+          { y: 22, label: "2020" },
+          { y: 27, label: "2021" },
+          { y: 30, label: "2022" }
+        ]
+      }]
+    });
+    chart.render();
 
 
-      // popup 3
+    // popup 3
 
-      CanvasJS.addColorSet("greenShades",
-        [//colorSet Array
+    CanvasJS.addColorSet("greenShades",
+      [//colorSet Array
 
-          "#D80D95",
-          "#0DCFD8",
-          "#9E0DD8",
-          "#0DD87C",
-          "#D2D80D",
-          "#0D65AB",
-          "#D8880D"
-        ]);
-      var chart = new CanvasJS.Chart("chartContainer3", {
-        animationEnabled: true,
-        colorSet: "greenShades",
-        theme: "light1", // "light1", "light2", "dark1", "dark2"
-        title: {
-          text: "STUDENTS PLACED"
-        },
-        axisY: {
-          title: "No of Students"
-        },
-        axisX: {
-          title: "YEAR"
-        },
-        width: 450,
-        data: [{
-          type: "column",
-          showInLegend: true,
-          legendMarkerColor: "grey",
-          // legendText: "MMbbl = one million barrels",
-          dataPoints: [
-            { y: 150, label: "2016" },
-            { y: 200, label: "2017" },
-            { y: 280, label: "2018" },
-            { y: 350, label: "2019" },
-            { y: 390, label: "2020" },
-            { y: 413, label: "2021" },
-            { y: 500, label: "2022" }
-          ]
-        }]
-      });
-      chart.render();
+        "#D80D95",
+        "#0DCFD8",
+        "#9E0DD8",
+        "#0DD87C",
+        "#D2D80D",
+        "#0D65AB",
+        "#D8880D"
+      ]);
+    var chart = new CanvasJS.Chart("chartContainer3", {
+      animationEnabled: true,
+      colorSet: "greenShades",
+      theme: "light1", // "light1", "light2", "dark1", "dark2"
+      title: {
+        text: "STUDENTS PLACED"
+      },
+      axisY: {
+        title: "No of Students"
+      },
+      axisX: {
+        title: "YEAR"
+      },
+      width: 450,
+      data: [{
+        type: "column",
+        showInLegend: true,
+        legendMarkerColor: "grey",
+        // legendText: "MMbbl = one million barrels",
+        dataPoints: [
+          { y: 150, label: "2016" },
+          { y: 200, label: "2017" },
+          { y: 280, label: "2018" },
+          { y: 350, label: "2019" },
+          { y: 390, label: "2020" },
+          { y: 413, label: "2021" },
+          { y: 500, label: "2022" }
+        ]
+      }]
+    });
+    chart.render();
 
-    
+
   </script>
 
 
