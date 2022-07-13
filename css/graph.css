@@ -85,6 +85,11 @@
         height: 500px;
         float: left;
       }
+      #chartdiv3 {
+        width: 50%;
+        height: 500px;
+        float: left;
+      }
       
   
       .details{
@@ -307,3 +312,4 @@ p {
   background-color: #ac5918;
   color: #fff;
 }
+
