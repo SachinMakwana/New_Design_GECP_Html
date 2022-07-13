@@ -161,19 +161,18 @@
         </div>
     </nav>
 
-
     <!-- Faculty container starts -->
 
     <div class="py-5 container">
         <div class="nopadding  border">
 
             <div class="p-3 row align-items-center bg-dark text-white">
-                <div class=" col-md-auto ">
-                    <img src="images/faculty/cseHoD.jpg" class="img-thumbnail ">
+                <div class="col-md-auto ">
+                    <img src="images/faculty/csesachin.jpg" class="img-thumbnail ">
                 </div>
                 <div class="col">
-                    <h3>Dr. HARIKRISHNA JETHVA</h3>
-                    <p>Head of Department</p>
+                    <h3>Mr. SACHIN MAKWANA</h3>
+                    <p>ASSISTANT PROFESSOR</p>
                 </div>
             </div>
 
@@ -181,55 +180,76 @@
 
             <div class="p-4">
                 <div class="d-inline" id="profile">
-                    <button class="faculty-tabs" onclick="openProfile('PersonalDetail')">Personal Detail</button>
+                    <button class="faculty-tabs" onclick="openProfile('PersonalDetail')">PERSIONAL DETAIL</button>
                     <button class="faculty-tabs" onclick="openProfile('educatinalQualification')">EDUCATIONAL
                         QUALIFICATION</button>
-                    <button class="faculty-tabs" onclick="openProfile('experience')">PROFESIONAL EXPERIENCE</button>
-
+                    <button class="faculty-tabs" onclick="openProfile('publication')">PUBLICATION</button>
+                    <button class="faculty-tabs" onclick="openProfile('portfolios')">PORTFOLIOS</button>
                 </div>
 
-                <div id="PersonalDetails" class="faculty-profile">
-                    <p class="lead fw-normal mb-1">Personal Detail</p>
-                    <div class="p-4" style="background-color: #f8f9fa;">
-
-                        <table class="table table-borderless font-italic mb-1">
+                <div id="PersonalDetail" class="faculty-profile mt-4">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PERSIONAL DETAIL</p>
+                        <table class="table table-borderless font-italic">
                             <tr>
                                 <td>Name</td>
-                                <td>JETHVA HARIKRISHNA B</td>
-                            </tr>
-                            <tr>
-                                <td>Date of birth</td>
-                                <td>30th July 1979</td>
-                            </tr>
-                            <tr>
-                                <td>Marital status</td>
-                                <td>Married</td>
-                            </tr>
-                            <tr>
-                                <td>Address</td>
-                                <td>4 Shrinagar society, Patan(N.G.)</td>
-                            </tr>
-                            <tr>
-                                <td>Contact No</td>
-                                <td>02766297736</td>
+                                <td>Mr. SACHIN MAKWANA</td>
                             </tr>
                             <tr>
                                 <td>E-mail</td>
-                                <td>hbjethva@gmail.com</td>
+                                <td>
+                                    <a href="mailto:schnmakwana11@gmail.com" class="nopadding">schnmakwana11@gmail.com</a>
+                                </td>
                             </tr>
                         </table>
                     </div>
                 </div>
 
-                <div id="educatinalQualification" class="faculty-profile" style="display: none;">
-                    educatinalQualification
+                <div id="educatinalQualification" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">EDUCATIONAL QUALIFICATION</p>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th>Degree</th>
+                                <th>Year</th>
+                                <th>Specialization</th>
+                            </tr>
+                            <tr>
+                                <td>B. E.</td>
+                                <td>2001</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                            <tr>
+                                <td>M. E.</td>
+                                <td>2009</td>
+                                <td>Computer Engineering</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
-                <div id="experience" class="faculty-profile" style="display: none;">
-                    experience
+                <div id="publication" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PUBLICATION</p>
+                        <table class="table table-borderless">
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Title</th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
+
+                <div id="portfolios" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">PORTFOLIOS</p>
+                        <table class="table table-borderless">
+                            
+                        </table>
+                    </div>
+                </div>
+
             </div>
-
         </div>
     </div>
 
@@ -320,16 +340,13 @@
     </footer>
 
     <script>
-
-        function openProfile(subjectProfile) {
+        function openProfile(profile) {
             var i;
             var x = document.getElementsByClassName("faculty-profile");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            document.getElementById(subjectProfile).style.display = "block";
-
-            
+            document.getElementById(profile).style.display = "block";
         }
     </script>
 </body>
