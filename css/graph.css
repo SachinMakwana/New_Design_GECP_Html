@@ -90,7 +90,11 @@
         height: 500px;
         float: left;
       }
-      
+      #chartdiv4 {
+        width: 50%;
+        height: 500px;
+        float: left;
+      }
   
       .details{
         width: 50%;

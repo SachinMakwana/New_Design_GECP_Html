@@ -202,7 +202,7 @@
       </div>
     </div>
 
-     <!-- block 4 -->
+    <!-- block 4 -->
 
     <div class="g1 col-lg-2 col-sm-4">
       <div class="graph-pnl text-center">
@@ -214,19 +214,19 @@
       </div>
     </div>
 
-     <!-- block 5 -->
+    <!-- block 5 -->
 
     <div class="g1 col-lg-2 col-sm-4">
       <div class="graph-pnl text-center">
-        <h5>CAMPUS PLACEMENTS DURING COVID-19 TIMES </h5>
-        <a id="myBtn" href="#animatedModal" class="lightbox" onclick="lightbox_open(this)">
-          <img src="images/Screenshot 1.png" width="289" height="241">
+        <h5>PLACEMENT RECORD </h5>
+        <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup4">
+          <img src="images/bargraph4.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
       </div>
     </div>
 
-     <!-- block 6 -->
+    <!-- block 6 -->
 
     <div class="g1 col-lg-2 col-sm-4">
       <div class="graph-pnl text-center">
@@ -241,7 +241,7 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  
+
   <!-- FOR BLOCK 1 -->
 
   <div id="popup" class="popup">
@@ -391,16 +391,16 @@
 
           <tr>
             <td colspan="4" align="left" class="placement-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Ratione, voluptates?</p>
             </td>
           </tr>
         </table>
-       </div>
+      </div>
     </div>
     <span class="popup-btn-close">&times;</span>
   </div>
-  
+
   <!-- FOR BLOCK 3 -->
 
   <div id="popup2" class="popup">
@@ -566,6 +566,122 @@
     <span class="popup-btn-close">&times;</span>
   </div>
 
+  <!-- FOR BLOCK 5 -->
+
+  <div id="popup4" class="popup">
+    <div class="popup-text">
+      <div id="chartdiv4">
+        <div id="chartContainer5" style="width: 100%; height: 300px;display: inline-block;"></div>
+      </div>
+      <div class="details">
+
+        <table>
+
+          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>PLACEMENT RECORD</span> </h3>
+
+          <!-- <tr>
+            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
+            <td width="4" align="left">&nbsp;</td>
+            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
+            <td style="width:80%;background-color:#E6F7FF"><strong>COMPANIES VISITED</strong></td>
+          </tr>
+
+
+          <tr>
+            <td align="left" bgcolor="#88C8A5">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2016</td>
+            <td bgcolor="#F7F7F7">85</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#09F591">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2017</td>
+            <td bgcolor="#F7F7F7">100</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#15CF80">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2018</td>
+            <td bgcolor="#F7F7F7">125</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#78FADA">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2019</td>
+            <td bgcolor="#F7F7F7">140</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#44E1BB">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2020</td>
+            <td bgcolor="#F7F7F7">170</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#1CB18D">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2021</td>
+            <td bgcolor="#F7F7F7">230</td>
+          </tr>
+          <tr>
+            <td align="left" bgcolor="#06644D">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left" bgcolor="#F7F7F7">2022</td>
+            <td bgcolor="#F7F7F7">250</td>
+          </tr> -->
+
+          <tr>
+            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
+            <td style="width:14%;background-color:#E6F7FF;text-align:center">2016</td>
+            <td style="width:14%;background-color:#E6F7FF;text-align:center">2017</td>
+            <td style="width:14%;background-color:#E6F7FF;text-align:center">2018</td>
+            <td style="width:14%;background-color:#E6F7FF;text-align:center">2019</td>
+            <td style="width:14%;background-color:#E6F7FF;text-align:center">2020</td>
+            <td style="width:14%;background-color:#E6F7FF;text-align:center">2021</td>
+            <td style="width:14%;background-color:#E6F7FF;text-align:center">2022</td>
+          </tr>
+
+          <tr>
+            <td align="left" bgcolor="#4F81BC">&nbsp;</td>
+            <td align="center" bgcolor="#F7F7F7">80</td>
+            <td align="center" bgcolor="#F7F7F7">100</td>
+            <td align="center" bgcolor="#F7F7F7">115</td>
+            <td align="center" bgcolor="#F7F7F7">125</td>
+            <td align="center" bgcolor="#F7F7F7">136</td>
+            <td align="center" bgcolor="#F7F7F7">150</td>
+            <td align="center" bgcolor="#F7F7F7">180</td>
+          </tr>
+
+          <tr>
+            <td align="left" bgcolor="#C0504E">&nbsp;</td>
+            <td align="center" bgcolor="#F7F7F7">55</td>
+            <td align="center" bgcolor="#F7F7F7">79</td>
+            <td align="center" bgcolor="#F7F7F7">100</td>
+            <td align="center" bgcolor="#F7F7F7">116</td>
+            <td align="center" bgcolor="#F7F7F7">129</td>
+            <td align="center" bgcolor="#F7F7F7">145</td>
+            <td align="center" bgcolor="#F7F7F7">176</td>
+          </tr>
+
+          <tr>
+            <td colspan="8" align="left">
+              <p>&nbsp;</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="8" align="left" class="placement-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Tempore, unde.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
   <script>
 
     //popup 2
@@ -696,9 +812,9 @@
     });
     chart.render();
 
- // popup 4
+    // popup 4
 
- CanvasJS.addColorSet("greenShades",
+    CanvasJS.addColorSet("greenShades",
       [//colorSet Array
 
         "#88C8A5",
@@ -738,6 +854,75 @@
     });
     chart.render();
 
+    // popup 5
+    var chart = new CanvasJS.Chart("chartContainer5", {
+      animationEnabled: true,
+      title: {
+        text: "PLACEMENTS RECORDS"
+      },
+      axisY: {
+        title: "Number of students registred",
+        titleFontColor: "#4F81BC",
+        lineColor: "#4F81BC",
+        labelFontColor: "#4F81BC",
+        tickColor: "#4F81BC"
+      },
+      axisY2: {
+        title: "Placements",
+        titleFontColor: "#C0504E",
+        lineColor: "#C0504E",
+        labelFontColor: "#C0504E",
+        tickColor: "#C0504E"
+      },
+      toolTip: {
+        shared: true
+      },
+      legend: {
+        cursor: "pointer",
+        itemclick: toggleDataSeries
+      },
+      data: [{
+        type: "column",
+        name: "Registred",
+        legendText: "Registred",
+        showInLegend: true,
+        dataPoints: [
+          { label: "2016", y: 80 },
+          { label: "2017", y: 100 },
+          { label: "2018", y: 115 },
+          { label: "2019", y: 125 },
+          { label: "2020", y: 136 },
+          { label: "2021", y: 150 },
+          { label: "2022", y: 180 }
+        ]
+      },
+      {
+        type: "column",
+        name: "Placed",
+        legendText: "Placed",
+        axisYType: "secondary",
+        showInLegend: true,
+        dataPoints: [
+          { label: "2016", y: 55 },
+          { label: "2017", y: 79 },
+          { label: "2018", y: 100 },
+          { label: "2019", y: 116 },
+          { label: "2020", y: 129 },
+          { label: "2021", y: 145 },
+          { label: "2022", y: 176 }
+        ]
+      }]
+    });
+    chart.render();
+    function toggleDataSeries(e) {
+      if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+        e.dataSeries.visible = false;
+      }
+      else {
+        e.dataSeries.visible = true;
+      }
+      chart.render();
+    }
 
   </script>
 
