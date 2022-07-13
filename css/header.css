@@ -3,37 +3,61 @@ body {
     margin: auto;
     overflow-x: hidden;
 }
+
 .header-line {
     color: rgb(255, 255, 255);
     background-color: rgb(127 190 255 / 68%);
     padding: 5px 5px;
 }
+
 .row {
     margin-right: 0px;
     margin-left: 0px;
 }
+
 a {
     padding: 2px;
     margin: 2px 5px;
     font-size: 1rem;
 }
+
 .header {
     /* padding: 0px 20px; */
     align-items: center;
     /* height: 20vh; */
     /* width: 100%; */
 }
+
 .gecp-logo-1 {
     width: 6vw;
 }
+
 .logo-right {
     width: 15vw;
 }
+
 .header-mid-center {
     font-size: 3.5vw;
     text-align: center;
     width: 75%;
 }
+
+@media (max-width: 1200px) {
+    .nav-item a {
+        font-size: 12px;
+    }
+
+    .header-line a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .nav-item a {
+        font-size: 10px;
+    }
+}
+
 /* @media (min-width: 919px) {
     .navbar-expand-md {
         -ms-flex-flow: row nowrap;
@@ -48,13 +72,64 @@ a.nav-link:hover,
 li.active {
     background-color: rgb(81, 181, 240);
     color: rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    /* background-color: rgb(81, 181, 240); */
+    background-color: rgb(92 217 255);
+    /* color: rgb(255, 255, 255); */
+    border-radius: 6px;
+    /* color: black !important; */
+    font-weight: bold;
+}
+
+.active-link {
+    /* background-color: rgb(81, 181, 240); */
+    background-color: rgb(92 217 255);
+    /* color: rgb(255, 255, 255); */
     border-radius: 6px;
 }
-a.fa:hover {
-    /* color: rgb(255, 255, 255); */
+
+a.header-link:hover {
     border-radius: 6px;
     text-decoration: none;
     color: rgb(85, 85, 85) !important;
     font-weight: bolder;
     transition: 0.3s;
+
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    width: initial;
+    background-color: rgb(92 217 255);
+    font-weight: bolder;
+    color: white;
+    transition: 0.3s;
+}
+
+.active-item {
+    width: initial;
+    background-color: rgb(92 217 255);
+    font-weight: bolder;
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    width: fit-content;
+    background-color: #e9ecef;
 }
