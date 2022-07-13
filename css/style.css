@@ -20,10 +20,9 @@ body{
     width:7%;
     padding:1%;
 } */
-/* .logo-right{
-    width:15%;
-    padding:1%;
-} */
+.logo-right{
+    width:15vw;
+}
 /* .header-line {
     margin-bottom: 0%;
     padding: 0.001%;
@@ -306,10 +305,10 @@ body{
 } 
 
 #deptPage .owl-theme .owl-dots .owl-dot span{
-    padding:7px;
-    border-radius:50%;
-    cursor:pointer;
-    margin-right:2px;
+    padding:7px ;
+    border-radius:50% ;
+    cursor: pointer;;
+    margin: right 2px;
     background: white;
     border: 2px solid #00b7ff;
 } 
@@ -772,6 +771,9 @@ body{
     transform: scale(0.9);
     transition: all .3s;
 }
+.b-9{
+    bottom:9%;
+}
 .slider .owl-item.active.center .bg-s{
     transform: scale(1.30);
 }
@@ -816,7 +818,7 @@ body{
     display:block;
 }
 .square-270-100{
-    width:270px;
+    width:100%;
     height:100px;
 }
 @media(min-width:1440px){
