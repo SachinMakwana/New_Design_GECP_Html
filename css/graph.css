@@ -318,3 +318,18 @@ p {
   color: #fff;
 }
 
+.popup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .details ,#chartdiv,#chartdiv1, #chartdiv2,#chartdiv3,#chartdiv4 {
+    width: 90%;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  #chartdiv2 {
+    width: 80%;
+  }
+} */
