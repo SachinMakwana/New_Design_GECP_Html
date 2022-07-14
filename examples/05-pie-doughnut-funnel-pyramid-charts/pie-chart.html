@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+window.onload = function() {
+
+	CanvasJS.addColorSet("greenShades",
+             [//colorSet Array
+
+               "#C71585",
+              "#66CDAA",
+               "#663399",
+               "#2E8B57",
+              "#FF6347"
+            ]);
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	colorSet: "greenShades",
+	animationEnabled: true,
+	title: {
+		text: "BRANCHWISE PLACEMENT"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "##0.00'%'",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+		{ y: 35.5, label: "CSE" },
+                 { y: 29.87, label: "EE" },
+                 { y: 18.65, label: "ME" },
+                 { y: 8.0, label: "EC" },
+                 { y: 7.98, label: "CIVIL" }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+<!-- <script src="../../canvasjs.min.js"></script> -->
+</body>
+</html>

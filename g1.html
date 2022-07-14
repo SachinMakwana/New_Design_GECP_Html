@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #chartdiv {
+      width: 40%;
+      height: 500px;
+      float: left;
+    }
+
+    .details{
+      width: 50%;
+      float: right;
+      
+    }
+    tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.placement-tb {
+    display: inline-block;
+    margin-left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 45% !important;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    font-variant: normal;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.placement-title span {
+    color: rgb(214, 70, 70);
+}
+
+.placement-title {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    width: 53px;
+    height: 29px;  
+}
+strong {
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.placement-text p {
+    color: rgb(72, 72, 72);
+    text-align: justify;
+}
+span{
+   color: brown;
+}
+
+  </style>
+
+
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+</head>
+
+<body>
+  <script>
+    am5.ready(function () {
+
+
+      var root = am5.Root.new("chartdiv");
+
+
+      root.setThemes([
+        am5themes_Animated.new(root)
+      ]);
+
+
+
+      var chart = root.container.children.push(am5xy.XYChart.new(root, {
+        panX: true,
+        panY: true,
+        wheelX: "panX",
+        wheelY: "zoomX",
+        pinchZoomX: true
+      }));
+
+      
+
+
+      var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+      cursor.lineY.set("visible", false);
+
+
+
+      var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+      xRenderer.labels.template.setAll({
+        rotation: -90,
+        centerY: am5.p50,
+        centerX: am5.p100,
+        paddingRight: 15
+      });
+
+      var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+        maxDeviation: 0.3,
+        categoryField: "country",
+        renderer: xRenderer,
+        tooltip: am5.Tooltip.new(root, {})
+      }));
+
+      var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+        maxDeviation: 0.3,
+        renderer: am5xy.AxisRendererY.new(root, {})
+      }));
+
+
+
+      var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+        name: "Series 1",
+        xAxis: xAxis,
+        yAxis: yAxis,
+        valueYField: "value",
+        sequencedInterpolation: true,
+        categoryXField: "country",
+        tooltip: am5.Tooltip.new(root, {
+          labelText: "{valueY}"
+        })
+      }));
+
+      series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5 });
+      series.columns.template.adapters.add("fill", function (fill, target) {
+        return chart.get("colors").getIndex(series.columns.indexOf(target));
+      });
+
+      series.columns.template.adapters.add("stroke", function (stroke, target) {
+        return chart.get("colors").getIndex(series.columns.indexOf(target));
+      });
+
+
+      // Set data
+      var data = [{
+        country: "2016",
+        value: 150
+      }, {
+        country: "2017",
+        value: 200
+      }, {
+        country: "2018",
+        value: 280
+      }, {
+        country: "2019",
+        value: 350
+      }, {
+        country: "2020",
+        value: 390
+      }, {
+        country: "2021",
+        value: 413
+      }, {
+        country: "2022",
+        value: 500
+      
+      }];
+
+      xAxis.data.setAll(data);
+      series.data.setAll(data);
+
+      
+
+      series.appear(1000);
+      chart.appear(1000, 100);
+
+    }); 
+    
+    
+  </script>
+  
+    <div id="chartdiv"></div>
+    <div class="details">
+     
+      <table>
+        <!-- <tr>
+          <td colspan="4" class="placement-title">YEARLY PLACEMENT RECORDS : STUDENT PLACED 2014-2022
+          </td>
+        </tr> -->
+        <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>STUDENT PLACED 2016-2022</span> </h3>
+
+        <tr>
+          <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
+          <td width="4" align="left">&nbsp;</td>
+        <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
+        <td style="width:80%;background-color:#E6F7FF"><strong>STUDENT PLACED</strong></td>
+      </tr>
+
+
+      <tr>
+        <td align="left" bgcolor="#5DCCDA">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+        <td align="left" bgcolor="#F7F7F7">2016</td>
+        <td bgcolor="#F7F7F7">150</td>
+      </tr>
+        <tr>
+         <td align="left" bgcolor="#5D97DA">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+        <td align="left" bgcolor="#F7F7F7">2017</td>
+    <td bgcolor="#F7F7F7">200 </td></tr>
+     <tr>
+         <td align="left" bgcolor="#5D6CDA">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+        <td align="left" bgcolor="#F7F7F7">2018</td>
+    <td bgcolor="#F7F7F7">280</td></tr>
+   <tr>
+         <td align="left" bgcolor="#7B5DDA">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+        <td align="left" bgcolor="#F7F7F7">2019</td>
+    <td bgcolor="#F7F7F7">350</td></tr>
+   <tr>
+         <td align="left" bgcolor="#975DDA">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+        <td align="left" bgcolor="#F7F7F7">2020</td>
+    <td bgcolor="#F7F7F7">390</td></tr>
+        <tr>
+         <td align="left" bgcolor="#BF5DDA">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+        <td align="left" bgcolor="#F7F7F7">2021</td>
+    <td bgcolor="#F7F7F7">413</td></tr>
+        <tr>
+         <td align="left" bgcolor="#DA5DCC">&nbsp;</td>
+        <td align="left">&nbsp;</td>
+        <td align="left" bgcolor="#F7F7F7">2022</td>
+    <td bgcolor="#F7F7F7">500</td></tr>				  
+      
+    <tr>
+      <td colspan="4" align="left">
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+
+<tr>
+<td colspan="4" align="left" class="placement-text">
+  <p>Chandi also the number of students ha
+    ving multiple offer letters have witnes
+    sed a growth of 24% this year. Chandigar
+    h University follows a rigorous training
+     process under which the student starts 
+     preparing for campus placements in its very first year itself. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptates?
+     <br>
+     <br>
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut rem dolore dolorum veritatis distinctio fuga omnis temporibus labore, unde praesentium.
+     
+
+</p></td>
+</tr>
+        
+      </table>
+      
+    </div>
+  
+
+
+
+
+
+
+    
+
+</body>
+
+</html>

@@ -7,7 +7,7 @@ body {
 .header-line {
     color: rgb(255, 255, 255);
     background-color: rgb(92 217 255);
-    padding: 5px 5px;
+    padding: 4px 4px;
 }
 
 .row {
@@ -46,63 +46,72 @@ a {
     width: 75%;
 }
 
-/* @media (min-width: 919px) {
-    .navbar-expand-md {
-        -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        padding-right: 0.5rem; 
-        padding-left: 0.5rem; 
+@media (max-width: 1290px) {
+    .nav-item a {
+        font-size: 14px;
     }
-} */
+
+    .header-line a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .nav-item a {
+        font-size: 10px;
+    }
+    .navbar{
+        padding: 4px;
+    }
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
-a.nav-link:hover{
-     /* background-color: rgb(81, 181, 240); */
-     background-color: rgb(92 217 255);
-     /* color: rgb(255, 255, 255); */
-     border-radius: 6px;
-     /* color: black !important; */
-     font-weight: bold;
-}
-.active-link {
-    /* background-color: rgb(81, 181, 240); */
+
+a.nav-link:hover {
     background-color: rgb(92 217 255);
-    /* color: rgb(255, 255, 255); */
+    color: rgb(0, 0, 0) !important;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.active-link {
+    background-color: rgb(92 217 255);
     border-radius: 6px;
     color: black !important;
-    font-weight: bold;
 }
+
 a.header-link:hover {
     border-radius: 6px;
-    /* color: white; */
     text-decoration: none;
     color: rgb(85, 85, 85) !important;
     font-weight: bolder;
     transition: 0.3s;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: none;
 }
-.dropdown:hover .dropdown-menu{
+
+.dropdown:hover .dropdown-menu {
     display: block;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     width: initial;
     background-color: rgb(92 217 255);
-    font-weight: bolder;
+    color: black;
+    transition: 0.5s;
+}
+
+.active-item {
+    width: initial;
+    background-color: rgb(92 217 255);
     color: white;
     transition: 0.3s;
 }
-.active-item{
-    width: initial;
-    background-color: rgb(92 217 255);
-    font-weight: bolder;
-    color: white;
-    transition: 0.3s;
-}
+
 .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
