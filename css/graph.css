@@ -11,15 +11,25 @@
     margin-top: 15px;
 }
 .my_page h4 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #0098da;
-    border-bottom: #0098da 2px solid;
-    display: inline-block;
-    padding-bottom: 5px;
-    padding-right: 0;
-    text-transform: uppercase;
-    margin-top: 15px;
+  font-size: 1.8rem;
+  font-weight: 700!important;
+  color: #0098da;
+  display: inline-block;
+  padding-right: 0;
+  text-transform: uppercase;
+  margin-top: 15px;
+  width: 20em;
+  border-bottom: 4px solid #007bff;
+  padding-bottom: 10px;
+  text-align: center!important;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.branch{
+  justify-content: center!important;
+  display: flex!important;
+  margin-bottom: 1.5rem;
 }
   .g1{
     /* border: 1px solid lightgray; */
