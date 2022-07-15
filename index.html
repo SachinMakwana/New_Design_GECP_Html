@@ -14,10 +14,9 @@
     <script type="text/javascript" src="js\custom.js"></script>
 
     <!-- JS for crousel -->
-    <!-- JS for crousel -->
-    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css" />
-    <!-- <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css"> -->
-    <script src="js/owlcarousel/assets/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css">
+    <script src="js/owlcarousel/assets/owl.carousel.js"></script>
 
     <link rel="stylesheet" href="css/cells.css">
     <link rel="stylesheet" href="css/header.css">
@@ -319,7 +318,7 @@
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              </ol>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div id="s-container-1"></div>
@@ -344,32 +343,33 @@
         <div class="mt-4 mx-auto">
             <div class="owl-carousel owl-theme" id="owlIndex2">
                 <div class="item p-2">
-                    <img src="images/p1.jpg" alt="" class="h-150">
+                    <img src="images/p1.jpg" alt="">
                 </div>
                 <div class="item p-2">
-                    <img src="images/p2.jpg" alt="" class="h-150">
+                    <img src="images/p2.jpg" alt="">
                 </div>
                 <div class="item p-2">
-                    <img src="images/p3.jpg" alt="" class="h-150">
+                    <img src="images/p3.jpg" alt="">
                 </div>
                 <div class="item p-2">
-                    <img src="images/p4.jpg" alt="" class="h-150">
+                    <img src="images/p4.jpg" alt="">
                 </div>
                 <div class="item p-2">
-                    <img src="images/1.jpg" alt="" class="h-150">
+                    <img src="images/1.jpg" alt="">
                 </div>
                 <div class="item p-2">
-                    <img src="images/2.jpg" alt="" class="h-150">
+                    <img src="images/2.jpg" alt="">
                 </div>
                 <div class="item p-2">
-                    <img src="images/3.jpg" alt="" class="h-150">
+                    <img src="images/3.jpg" alt="">
                 </div>
                 <div class="item p-2">
-                    <img src="images/4.jpg" alt="" class="h-150">
+                    <img src="images/4.jpg" alt="">
                 </div>
             </div>
         </div>
-     </div>   
+    </div>
+
     <!-- Footer -->
     <footer class="bg-color-light page-footer font-small lighten-5">
         <div class="bg-color-dark py-2"></div>
@@ -460,35 +460,8 @@
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
     <script>
-        
-        // $(document).ready(function () {
-        //     $('.owl-carousel').owlCarousel({
-        //         loop: true,
-        //         margin: 10,
-        //         responsiveClass: true,
-        //         center: true,
-        //         nav: true,
-        //         responsive: {
-        //             0: {
-        //                 items: 1,
-        //                 nav: true
-        //             },
-        //             600: {
-        //                 items: 3,
-        //                 //nav: false
-        //             },
-        //             1000: {
-        //                 items: 4,
-        //                 //nav: true,
-        //                 loop: false,
-        //                 margin: 20
-        //             }
-        //         }
-        //     })
-        // })
-
         $(document).ready(function () {
-            $('#owlIndex2').owlCarousel({
+            $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
                 responsiveClass: true,
@@ -499,11 +472,36 @@
                     },
                     600: {
                         items: 3,
+                        //nav: false
                     },
                     1000: {
                         items: 4,
-                        nav: true,
-                        // loop: false,
+                        //nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+
+        $(document).ready(function () {
+            $('#owlIndex2').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 4,
+                        //nav: true
+                    },
+                    600: {
+                        items: 4,
+                        //nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        //nav: true,
+                        loop: false,
                         margin: 20
                     }
                 }
