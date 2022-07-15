@@ -14,9 +14,10 @@
     <script type="text/javascript" src="js\custom.js"></script>
 
 
-    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css" />
-    <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css">
-    <script src="js/owlcarousel/assets/owl.carousel.js"></script>
+    <!-- JS for crousel -->
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css"> -->
+    <script src="js/owlcarousel/assets/owl.carousel.min.js"></script>
 
     <link rel="stylesheet" href="css/cells.css">
     <link rel="stylesheet" href="css/header.css">
@@ -293,9 +294,9 @@
         </div> -->
         <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div id="s-container-1"></div>
@@ -310,9 +311,8 @@
                 <div id="s-container-8"></div>
               </div>
             </div>
-          </div>
-    </div>
-
+        </div>
+     </div>   
     <!-- Footer -->
     <footer class="bg-color-light page-footer font-small lighten-5">
         <div class="bg-color-dark py-2"></div>
@@ -403,24 +403,27 @@
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
                 responsiveClass: true,
+                center: true,
+                nav: true,
                 responsive: {
                     0: {
                         items: 1,
-                        //nav: true
+                        nav: true
                     },
                     600: {
                         items: 3,
-                        //nav: false
+                        nav: true
                     },
                     1000: {
-                        items: 4,
-                        //nav: true,
-                        loop: false,
+                        items: 5,
+                        nav: true,
+                        // loop: false,
                         margin: 20
                     }
                 }
