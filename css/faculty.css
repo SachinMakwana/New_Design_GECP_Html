@@ -60,17 +60,6 @@ body {
 .mail-icon {
     color: darkblue;
 }
-/* .faculty img{
-    width: 100%;
-}
-.faculty{
-    margin: 15px;
-    box-shadow: 10px 10px 10px rgb(163, 163, 163);
-    border: 2px solid;
-    white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
-} */
 
 .ourTeam-box {
     border-radius: 8px;
@@ -108,8 +97,12 @@ body {
     text-decoration: none;
     font-size: 20px;
 }
-/* .section3 i{
-    color: #ffffff !important;
-    padding: 15px;
-    font-size: 15px;
-} */
+.section3:hover{
+    background-color: #189ddb;
+}
+.section3:hover a{
+    /* background-color: #25aae7; */
+    color: black !important;
+    font-weight: bold;
+}
+  
