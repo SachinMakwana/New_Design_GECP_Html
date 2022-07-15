@@ -150,7 +150,7 @@ body{
 .h-frame{
     border-radius: 3%;
     box-shadow: 0px 0px 5px 5px #c5c5c5;
-    /* height: 30vw; */
+    /* height: 13vw;  */
 }
 
 .img-container{
@@ -824,6 +824,11 @@ body{
 #owlIndex2 .owl-dots{
     display:block;
 }
+.owl-theme .owl-dots{
+    position:relative;
+    width:200px;
+    left:calc(50% - 100px);
+}
 @media(min-width:1440px){
     .principal{
         height:15vw;
@@ -850,6 +855,16 @@ body{
     }
 
 }
+/* @media (max-width: 1900px){
+    .h-frame{
+        height:20vw;
+    }
+}
+@media (max-width: 1500px){
+    .h-frame{
+        height:25vw;
+    }
+} */
 @media (max-width: 904px) {
  .header-right-writting {
        font-size: small;
