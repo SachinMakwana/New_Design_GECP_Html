@@ -826,8 +826,8 @@ body{
 }
 .owl-theme .owl-dots{
     position:relative;
-    width:200px;
-    left:calc(50% - 100px);
+    width:60px;
+    left:calc(50% - 30px);
 }
 @media(min-width:1440px){
     .principal{
