@@ -30,9 +30,7 @@
 </head>
 
 <body>
-
-    <!--   Header   -->
-
+    <!-- Header -->
     <div class="header-line row d-flex justify-content-between">
         <div class="">
             <a href="#" class="header-link fa fa-solid fa-envelope text-white">
@@ -74,49 +72,41 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             ABOUT US
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item " href="vision.html">Vision & Mission</a>
+                            <a class="dropdown-item" href="vision.html">Vision & Mission</a>
                             <a class="dropdown-item" href="infrastructure.html">Infrastructure</a>
                             <a class="dropdown-item" href="principal.html">Principal</a>
                             <a class="dropdown-item" href="overview.html">Overview</a>
                         </div>
                     </div>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">ADMINISTRATION</a>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="admission.html">ADMISSION</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             COURSES
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="cseDepartment.html">Computer Science & Engineering</a>
                             <a class="dropdown-item" href="mechDeapartment.html">Mechanical Engineering</a>
                             <a class="dropdown-item" href="electricalDepartment.html">Electrical Engineering</a>
-                            <a class="dropdown-item" href="ecDepartment.html">Electronics & Communication Engineering</a>
+                            <a class="dropdown-item" href="ecDepartment.html">Electronics & Communication
+                                Engineering</a>
                             <a class="dropdown-item" href="civilDepartment.html">Civil Engineering</a>
                         </div>
                     </div>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">COURSES</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">COMMITTEES</a>
-                </li> -->
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             COMMITTEES
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
@@ -128,17 +118,44 @@
                 <li class="nav-item">
                     <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
                 </li>
+                <li class="nav-item active-link">
+                    <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="event.html">EVENT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Placements.html">TPO CELL</a>
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            TPO CELL
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Placements.html">TPO Overview</a>
+                            <a class="dropdown-item" href="#">TPO Vision & Mission</a>
+                            <a class="dropdown-item" href="plac&cell.html">Placements</a>
+                            <a class="dropdown-item" href="graph.html">Graph View</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contactus.html">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FACULTY</a>
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            FACULTY
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cseFaculty.html">Computer Science &
+                                Engineering</a>
+                            <a class="dropdown-item" href="mechFaculty.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="electricalFaculty.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="ecFaculty.html">Electronics & Communication Engineering</a>
+                            <a class="dropdown-item" href="civilFaculty.html">Civil Engineering</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">GALLERY</a>
@@ -146,7 +163,6 @@
             </ul>
         </div>
     </nav>
-
 
     <!-- Container  -->
 
@@ -158,60 +174,6 @@
         </div>
     </div>
 
-    <!-- Department old design -->
-    <!-- <div class="bg-dark text-white">
-        <div class="m-5 p-3">
-            <div class="container mx-auto">
-                <div class="text-center d-flex justify-content-center">
-                    <div class="headings h4 text-center font-weight-bold mb-4">DEPARTMENTS</div>
-                </div>
-                <div class="d-flex align-items-center">
-                    <button class="" onclick="openBranch('cse')">
-                        <div class="branch-container col  p-3 text-center activeBranch">
-                            <i class="fa fa-laptop"></i>
-                            <div class="font-weight-bold">
-                                Computer Science
-                            </div>
-                        </div>
-                    </button>
-                    <button class="" onclick="openBranch('ec')">
-                        <div class="branch-container col p-3 text-center">
-                            <i class="fa fa-microchip"></i>
-                            <div class="font-weight-bold">
-                                Electronics and Communication
-                            </div>
-                        </div>
-                    </button>
-                    <button class="" onclick="openBranch('mechanical')">
-                        <div class="branch-container col p-3 text-center">
-                            <i class="fa fa-wrench"></i>
-                            <div class="font-weight-bold">
-                                Mechanical
-                            </div>
-                        </div>
-                    </button>
-                    <button class="" onclick="openBranch('civil')">
-                        <div class="branch-container col p-3 text-center">
-                            <i class="fa fa-hard-hat"></i>
-                            <div class="font-weight-bold">
-                                Civil
-
-                            </div>
-                        </div>
-                    </button>
-                    <button class="" onclick="openBranch('electrical')">
-                        <div class="branch-container col p-3 text-center">
-                            <i class="fa fa-bolt"></i>
-                            <div class="font-weight-bold">
-                                Electrical
-                            </div>
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div> -->
- 
     <!--  NEw design Department -->
     <div class="m-5 p-3">
         <div class="container">
@@ -230,7 +192,7 @@
                     </div>
                 </button>
                 <button class="department" name="ec" onclick="openBranch('ec')">
-                <!-- <button class="department" name="ec" onclick="selection('ec',this)"> -->
+                    <!-- <button class="department" name="ec" onclick="selection('ec',this)"> -->
                     <div class="col">
                         <img src="images/studyMaterial/ec-logo-2.png " alt=""
                             class="department-logos border img-fluid rounded-circle">
