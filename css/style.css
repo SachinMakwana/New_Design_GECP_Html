@@ -812,8 +812,17 @@ body{
     width:100%;
     height:100px;
 }
-#compstate-2{
+.h-150{
+    height:150px;
+}
+/* #compstate-2{
     min-height: 100%;
+} */
+#owlIndex2 .owl-nav{
+    display:none;
+}
+#owlIndex2 .owl-dots{
+    display:block;
 }
 @media(min-width:1440px){
     .principal{

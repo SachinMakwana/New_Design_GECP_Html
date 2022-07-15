@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    /* background-color: #f8f8f8; */
+}
+
+.header-block {
+    width: 100%;
+    position: relative;
+}
+
+.header-block img {
+    width: 100%;
+    height: 25vw;
+    opacity: 0.7;
+}
+
+.text-block {
+    width: 80%;
+    height: 40%;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+/* Main Container start */
+.faculty-img {
+    width: 100%;
+    width: fit-content;
+    border: 50px solid rgba(224, 224, 224, 0.4);
+    /* border-radius: 15px; */
+    /* box-shadow: -1px 3px 12px -3px rgba(0, 0, 0, 7.5); */
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.faculty-desc {
+    font-weight: lighter;
+    color: gray;
+}
+
+.faculty-job {
+    font-weight: bold;
+    color: gray;
+}
+
+.mail-icon {
+    color: darkblue;
+}
+/* .faculty img{
+    width: 100%;
+}
+.faculty{
+    margin: 15px;
+    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    border: 2px solid;
+    white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+} */
+
+.ourTeam-box {
+    border-radius: 8px;
+    /* border-top: 6px solid #5db5dd; */
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.section1 {
+    /* padding: 30px 0px 30px 0px; */
+    padding: 15px;
+}
+
+.section1 img {
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+
+.section2 h5 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section2 span , .section2 p{
+    color: gray;
+}
+
+.section3 {
+    padding: 10px;
+    background-color: #5db5dd;
+    border-radius: 0px 0px 7px 7px;
+}
+.section3 a{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* .section3 i{
+    color: #ffffff !important;
+    padding: 15px;
+    font-size: 15px;
+} */

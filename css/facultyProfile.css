@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.faculty-tabs{
+    background-color: white;
+    padding: 10px 35px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 5px;
+    margin: 0px 2px;
+}
+.faculty-tabs:hover{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    border-radius: 5px;
+} 
+.faculty-tab-header{
+    /* font-weight: bold; */
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 0.5px solid black
+}
