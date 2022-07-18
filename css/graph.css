@@ -361,3 +361,17 @@ p {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+
+
+.item{
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 70%;
+}
+
+
