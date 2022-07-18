@@ -366,12 +366,12 @@ p {
 
 .item{
   align-items: center;
-  background-color: tomato;
+ 
   color: white;
   display: flex;
-  height: 100px;
+  height: 90px;
   justify-content: center;
-  width: 70%;
+  width: 60%;
 }
 
 
