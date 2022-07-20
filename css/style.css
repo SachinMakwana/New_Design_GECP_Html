@@ -138,6 +138,9 @@ body{
     margin:auto;
     margin-top:20%;
 }
+.feature{
+    transition: 1s;
+}
 .thumbnail.h-350{
     height: 350px !important;
 }
@@ -307,19 +310,18 @@ body{
     margin-left:50%;
 } 
 
-#deptPage .owl-theme .owl-dots .owl-dot span{
+/* #deptPage .owl-theme .owl-dots .owl-dot span{
     padding:7px ;
     border-radius:50% ;
     cursor: pointer;;
     margin: right 2px;
     background: white;
     border: 2px solid #00b7ff;
-} 
-#deptPage .owl-theme .owl-dots .owl-dot.active span
+}  */
+/* #deptPage .owl-theme .owl-dots .owl-dot.active span
 {
-    padding: 7px;
-    background: #00b7ff;
-}
+    background: #fff;
+} */
 
 #studyCouncil  .owl-theme .owl-dots .owl-dot span{
     padding:7px;
@@ -389,6 +391,9 @@ body{
 }
 .img-container:hover .t-500{
     color:white;
+}
+.img-container{
+    transition:1s;
 }
 .m-custom{
     margin-left: 3%;
