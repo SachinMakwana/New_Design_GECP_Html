@@ -70,7 +70,7 @@ body{
     width: 80px;
     height: 2px;
     display: block;
-    margin-bottom:2%;
+    /* margin-bottom:2%; */
     
 }
 .blue{
@@ -78,10 +78,11 @@ body{
 }
 .NA-content {
     margin: 2% 2% 2% 1%;
-    display:flex;
+    /* display:flex; */
     padding:2%;
     width:80%;
     border-radius: 2%;
+    height:17vw;
 }
 .bg-brown{
     background-color: #696969;
@@ -323,7 +324,7 @@ body{
     background: #fff;
 } */
 
-#studyCouncil  .owl-theme .owl-dots .owl-dot span{
+/* #studyCouncil  .owl-theme .owl-dots .owl-dot span{
     padding:7px;
     border-radius:50%;
     cursor:pointer;
@@ -336,7 +337,7 @@ body{
 {
     padding: 7px;
     background: #00b7ff;
-}
+} */
 #placementOwl .owl-theme .owl-dots .owl-dot span{
     padding:7px;
     border-radius:50%;
@@ -345,7 +346,12 @@ body{
     background: white;
     border: 2px solid #00b7ff;
 } 
-
+.para{
+    width:95%;
+}
+.symb{
+    width:5%;
+}
 #placementOwl .owl-theme .owl-dots .owl-dot.active span
 {
     padding: 7px;
@@ -846,6 +852,11 @@ body{
         height:16vw;
     }
 }
+@media(max-width:1440px){
+    .NA-content {
+        height:300px;
+    }
+}
 @media(min-width:1376px) {
     #w-900{
         width:900%;
@@ -881,6 +892,7 @@ body{
        margin: 0% 0% 0% 0%;
        float: right;
  }
+
 }
 @media (max-width: 990px){
     #actd-1 p,#actd-2 p{
@@ -901,13 +913,12 @@ body{
 	font-size:99%;
     }
 }
-@media (min-width: 768px){
-    .col-md-49{
-        width:49%;
+@media (max-width: 768px){
+    .NA-content {
+        margin: 0%;
+        width:100%;
     }
-    .align-md-right{
-        text-align:right;
-    }
+    
 }
 @media (max-width: 700px){
     .slogan{
@@ -946,10 +957,7 @@ body{
         width: 70%;
        text-align: right; 
     }
-    .NA-content {
-        margin: 0%;
-        width:100%;
-    }
+    
     .IP{
         font-size:100%;  
     }
