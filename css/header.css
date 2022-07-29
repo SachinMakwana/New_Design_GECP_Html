@@ -112,9 +112,9 @@ a.header-link:hover {
     transition: 0.3s;
 }
 
-.dropdown-item:focus {
+/* .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
     width: fit-content;
     background-color: #e9ecef;
-}
+} */
