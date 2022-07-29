@@ -227,6 +227,7 @@ body{
     width:80%;
     margin-top:5px;
     padding:5%;
+    transition:1s;
 }
 .align-center{
     text-align: center;
