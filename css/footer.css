@@ -35,24 +35,5 @@
 }
 .our-client-box{
     width: fit-content;
+    height: fit-content;
 }
-/* .fa-google{
-    background-image: url("../images/google.png");
-    background-size: cover;
-    height: 40px;
-}
-.fa-microsoft{
-    background-image: url("../images/microsoft.png");
-    background-size: cover;
-    height: 40px;
-}
-.fa-envato{
-    background-image: url("../images/envato.png");
-    background-size: cover;
-    height: 40px;
-}
-.fa-WooCOMMERCE{
-    background-image: url("../images/woocommerce.png");
-    background-size: cover;
-    height: 40px; 
-} */

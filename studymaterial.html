@@ -132,7 +132,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="Placements.html">TPO Overview</a>
-                            <a class="dropdown-item" href="#">TPO Vision & Mission</a>
+                            <a class="dropdown-item" href="tpo-vision.html">TPO Vision & Mission</a>
                             <a class="dropdown-item" href="plac&cell.html">Placements</a>
                             <a class="dropdown-item" href="graph.html">Graph View</a>
                         </div>
@@ -180,8 +180,9 @@
             <div class="d-flex justify-content-center">
                 <div class="headings h4 text-center font-weight-bold mb-4 text-dark">DEPARTMENTS</div>
             </div>
-            <div class="row d-flex align-items-center justify-content-center" id="branchId">
-
+            <div class="row d-flex align-items-center justify-content-center" id="branchId">    
+                
+                <!-- <button class="department activeBranch" name="ec" onclick="selection('cse',this)"> -->
                 <button class="department activeBranch" name="cse" onclick="openBranch('cse')">
                     <div class="col">
                         <img src="images/studyMaterial/comlogo.png" alt=""
@@ -191,8 +192,8 @@
                         </div>
                     </div>
                 </button>
-                <button class="department" name="ec" onclick="openBranch('ec')">
-                    <!-- <button class="department" name="ec" onclick="selection('ec',this)"> -->
+                <!-- <button class="department" name="ec" onclick="openBranch('ec')"> -->
+                    <button class="department" name="ec" onclick="selection('ec',this)">
                     <div class="col">
                         <img src="images/studyMaterial/ec-logo-2.png " alt=""
                             class="department-logos border img-fluid rounded-circle">
@@ -201,6 +202,7 @@
                         </div>
                     </div>
                 </button>
+                <!-- <button class="department" name="ec" onclick="selection('mechanical',this)"> -->
                 <button class="department" onclick="openBranch('mechanical')">
                     <div class="col">
                         <img src="images/studyMaterial/mech-logo.png" alt=""
@@ -1013,12 +1015,20 @@
                     </p>
                 </div>
 
-                <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
-                    <div class="client">Our Clients</div>
-                    <div class="bg-color-light company-name">Google</div>
-                    <div class="bg-color-light company-name">Microsoft</div>
-                    <div class="bg-color-light company-name">envato</div>
-                    <div class="bg-color-light company-name">WooCOMMERCE</div>
+                <div class="our-client-box mx-auto bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4 py-2">
+                    <div class="text-center font-weight-bold my-1">Our Clients</div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/google.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/woocommerce.png" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>

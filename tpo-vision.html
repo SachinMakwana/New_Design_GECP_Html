@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +18,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/tpovision.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
 
     <title>TPO Vision</title>
 </head>
+
 <body>
+    <!-- Header -->
     <div class="header-line row d-flex justify-content-between">
         <div class="">
             <a href="#" class="header-link fa fa-solid fa-envelope text-white">
@@ -34,19 +40,20 @@
         <div class="">
             <a href="#" class="header-link fa fa-sign-in text-white"> Register</a>
             <a href="#" class="header-link fa fa-solid fa-lock text-white"> Login</a>
-            <a href="#" class="header-link fa fa-brands fa-facebook-f text-white"></a>
+            <a href="https://www.facebook.com/GEC-PATAN-2004-Official-104917512281223/"
+                class="header-link fa fa-brands fa-facebook-f text-white"></a>
             <a href="#" class="header-link fa fa-brands fa-twitter text-white"></a>
-            <a href="#" class="header-link fa fa-brands fa-google text-white"></a>
+            <a href="https://gecpatan.ac.in/" class="header-link fa fa-brands fa-google text-white"></a>
             <a href="#" class="header-link fa fa-brands fa-youtube text-white"></a>
             <a href="#" class="header-link fa fa-solid fa-wifi text-white"></a>
         </div>
     </div>
 
     <div class="header row">
-        <img src="images/contactusBootstrap/gecplogo.jpg" class="gecp-logo col p-2">
+        <img src="images/header/gecplogo.jpg" class="gecp-logo col p-2">
         <div class="header-mid-center col-md-auto p-2 mx-auto">
             Government Engineering College, Patan</div>
-        <img src="images/contactusBootstrap/rightlogo.png" class="logo-right col  p-2">
+        <img src="images/header/rightlogo.png" class="logo-right col p-2">
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fullwidth">
@@ -57,93 +64,234 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             ABOUT US
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Vision & Mission</a>
-                            <a class="dropdown-item" href="#">Infrastructure</a>
-                            <a class="dropdown-item" href="#">Principal</a>
-                            <a class="dropdown-item" href="#">Overview</a>
+                            <a class="dropdown-item" href="vision.html">Vison & Mission</a>
+                            <a class="dropdown-item" href="infrastructure.html">Infrastructure</a>
+                            <a class="dropdown-item" href="principal.html">Principal</a>
+                            <a class="dropdown-item" href="overview.html">Overview</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ADMINISTRATION</a>
+                    <a class="nav-link" href="admission.html">ADMISSION</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             COURSES
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Computer Science & Engineering</a>
-                            <a class="dropdown-item" href="#">Mechanical Engineering</a>
-                            <a class="dropdown-item" href="#">Electrical Engineering</a>
-                            <a class="dropdown-item" href="#">Electronics & Communication Engineering</a>
-                            <a class="dropdown-item" href="#">Civil Engineering</a>
+                            <a class="dropdown-item" href="cseDepartment.html">Computer Science & Engineering</a>
+                            <a class="dropdown-item" href="mechDeapartment.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="electricalDepartment.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="ecDepartment.html">Electronics & Communication
+                                Engineering</a>
+                            <a class="dropdown-item" href="civilDepartment.html">Civil Engineering</a>
                         </div>
                     </div>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">COURSES</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">COMMITTEES</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FACULTY</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             COMMITTEES
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="cells.html">Women cell</a>
                             <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">STUDENT CORNER</a>
+                    <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">EVENT</a>
+                </li>
+                <li class="nav-item active-link">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            TPO CELL
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Placements.html">TPO Overview</a>
+                            <a class="dropdown-item active-item" href="#">TPO Vision & Mission</a>
+                            <a class="dropdown-item" href="plac&cell.html">Placements</a>
+                            <a class="dropdown-item" href="graph.html">Graph View</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            FACULTY
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cseFaculty.html">Computer Science &
+                                Engineering</a>
+                            <a class="dropdown-item" href="mechFaculty.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="electricalFaculty.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="ecFaculty.html">Electronics & Communication Engineering</a>
+                            <a class="dropdown-item" href="civilFaculty.html">Civil Engineering</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">GALLERY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
 
 
-    <div class="row">
-        
+    <div class="header-block row d-flex align-items-center mx-auto">
+        <img src="images\aboutus\about2.jpg">
+        <div class="text-block text-block mx-auto d-flex align-items-center justify-content-center">
+            TPO Vision & Mission
+        </div>
     </div>
 
+    <div class="container my-5">
+        <div class="row">
+            <div class="tpo-block col shadow p-4 m-4 bg-dark text-white">
+                <div class="headings h4 mx-3">VISION</div>
+                <div class="px-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur optio ea enim reiciendis, modi
+                    necessitatibus recusandae consectetur accusamus asperiores dicta at earum a, laudantium
+                    exercitationem
+                    nam amet dolorum fugiat qui.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem delectus omnis nobis eveniet,
+                    dolorem ut minima iusto ad. Pariatur earum deserunt enim ipsam harum tempore adipisci? Delectus,
+                    praesentium accusamus eos, inventore dignissimos rem aliquam perspiciatis tenetur officia rerum,
+                    odio
+                    quas.
+                </div>
+            </div>
+            <div class="tpo-block col shadow p-4 m-4 bg-light">
+                <div class="headings h4 mx-3">MISSION</div>
+                <div class="px-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam reprehenderit possimus ea
+                    expedita libero sed natus, repellat ut amet vero cum aperiam laudantium deleniti debitis dignissimos
+                    doloribus! Voluptatibus, non.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi aliquam, non quasi nihil
+                    alias
+                    odio aperiam laudantium corporis tempore laborum pariatur porro vitae tempora eveniet facilis sint
+                    perspiciatis commodi tenetur qui. Architecto saepe illo porro excepturi in! Voluptatibus, quam.
+                </div>
+            </div>
 
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <footer class="bg-color-light page-footer font-small lighten-5">
+        <div class="bg-color-dark py-2"></div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <div class="text-center mx-auto">
+                        <img src="images/header/gecplogo.jpg" class="rounded-circle gecp-logo ">
+                    </div>
+                    <p>Government Engineering College,
+                        Patan
+                        At. Katpur,
+                        Pincode: 384265
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <p>
+                        <a class="text-white" href="#!">About US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Contact US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Grievance</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Student Corner</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Placement</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Scholarship</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <p>
+                        <a class="text-white" href="#!">About US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Contact US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Grievance</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Student Corner</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Placement</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Scholarship</a>
+                    </p>
+                </div>
 
+                <!-- <div class="our-client-box mx-auto text-center bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <div class="client">Our Clients</div>
+                    <div class="bg-color-light company-name">Google</div>
+                    <div class="bg-color-light company-name">Microsoft</div>
+                    <div class="bg-color-light company-name">envato</div>
+                    <div class="bg-color-light company-name">WooCOMMERCE</div>
+                </div> -->
 
-    <!-- <script type="text/javascript" src="js/jquery-latest.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script> -->
+                <div class="our-client-box mx-auto bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4 py-2">
+                    <div class="text-center font-weight-bold my-1">Our Clients</div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/google.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/woocommerce.png" alt="" class="img-fluid">
+                    </div>
+                </div>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.dropdown-toggle').dropdown();
-        });
-    </script>
+            </div>
+        </div>
 
+        <div class="footer-copyright">
+            <div class="row d-flex justify-content-between">
+                <div>Copyright © 2004 GEC Patan. All rights reserved.</div>
+                <div>Terms of Use | Privacy Policy</div>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>
