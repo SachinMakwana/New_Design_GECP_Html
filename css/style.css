@@ -73,6 +73,12 @@ body{
     /* margin-bottom:2%; */
     
 }
+.speciname{
+    position: absolute;
+    left: calc(50% - 69px);
+    top: calc(50% + 35px);
+    color: white;
+}
 .blue{
     color:#00b7ff;
 }
