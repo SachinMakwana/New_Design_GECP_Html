@@ -869,6 +869,10 @@ body{
 #owlIndex2 .owl-dots{
     display:block;
 }
+.space {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 @media(min-width:1440px){
     .principal{
         height:15vw;
