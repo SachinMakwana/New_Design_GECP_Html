@@ -1034,6 +1034,49 @@
     });
   }
   
+  else if(id=="chart2"){
+    CanvasJS.addColorSet("greenShades",
+      [//colorSet Array
+
+        "#5DCCDA",
+        "#5D97DA",
+        "#5D6CDA",
+        "#7B5DDA",
+        "#975DDA",
+        "#BF5DDA",
+        "#DA5DCC"
+      ]);
+    var chart = new CanvasJS.Chart("test", {
+      animationEnabled: true,
+      colorSet: "greenShades",
+      theme: "light1", // "light1", "light2", "dark1", "dark2"
+      title: {
+        text: "HIGHEST PACKAGE OFFERED"
+      },
+      axisY: {
+        title: "Highest Package",
+        suffix: "LPA",
+        includeZero: false
+      },
+      axisX: {
+        title: "BATCH"
+      },
+      width: 450,
+      data: [{
+        type: "column",
+        dataPoints: [
+          { y: 5, label: "2016" },
+          { y: 9, label: "2017" },
+          { y: 13, label: "2018" },
+          { y: 18, label: "2019" },
+          { y: 22, label: "2020" },
+          { y: 27, label: "2021" },
+          { y: 30, label: "2022" }
+        ]
+      }]
+    });
+   
+  }
   else{}
     chart.render();
     }
