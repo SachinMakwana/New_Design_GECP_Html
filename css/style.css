@@ -79,6 +79,8 @@ body{
     transform:translate(-50%);
     top: calc(50% + 35px);
     color: white;
+    margin-top: 12px;
+    font-weight: bolder;
 }
 .blue{
     color:#00b7ff;
