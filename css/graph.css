@@ -11,7 +11,7 @@
     margin-top: 15px;
 }
 .my_page h4 {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     color: #0098da;
     border-bottom: #0098da 2px solid;
@@ -372,6 +372,12 @@ p {
   height: 90px;
   justify-content: center;
   width: 60%;
+}
+.top-requter18{
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bolder;
+
 }
 
 
