@@ -899,41 +899,61 @@
     });
   }
   else if(id=="chart4"){
-    CanvasJS.addColorSet("greenShades",
-      [//colorSet Array
-
-        "#88C8A5",
-        "#09F591",
-        "#15CF80",
-        "#78FADA",
-        "#44E1BB",
-        "#1CB18D",
-        "#06644D"
-      ]);
     chart = new CanvasJS.Chart("test", {
       animationEnabled: true,
-      colorSet: "greenShades",
-      theme: "light1", // "light1", "light2", "dark1", "dark2"
       title: {
-        text: "NO. OF COMPANIES VISITED"
+        text: "PLACEMENTS RECORDS"
       },
       axisY: {
-        title: "No. Of Companies Visited"
+        title: "Number of students registred",
+        titleFontColor: "#4F81BC",
+        lineColor: "#4F81BC",
+        labelFontColor: "#4F81BC",
+        tickColor: "#4F81BC"
       },
-      axisX: {
-        title: "YEAR"
+      axisY2: {
+        title: "Placements",
+        titleFontColor: "#C0504E",
+        lineColor: "#C0504E",
+        labelFontColor: "#C0504E",
+        tickColor: "#C0504E"
       },
-      width: 450,
+      toolTip: {
+        shared: true
+      },
+      legend: {
+        cursor: "pointer",
+        itemclick: toggleDataSeries
+      },
       data: [{
         type: "column",
+        name: "Registred",
+        legendText: "Registred",
+        showInLegend: true,
         dataPoints: [
-          { y: 85, label: "2016" },
-          { y: 100, label: "2017" },
-          { y: 125, label: "2018" },
-          { y: 140, label: "2019" },
-          { y: 170, label: "2020" },
-          { y: 230, label: "2021" },
-          { y: 250, label: "2022" }
+          { label: "2016", y: 80 },
+          { label: "2017", y: 100 },
+          { label: "2018", y: 115 },
+          { label: "2019", y: 125 },
+          { label: "2020", y: 136 },
+          { label: "2021", y: 150 },
+          { label: "2022", y: 180 }
+        ]
+      },
+      {
+        type: "column",
+        name: "Placed",
+        legendText: "Placed",
+        axisYType: "secondary",
+        showInLegend: true,
+        dataPoints: [
+          { label: "2016", y: 55 },
+          { label: "2017", y: 79 },
+          { label: "2018", y: 100 },
+          { label: "2019", y: 116 },
+          { label: "2020", y: 129 },
+          { label: "2021", y: 145 },
+          { label: "2022", y: 176 }
         ]
       }]
     });
@@ -950,7 +970,7 @@
           "#FF6347"
         ]);
 
-      var chart = new CanvasJS.Chart("chartContainer1", {
+      var chart = new CanvasJS.Chart("test", {
         colorSet: "greenShades",
         animationEnabled: true,
         title: {
