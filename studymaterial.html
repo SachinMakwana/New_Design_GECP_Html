@@ -115,12 +115,24 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active-link">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            STUDENT CORNER
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item active-item" href="studymaterial.html">STUDY MATERIAL</a>
+                            <a class="dropdown-item" href="StudentCouncil.html">STUDENT COUNCIL</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
                 </li>
                 <li class="nav-item active-link">
                     <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="event.html">EVENT</a>
                 </li>
@@ -180,8 +192,8 @@
             <div class="d-flex justify-content-center">
                 <div class="headings h4 text-center font-weight-bold mb-4 text-dark">DEPARTMENTS</div>
             </div>
-            <div class="row d-flex align-items-center justify-content-center" id="branchId">    
-                
+            <div class="row d-flex align-items-center justify-content-center" id="branchId">
+
                 <!-- <button class="department activeBranch" name="ec" onclick="selection('cse',this)"> -->
                 <button class="department activeBranch" name="cse" onclick="openBranch('cse')">
                     <div class="col">
@@ -192,8 +204,8 @@
                         </div>
                     </div>
                 </button>
-                <!-- <button class="department" name="ec" onclick="openBranch('ec')"> -->
-                    <button class="department" name="ec" onclick="selection('ec',this)">
+                <button class="department" name="ec" onclick="openBranch('ec')">
+                <!-- <button class="department" name="ec" onclick="selection('ec',this)"> -->
                     <div class="col">
                         <img src="images/studyMaterial/ec-logo-2.png " alt=""
                             class="department-logos border img-fluid rounded-circle">
@@ -235,7 +247,6 @@
     </div>
 
     <!-- Semester - CSE -->
-
     <div class="branch container-fluid mx-auto m-5 p-5" id="cse">
         <div class="text-center d-flex justify-content-center align-items-center">
             <div class="headings h4 mb-4 font-weight-bold"> COMPUTER</div>
@@ -665,8 +676,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <!-- semester Civil -->
@@ -957,7 +966,6 @@
         </div>
     </div>
 
-
     <!-- Footer -->
     <footer class="bg-color-light page-footer font-small lighten-5">
         <div class="bg-color-dark py-2"></div>
@@ -1041,18 +1049,16 @@
         </div>
 
     </footer>
-
     <!-- JS  -->
     <script>
-
-        function selection(branch, obj) {
-            var id = $('.activeBranch').attr('name');
-            $('.activeBranch').removeClass('activeBranch');
-            $(obj).addClass('activeBranch');
-            // $('#'+branch)
-            $("#" + id).attr('style', 'display:none');
-            $('#' + branch).attr('style', 'display:block');
-        }
+        // function selection(branch, obj) {
+        //     var id = $('.activeBranch').attr('name');
+        //     $('.activeBranch').removeClass('activeBranch');
+        //     $(obj).addClass('activeBranch');
+        //     // $('#'+branch)
+        //     $("#" + id).attr('style', 'display:none');
+        //     $('#' + branch).attr('style', 'display:block');
+        // }
 
         function openSubject(subjectName) {
             var i;
@@ -1082,11 +1088,11 @@
                 x[i].style.display = "none";
             }
             document.getElementById(branchName).style.display = "block";
+        }
 
+        $(document).ready(function () {
             var btnContainer = document.getElementById("branchId");
-
             var btns = btnContainer.getElementsByClassName("department");
-
             for (var i = 0; i < btns.length; i++) {
                 btns[i].addEventListener("click", function () {
                     var current = document.getElementsByClassName("activeBranch");
@@ -1094,7 +1100,7 @@
                     this.className += " activeBranch";
                 });
             }
-        }
+        })
     </script>
 </body>
 
