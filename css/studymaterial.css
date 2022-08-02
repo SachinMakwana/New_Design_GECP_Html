@@ -62,7 +62,7 @@ body{
     color: white;
     border-radius: 12px 12px 0px 0px;
 } 
-.activeSub, .activeSem{
+.activeSub, .activeyr{
     background-color: lightgray;
     border-radius: 12px 12px 0px 0px;
 }
