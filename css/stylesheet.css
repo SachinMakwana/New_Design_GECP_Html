@@ -104,6 +104,7 @@ div.effect:hover::before {
     bottom: 8%;
     left: -8%;
     right: 0%; 
+    transition: 0.5s;
 }
 
 .effect {
