@@ -13,6 +13,10 @@ body {
     padding: 0 !important;
     margin: 0 !important;
 }
+.activeTab{
+    background-color: #343a40!important;
+    color: white;
+}
 .faculty-tabs{
     background-color: white;
     padding: 10px 35px;

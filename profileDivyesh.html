@@ -50,20 +50,20 @@
             <a href="#" class="header-link fa fa-solid fa-wifi text-white"></a>
         </div>
     </div>
-    
+
     <div class="header row">
         <img src="images/header/gecplogo.jpg" class="gecp-logo col p-2">
         <div class="header-mid-center col-md-auto p-2 mx-auto">
             Government Engineering College, Patan</div>
         <img src="images/header/rightlogo.png" class="logo-right col p-2">
     </div>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fullwidth">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item">
@@ -71,8 +71,8 @@
                 </li>
                 <li class="nav-item ">
                     <div class="dropdown">
-                        <a class="btn nav-link text-white text-left" type="button"
-                            id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             ABOUT US
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
@@ -88,8 +88,8 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link text-white text-left" type="button"
-                            id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             COURSES
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
@@ -104,8 +104,8 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link text-white text-left" type="button"
-                            id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             COMMITTEES
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
@@ -116,8 +116,8 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link text-white text-left" type="button"
-                            id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             STUDENT CORNER
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
@@ -137,8 +137,8 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn nav-link text-white text-left" type="button"
-                            id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             TPO CELL
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
@@ -154,8 +154,8 @@
                 </li>
                 <li class="nav-item active-link">
                     <div class="dropdown">
-                        <a class="btn nav-link text-white text-left" type="button"
-                            id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             FACULTY
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
@@ -195,11 +195,12 @@
 
             <div class="p-4">
                 <div class="d-inline" id="profile">
-                    <button class="faculty-tabs" onclick="openProfile('PersonalDetail')">PERSIONAL DETAIL</button>
+                    <button class="faculty-tabs activeTab" onclick="openProfile('PersonalDetail')">PERSIONAL DETAIL</button>
                     <button class="faculty-tabs" onclick="openProfile('educatinalQualification')">EDUCATIONAL
                         QUALIFICATION</button>
                     <button class="faculty-tabs" onclick="openProfile('publication')">PUBLICATION</button>
                     <button class="faculty-tabs" onclick="openProfile('portfolios')">PORTFOLIOS</button>
+                    <button class="faculty-tabs" onclick="openProfile('achievement')">ACHIEVEMENT</button>
                 </div>
 
                 <div id="PersonalDetail" class="faculty-profile mt-4">
@@ -213,7 +214,8 @@
                             <tr>
                                 <td>E-mail</td>
                                 <td>
-                                    <a href="mailto:divyeshbavisa6@gmail.com" class="nopadding">divyeshbavisa6@gmail.com</a>
+                                    <a href="mailto:divyeshbavisa6@gmail.com"
+                                        class="nopadding">divyeshbavisa6@gmail.com</a>
                                 </td>
                             </tr>
                         </table>
@@ -251,7 +253,7 @@
                                 <th>Sr. No.</th>
                                 <th>Title</th>
                             </tr>
-                           
+
                         </table>
                     </div>
                 </div>
@@ -260,7 +262,16 @@
                     <div class="p-2 bg-light">
                         <p class="faculty-tab-header">PORTFOLIOS</p>
                         <table class="table table-borderless">
-                            
+
+                        </table>
+                    </div>
+                </div>
+
+                <div id="achievement" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">ACHIEVEMENT</p>
+                        <table class="faculty-tab-header">
+
                         </table>
                     </div>
                 </div>
@@ -364,6 +375,17 @@
             }
             document.getElementById(profile).style.display = "block";
         }
+        $(document).ready(function () {
+            var btnContainer = document.getElementById("profile");
+            var btns = btnContainer.getElementsByClassName("faculty-tabs");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("activeTab");
+                    current[0].className = current[0].className.replace(" activeTab", "");
+                    this.className += " activeTab";
+                });
+            }
+        })
     </script>
 </body>
 

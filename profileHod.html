@@ -194,11 +194,12 @@
 
             <div class="p-4">
                 <div class="d-inline" id="profile">
-                    <button class="faculty-tabs" onclick="openProfile('PersonalDetail')">PERSIONAL DETAIL</button>
+                    <button class="faculty-tabs activeTab" onclick="openProfile('PersonalDetail')">PERSIONAL DETAIL</button>
                     <button class="faculty-tabs" onclick="openProfile('educatinalQualification')">EDUCATIONAL
                         QUALIFICATION</button>
                     <button class="faculty-tabs" onclick="openProfile('publication')">PUBLICATION</button>
                     <button class="faculty-tabs" onclick="openProfile('portfolios')">PORTFOLIOS</button>
+                    <button class="faculty-tabs" onclick="openProfile('achievement')">ACHIEVEMENT</button>
                 </div>
 
                 <div id="PersonalDetail" class="faculty-profile mt-4">
@@ -341,6 +342,15 @@
                     </div>
                 </div>
 
+                <div id="achievement" class="faculty-profile mt-4" style="display: none;">
+                    <div class="p-2 bg-light">
+                        <p class="faculty-tab-header">ACHIEVEMENT</p>
+                        <table class="faculty-tab-header">
+
+                        </table>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -448,6 +458,18 @@
             }
             document.getElementById(profile).style.display = "block";
         }
+        $(document).ready(function () {
+            var btnContainer = document.getElementById("profile");
+            var btns = btnContainer.getElementsByClassName("faculty-tabs");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("activeTab");
+                    current[0].className = current[0].className.replace(" activeTab", "");
+                    this.className += " activeTab";
+                });
+            }
+        })
+
     </script>
 </body>
 

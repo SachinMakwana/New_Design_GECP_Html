@@ -84,6 +84,10 @@ button{
 .activeBranch{
     background-color: rgb(81, 181, 240);
 }
+.activeSem{
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
 .department:hover{
     transform: scale(1.09);
     /* background-color: #585858; */
