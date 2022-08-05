@@ -916,7 +916,7 @@ li button:hover:not(.activeEvent) {
     /* Width of popup can be changed */
     width: 80%;
     max-width: 70%;
-    height: 60%;
+    height: 80%;
     z-index: 5001;
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -960,3 +960,64 @@ li button:hover:not(.activeEvent) {
     line-height: 30px;
     z-index: 9999;
   }
+
+  .imgcontainer{
+    width: 50%;
+    height: 500px;
+    float: left;
+  }
+  .imgdetails{
+    width: 50%;
+        float: right;
+        height: 500px;
+  }
+
+
+  @media only screen and (min-width: 1920px) {
+    #heading {
+            float:left;
+            width:100%;
+            padding-top:3%;
+            padding-bottom:1%;
+            font-size:25px;
+            color:#FFF;
+            position:relative;
+            font-size: xxpt; /*put your size here*/
+}
+
+ #subheading {
+
+            float:left;
+            width:100%;
+            padding-top:3%;
+            padding-bottom:3%;
+            font-size:20px;
+            position:relative;
+            font-size: xxpt; /*put your size here*/
+ }
+}
+
+@media only screen and (min-width: 1024px)  {
+            #heading {
+            float:left;
+            width:100%;
+            padding-top:3%;
+            padding-bottom:1%;
+            font-size:25px;
+            color:#FFF;
+            position:relative;
+            font-size: xxpt; /*put your size here*/
+}
+
+
+ #subheading {
+
+            float:left;
+            width:100%;
+            padding-top:3%;
+            padding-bottom:3%;
+            font-size:20px;
+            position:relative;
+            font-size: xxpt; /*put your size here*/
+}
+}
