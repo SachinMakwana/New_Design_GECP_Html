@@ -1021,3 +1021,15 @@ li button:hover:not(.activeEvent) {
             font-size: xxpt; /*put your size here*/
 }
 }
+
+
+
+.abc{padding:0; margin:0; box-sizing:border-box; width:100%;}
+.bcd{display:inline-block;width:40%;}
+@media all and (max-width: 360px){
+    .bcd
+    {
+        display:inline-block;
+        width:40%;
+    }
+}
