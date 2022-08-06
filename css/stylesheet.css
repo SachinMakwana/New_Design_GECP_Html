@@ -1078,6 +1078,7 @@ li button:hover:not(.activeEvent) {
     width: 250px;
     height: 300px;
     padding: 20px;
+    margin: auto;
 }
 
 .fakeimg img {
