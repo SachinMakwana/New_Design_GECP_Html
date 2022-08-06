@@ -24,6 +24,7 @@
   <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  
 
 
 
@@ -266,15 +267,17 @@
 
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
   <!-- FOR POPUP -->
 
   <div class="popup">
     <!-- <div class="popup-text"> -->
-      <div id="chartdiv0">
-        <div id="test" style="width: 100%; height: 450px;display: inline-block;"></div>
-      </div>
+      <!-- <div id="chartdiv0"> -->
+        <!-- <div id="test" style="width:100%; height: 450px;display: inline-block;"></div> -->
+        <div id="test" style="height: 370px; max-width: 920px; margin: 0px auto;overflow-x: scroll;"></div>
+        <script src="../../canvasjs.min.js"></script> 
+      <!-- </div> -->
       
      
     <!-- </div> -->
@@ -299,6 +302,7 @@
     function openGraph(id){
       var chart;
       if(id=="chart3"){
+        
     CanvasJS.addColorSet("greenShades",
       [//colorSet Array
 
@@ -458,6 +462,10 @@
       axisX: {
         title: "YEAR"
       },
+      options: {
+      maintainAspectRatio: false,
+      
+    },
       width: 450,
       data: [{
         type: "column",
