@@ -835,13 +835,13 @@ body{
     /* display: inline !important; */
 }
 .slider .owl-stage-outer{
-    height:260px;
+    height:265px;
 }
 .slider .owl-nav.disabled{
     display: block !important;
 }
 .h-name{
-    margin-top:5px;
+    /* margin-top:5px; */
     font-size:100%;
     font-weight:500;
     width:200%;
@@ -853,8 +853,10 @@ body{
     display:block;
 }
 .square-270-100{
-    width:100%;
+    width:50%;
     height:8vw;
+    left:50%;
+    transform: translate(-50%);
 }
 .h-150{
     height:150px;
