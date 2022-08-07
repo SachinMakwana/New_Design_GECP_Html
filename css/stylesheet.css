@@ -773,15 +773,18 @@ select {
     background-color: transparent;
     padding: 4px;
     width: 38%;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 label {
-    display: inline-block;
+    display: flex;
     margin-bottom: 0.5rem;
     font-weight: 720;
     font-size: 20px;
     color: rgb(9, 0, 0);
-    width: 80%
+    width: 100%
 }
 
 table.dataTable thead th,
@@ -798,7 +801,14 @@ table.dataTable thead td {
     padding: 4px;
     color: black;
 }
-
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 3px;
+    height: 30px;
+}
 
 /* 
 gallery   */
