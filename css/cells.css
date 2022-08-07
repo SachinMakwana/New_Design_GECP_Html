@@ -135,8 +135,8 @@ div.figure div.text-on-image {
 .carousel-control-prev, .carousel-control-next{
     background-color: black;
     color: aquamarine;
-    width: 30px;
-    height: 30px;
+    width: 2vw;
+    height: 2vw;
 }
 /* .image-container{
     position: relative;
