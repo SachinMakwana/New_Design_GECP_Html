@@ -93,7 +93,7 @@ body{
     padding:2%;
     width:80%;
     border-radius: 2%;
-    height:17vw;
+    height:calc(19vw + 1rem);
 }
 .h-17vw{
     height:17vw !important;
@@ -889,7 +889,7 @@ body{
 }
 @media(max-width:1440px){
     .NA-content {
-        height:290px;
+        height: calc(280px + 1rem);
     }
     .h-17vw{
         height:250px !important;
