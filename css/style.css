@@ -159,9 +159,6 @@ body{
 .thumbnail.h-350{
     height: 350px !important;
 }
-.pad-b-120{
-    padding-bottom:120px;
-}
 .w-265{
     width:265px;
 }
@@ -463,7 +460,7 @@ body{
     padding-left: 4%;
     padding-right:2%;
     background-size: 100% 100%;
-    height:100%;
+    height: 200px; 
 }
 .col-md-6 img{
     height:200px;
@@ -876,7 +873,7 @@ body{
 }
 @media(min-width:1440px){
     .principal{
-        height:15vw;
+        height:19vw;
     }
     .depaprtment img{
         height:16vw;
@@ -958,12 +955,12 @@ body{
         width:100%;
     } 
 }
-@media (max-width: 767px){
+/* @media (max-width: 767px){
     .principal{
-        height:150px;
+        height:200px;
     }
     
-}
+} */
 @media (max-width: 700px){
     .slogan{
         font-size: 100%;
