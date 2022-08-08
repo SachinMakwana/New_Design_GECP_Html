@@ -219,8 +219,9 @@ a.icone1:hover {
 }
 
 .ev-name {
-    top: 210px;
-    left: 112px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
     text-align: center;
     /*
     -ms-transform: rotate(190deg); 
@@ -233,8 +234,9 @@ a.icone1:hover {
 }
 
 .fa-bar {
-    top: 290px;
-    left: 58px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,20%);
     /* -ms-transform: rotate(190deg); 
     transform: rotate(-11deg); 
     max-width: 50em;
