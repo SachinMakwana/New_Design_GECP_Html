@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- JS for crousel -->
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="js/owlcarousel//assets/owl.theme.default.min.css">
+    <script src="js/owlcarousel/assets/owl.carousel.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-line row d-flex justify-content-between">
+        <div class="">
+            <a href="#" class="header-link fa fa-solid fa-envelope text-white">
+                info@yourdomain.com
+            </a>
+            <a href="#" class="header-link fa fa-solid fa-phone text-white">
+                +91 xxx xxx xxxx
+            </a>
+        </div>
+        <div class="">
+            <a href="#" class="header-link fa fa-sign-in text-white"> Register</a>
+            <a href="#" class="header-link fa fa-solid fa-lock text-white"> Login</a>
+            <a href="https://www.facebook.com/GEC-PATAN-2004-Official-104917512281223/"
+                class="header-link fa fa-brands fa-facebook-f text-white"></a>
+            <a href="#" class="header-link fa fa-brands fa-twitter text-white"></a>
+            <a href="https://gecpatan.ac.in/" class="header-link fa fa-brands fa-google text-white"></a>
+            <a href="#" class="header-link fa fa-brands fa-youtube text-white"></a>
+            <a href="#" class="header-link fa fa-solid fa-wifi text-white"></a>
+        </div>
+    </div>
+
+    <div class="header row">
+        <img src="images/header/gecplogo.jpg" class="gecp-logo col p-2">
+        <div class="header-mid-center col-md-auto p-2 mx-auto">
+            Government Engineering College, Patan</div>
+        <img src="images/header/rightlogo.png" class="logo-right col p-2">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fullwidth">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="vision.html">Vision & Mission</a>
+                            <a class="dropdown-item" href="infrastructure.html">Infrastructure</a>
+                            <a class="dropdown-item" href="principal.html">Principal</a>
+                            <a class="dropdown-item" href="overview.html">Overview</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admission.html">ADMISSION</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            COURSES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cseDepartment.html">Computer Science & Engineering</a>
+                            <a class="dropdown-item" href="mechDeapartment.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="electricalDepartment.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="ecDepartment.html">Electronics & Communication
+                                Engineering</a>
+                            <a class="dropdown-item" href="civilDepartment.html">Civil Engineering</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            COMMITTEES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cells.html">Women cell</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
+            </li> -->
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            STUDENT CORNER
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="studymaterial.html">STUDY MATERIAL</a>
+                            <a class="dropdown-item" href="StudentCouncil.html">STUDENT COUNCIL</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active-link">
+                    <a class="nav-link" href="event.html">EVENT</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            TPO CELL
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Placements.html">TPO Overview</a>
+                            <a class="dropdown-item" href="tpo-vision.html">TPO Vision & Mission</a>
+                            <a class="dropdown-item" href="plac&cell.html">Placements</a>
+                            <a class="dropdown-item" href="graph.html">Graph View</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            FACULTY
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cseFaculty.html">Computer Science &
+                                Engineering</a>
+                            <a class="dropdown-item" href="mechFaculty.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="electricalFaculty.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="ecFaculty.html">Electronics & Communication Engineering</a>
+                            <a class="dropdown-item" href="civilFaculty.html">Civil Engineering</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery1.html">GALLERY</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--event body-->
+    <!-- <div class="ev-header">
+        <img src="images/events/eventavif.avif">
+        <div class="h2 ev-heading font-weight-bold">EVENTS
+        </div>
+    </div> -->
+
+    <div class=" header-block row d-flex align-items-center mx-auto">
+        <img src="images/events/event-holi.jpg" alt="Contact">
+        <div class="object-block text-block mx-auto text-center d-flex align-items-center justify-content-center">
+            EVENTS
+        </div>
+    </div>
+
+
+    <!---container-->
+    <div class="ev-container">
+        <h3>GALLERY</h3>
+        <h1>PHOTOS OF OUR EVENTS</h1>
+
+    </div>
+
+    <!---gallrey-->
+    <div class="row">
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/diwali.jpg" class="gal-img">
+                <div class=" w-60 row mx-auto mg-glass"><a href="#" class="fa fa-search text-white   icone1"></a></div>
+            </div>
+        </div>
+
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/farwell.jpg" class="gal-img">
+                <div class=" w-60 row mx-auto mg-glass"><a href="#" class="fa fa-search text-white   icone1"></a></div>
+            </div>
+        </div>
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/freshers-party.png" class="gal-img">
+                <div class="w-60 row    mx-auto mg-glass"><a href="#" class="fa fa-search text-white   icone1"></a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/diwali.jpg" class="gal-img">
+                <div class="w-60 row  mx-auto mg-glass"><a href="#" class="fa fa-search text-white   icone1"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/farwell.jpg" class="gal-img">
+                <div class="w-60 row    mx-auto mg-glass"><a href="#" class="fa fa-search text-white  icone1"></a></div>
+            </div>
+        </div>
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/freshers-party.png" class="gal-img">
+                <div class="w-60 row   mx-auto mg-glass"><a href="#" class="fa fa-search text-white   icone1 "></a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/farwell.jpg" class="gal-img">
+                <div class="w-60 row mx-auto mg-glass"><a href="#" class="fa fa-search text-white  icone1"></a></div>
+            </div>
+        </div>
+        <div class="gallery col-md-3 col-sm-6 p-0 overflow-hidden">
+            <div class="effect">
+                <img src="images/events/diwali.jpg" class="gal-img">
+                <div class="w-60 row mx-auto mg-glass"><a href="#" class="fa fa-search text-white  icone1"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!--speaker-container-->
+
+    <div class="ev-speaker">
+        <h5>MEET OUR SPEAKER</h5>
+        <h1>OUR EVENT SPEAKERS</h1>
+    </div>
+    <!--- <div class="ev-speaker p-4 position-absulate">
+     </div>-->
+
+    <!--ev-speakerimg-->
+    <div class="ev-speaker-2">
+        <div class="row ">
+            <div class="gallery  col-md-3">
+                <div class="temp">
+                    <img class="sp-img position-relative" src="images/events/sp-1.jpg">
+                    <div class="overlay2"></div>
+                    <div class=" position-absolute text-white ev-name justify-content-sm-around ">
+                        <h5>LLOYD WILSON</h5>
+                        <h6> DEVLOPER</h6>
+                    </div>
+                    <div class="col-8 row position-absolute justify-content-sm-around mx-auto fa-bar">
+                        <div class="soc-1"><a href="#" class="fa fa-twitter text-white"></a></div>
+                        <div class="soc-1"><a href="#" class="fa fa-facebook-f text-white"></a></div>
+                        <div class="soc-1"> <a href="#" class="fa fa-google text-white"></a></div>
+                        <div class="soc-1"><a href="#" class="fa fa-instagram text-white"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery  col-md-3 ">
+                <div class="temp">
+                    <img class="sp-img position-relative" src="images/events/sp-4.jpg">
+                    <div class="overlay2"></div>
+                    <div class=" position-absolute text-white ev-name justify-content-sm-around">
+                        <h5>LLOYD WILSON</h5>
+                        <h6>WEB DEVLOPER</h6>
+                    </div>
+                    <div class="col-8 row position-absolute justify-content-sm-around mx-auto fa-bar">
+                        <div class="soc-1"><a href="#" class="fa fa-twitter text-white"></a></div>
+                        <div class="soc-1"><a href="#" class="fa fa-facebook-f text-white"></a></div>
+                        <div class="soc-1"> <a href="#" class="fa fa-google text-white"></a></div>
+                        <div class="soc-1"><a href="#" class="fa fa-instagram text-white"></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery  col-md-3 ">
+                <div class="temp">
+                    <img class="sp-img position-relative" src="images/events/sp-3.jpg">
+                    <div class="overlay2"></div>
+                    <div class=" position-absolute text-white ev-name justify-content-sm-around">
+                        <h5>LLOYD WILSON</h5>
+                        <h6>WEB DEVLOPER</h6>
+                    </div>
+                    <div class="col-8 row position-absolute justify-content-sm-around mx-auto fa-bar">
+                        <div class="soc-1"><a href="#" class="fa fa-twitter text-white"></a></div>
+                        <div class="soc-1"><a href="#" class="fa fa-facebook-f text-white"></a></div>
+                        <div class="soc-1"> <a href="#" class="fa fa-google text-white"></a></div>
+                        <div class="soc-1"><a href="#" class="fa fa-instagram text-white"></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery  col-md-3">
+                <div class="temp">
+                    <img class="sp-img position-relative" src="images/events/sp-4.jpg">
+                    <div class="overlay2"></div>
+                    <div class=" position-absolute text-white ev-name">
+                        <h5>LLOYD WILSON</h5>
+                        <h6>WEB DEVLOPER</h6>
+                    </div>
+                    <div class="col-8 row position-absolute justify-content-sm-around mx-auto fa-bar">
+                        <div class="soc-1 "><a href="#" class="fa fa-twitter text-white"></a></div>
+                        <div class="soc-1 "><a href="#" class="fa fa-facebook-f text-white"></a></div>
+                        <div class="soc-1 "> <a href="#" class="fa fa-google text-white"></a></div>
+                        <div class="soc-1 "><a href="#" class="fa fa-instagram text-white"></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--ev-search header-->
+
+    <div class="ev-searchheader position-relative">
+        <h1>Subscribe to our newsletter</h1>
+        <p> far far away, behind the word mountains, far from the countries vokalia and <br> conssonantia, there live
+            the blind texts,separated they live in</p>
+        <form class="search p-2">
+            <input type="email" placeholder="Enter email address">
+            <button type="submit" value="subscribe">subscribe</button>
+        </form>
+    </div>
+    <!--blog-->
+
+    <div class="ev-blog">
+        <h5>Our blog</h5>
+        <h2>Recent <b>Blog</b></h2>
+    </div>
+
+    <!--blog-img-->
+    <div class="row  w-60  justify-content-sm-around mx-auto">
+
+        <div class="owl-carousel owl-theme">
+
+            <div class="item">
+                <div class="h-100">
+                    <img class="w-100" src="images/events/bl-5.jpg">
+                    <div class="p-2 bg-gwhite">
+                        <div class="row ">
+                            <h1 class="gred">07</h1>
+                            <div class="gray">2019<br>january</div>
+                            <p class="font-weight-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Eaque voluptates delectus aperiam, saepe perferendis ad repellat. Iure, fugit aliquam. Veniam
+                                accusantium eos quos nesciunt ad qui architecto ipsam dignissimos at.</p>
+                            <a class="btn btn-primary btn-block popup-trigger" data-target="#popup1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="h-100">
+                    <img class="w-100" src="images/events/bl-6.jpg">
+                    <div class="p-2 bg-gwhite">
+                        <div class="row ">
+                            <h1 class="gred">08</h1>
+                            <div class="gray">2019<br>january</div>
+                            <p class="font-weight-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Eaque voluptates delectus aperiam, saepe perferendis ad repellat. Iure, fugit aliquam. Veniam
+                                accusantium eos quos nesciunt ad qui architecto ipsam dignissimos at.</p>
+                            <a class="btn btn-primary btn-block popup-trigger" data-target="#popup2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="h-100">
+                    <img class="w-100" src="images/events/bl-7.jpg">
+                    <div class="p-2 bg-gwhite">
+                        <div class="row ">
+                            <h1 class="gred">06</h1>
+                            <div class="gray">2019<br>january</div>
+                            <p class="font-weight-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Eaque voluptates delectus aperiam, saepe perferendis ad repellat. Iure, fugit aliquam. Veniam
+                                accusantium eos quos nesciunt ad qui architecto ipsam dignissimos at.</p>
+                            <a class="btn btn-primary btn-block">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="h-100">
+                    <img class="w-100" src="images/events/bl-5.jpg">
+                    <div class="p-2 bg-gwhite">
+                        <div class="row ">
+                            <h1 class="gred">09</h1>
+                            <div class="gray">2019<br>january</div>
+                            <p class="font-weight-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Eaque voluptates delectus aperiam, saepe perferendis ad repellat. Iure, fugit aliquam. Veniam
+                                accusantium eos quos nesciunt ad qui architecto ipsam dignissimos at.</p>
+                            <a class="btn btn-primary btn-block popup-trigger" data-target="#popup1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="h-100">
+                    <img class="w-100" src="images/events/bl-5.jpg">
+                    <div class="p-2 bg-gwhite">
+                        <div class="row ">
+                            <h1 class="gred">10</h1>
+                            <div class="gray">2019<br>january</div>
+                            <p class="font-weight-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Eaque voluptates delectus aperiam, saepe perferendis ad repellat. Iure, fugit aliquam. Veniam
+                                accusantium eos quos nesciunt ad qui architecto ipsam dignissimos at.</p>
+                            <a class="btn btn-primary btn-block popup-trigger" data-target="#popup1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="h-100">
+                    <img class="w-100" src="images/events/bl-5.jpg">
+                    <div class="p-2 bg-gwhite">
+                        <div class="row ">
+                            <h1 class="gred">11</h1>
+                            <div class="gray">2019<br>january</div>
+                            <p class="font-weight-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Eaque voluptates delectus aperiam, saepe perferendis ad repellat. Iure, fugit aliquam. Veniam
+                                accusantium eos quos nesciunt ad qui architecto ipsam dignissimos at.</p>
+                            <a class="btn btn-primary btn-block popup-trigger" data-target="#popup1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="h-100">
+                    <img class="w-100" src="images/events/bl-5.jpg">
+                    <div class="p-2 bg-gwhite">
+                        <div class="row ">
+                            <h1 class="gred">12</h1>
+                            <div class="gray">2019<br>january</div>
+                            <p class="font-weight-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Eaque voluptates delectus aperiam, saepe perferendis ad repellat. Iure, fugit aliquam. Veniam
+                                accusantium eos quos nesciunt ad qui architecto ipsam dignissimos at.</p>
+                            <a class="btn btn-primary btn-block popup-trigger" data-target="#popup1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        
+        </div>
+    </div>
+
+
+    <div id="popup1" class="popup">
+        <div class="popuphe">
+            <h4>Blog Name</h4>
+        </div>
+
+        <div class="popupr">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h4>TITLE HEADING</h4>
+                    <h6>Title description, Dec 7, 2017</h6>
+                    <div class="fakeimg">
+                        <img src="images/events/bl-5.jpg" alt="">
+                    </div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+
+    <div id="popup2" class="popup">
+        <div class="popuphe">
+            <h4>Blog Name</h4>
+        </div>
+
+        <div class="popupr">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h4>TITLE HEADING</h4>
+                    <h6>Title description, Dec 7, 2017</h6>
+                    <div class="fakeimg">
+                        <img src="images/events/bl-6.jpg" alt="">
+                    </div>
+                    <p>Some text..</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem nihil, quae
+                        provident odio suscipit maxime consequatur laboriosam facere animi, inventore fuga accusamus.
+                        Doloribus, totam, voluptatem sapiente pariatur facilis fugiat atque a vitae tempore rem magni
+                        laboriosam enim deleniti aperiam vel facere rerum voluptatum? Minus sequi tempora illum dolorum
+                        molestiae! Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores consequatur
+                        earum nisi nulla, eaque officiis ex iusto dolores optio vero tempore maiores, eveniet odio
+                        soluta error corporis facilis atque quibusdam aliquid quas delectus vel nesciunt ut. Eius ipsam
+                        laborum reiciendis accusamus suscipit aut cupiditate aperiam optio. Nesciunt similique
+                        recusandae explicabo debitis iste labore tempora deleniti et dignissimos corrupti blanditiis
+                        consequatur sapiente, pariatur ipsam omnis nisi. Itaque unde dolorem ut, adipisci, ea voluptas
+                        illo aliquam, magni dicta dolores facilis amet eius laborum quia neque natus. Commodi, pariatur
+                        suscipit. Consectetur labore iste quasi blanditiis reiciendis totam quaerat voluptatum eum quas
+                        perferendis!</p>
+                </div>
+
+            </div>
+        </div>
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+
+        <!-- Footer -->
+        <footer class="bg-color-light page-footer font-small lighten-5">
+            <div class="bg-color-dark py-2"></div>
+            <div class="container text-center text-md-left mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+                        <div class="text-center mx-auto">
+                            <img src="images/header/gecplogo.jpg" class="rounded-circle gecp-logo ">
+                        </div>
+                        <p>Government Engineering College,
+                            Patan
+                            At. Katpur,
+                            Pincode: 384265
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <p>
+                            <a class="text-white" href="#!">About US</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Contact US</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Grievance</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Student Corner</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Placement</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Scholarship</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <p>
+                            <a class="text-white" href="#!">About US</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Contact US</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Grievance</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Student Corner</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Placement</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="#!">Scholarship</a>
+                        </p>
+                    </div>
+    
+                    <!-- <div class="our-client-box mx-auto text-center bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+                        <div class="client">Our Clients</div>
+                        <div class="bg-color-light company-name">Google</div>
+                        <div class="bg-color-light company-name">Microsoft</div>
+                        <div class="bg-color-light company-name">envato</div>
+                        <div class="bg-color-light company-name">WooCOMMERCE</div>
+                    </div> -->
+    
+                    <div class="our-client-box mx-auto bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4 py-2">
+                        <div class="text-center font-weight-bold my-1">Our Clients</div>
+                        <div class="text-center py-1">
+                            <img src="images/footer/google.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="text-center py-1">
+                            <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="text-center py-1">
+                            <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="text-center py-1">
+                            <img src="images/footer/woocommerce.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="footer-copyright">
+                <div class="row d-flex justify-content-between">
+                    <div>Copyright © 2004 GEC Patan. All rights reserved.</div>
+                    <div>Terms of Use | Privacy Policy</div>
+                </div>
+            </div>
+    
+        </footer>
+
+    <script>
+        function popupOpenClose(popup) {
+
+            /* Add div inside popup for layout if one doesn't exist */
+            if ($(".wrapper", popup).length == 0) {
+                $(popup).wrapInner("<div class='wrapper'></div>");
+            }
+
+            /* Open popup */
+            $(popup).show();
+
+            /* Close popup if user clicks on background */
+            $(popup).click(function (e) {
+                if (e.target == this) {
+                    if ($(popup).is(':visible')) {
+                        $(popup).hide();
+                    }
+                }
+            });
+
+            /* Close popup and remove errors if user clicks on cancel or close buttons */
+            $(popup).find(".popup-btn-close").on("click", function () {
+                if ($(".formElementError").is(':visible')) {
+                    $(".formElementError").remove();
+                }
+                $(popup).hide();
+            });
+        }
+
+        $(document).ready(function () {
+            $(".popup-trigger").on("click", function () {
+                var target = $(this).data('target');
+                popupOpenClose($(target));
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        //nav: true
+                    },
+                    600: {
+                        items: 3,
+                        //nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        //nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+
+    <!-- <div class="p-5 bg-gwhite"></div> -->
+
+ 
+
+</body>
+
+</html>

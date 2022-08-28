@@ -11,7 +11,7 @@
     margin-top: 15px;
 }
 .my_page h4 {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     color: #0098da;
     border-bottom: #0098da 2px solid;
@@ -25,51 +25,32 @@
     /* border: 1px solid lightgray; */
     margin-bottom: 20px;
     margin-top: 30px;
-    margin-left: 20px;
-  }
-
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    flex-direction: row;
-    display: flex;
-    justify-content:space-around;
     
   }
+
   
   
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  .drop1{
+    float: left;
+    width: 10%;
+    margin-bottom: 20px;
+  }
+  #size_select{
+    width: 15%;
+    margin-bottom: 20px;
   }
   
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+
+  img{
+    max-width: 100%;
+    height: auto;
   }
+  #chartdiv0 {
+    width: 100%;
+    height: 500px;
+  }
+
+
    #chartdiv {
         width: 50%;
         height: 500px;
@@ -95,10 +76,16 @@
         height: 500px;
         float: left;
       }
+      #chartdiv5 {
+        width: 50%;
+        height: 500px;
+        float: left;
+      }
   
       .details{
         width: 50%;
         float: right;
+        height: 500px;
         
       }
       tbody {
@@ -175,8 +162,11 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
+    /* margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x)); */
+
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 @media (min-width: 992px){
@@ -280,8 +270,11 @@ p {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   padding: 30px 15px;
   /* Width of popup can be changed */
-  width: 100%;
-  max-width: 1100px;
+  /* width: 100%; */
+  /* max-width: 1100px; */
+  width: 45%;
+  max-width: 80%;
+ 
   z-index: 5001;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -333,3 +326,28 @@ p {
     width: 80%;
   }
 } */
+
+.size_chart{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+
+.item{
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  width: 60%;
+}
+.top-requter18{
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bolder;
+
+}
+
+

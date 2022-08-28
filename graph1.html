@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js\custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/cells.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/graph.css">
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
+    <title>GRAPH 1</title>
+</head>
+
+<body>
+
+    <!--   Header   -->
+
+    <div class="header-line row d-flex justify-content-between">
+        <div class="">
+            <a href="#" class="header-link fa fa-solid fa-envelope text-white">
+                info@yourdomain.com
+            </a>
+            <a href="#" class="header-link fa fa-solid fa-phone text-white">
+                +91 xxx xxx xxxx
+            </a>
+        </div>
+        <div class="">
+            <a href="#" class="header-link fa fa-sign-in text-white"> Register</a>
+            <a href="#" class="header-link fa fa-solid fa-lock text-white"> Login</a>
+            <a href="https://www.facebook.com/GEC-PATAN-2004-Official-104917512281223/"
+                class="header-link fa fa-brands fa-facebook-f text-white"></a>
+            <a href="#" class="header-link fa fa-brands fa-twitter text-white"></a>
+            <a href="https://gecpatan.ac.in/" class="header-link fa fa-brands fa-google text-white"></a>
+            <a href="#" class="header-link fa fa-brands fa-youtube text-white"></a>
+            <a href="#" class="header-link fa fa-solid fa-wifi text-white"></a>
+        </div>
+    </div>
+
+    <div class="header row">
+        <img src="images/header/gecplogo.jpg" class="gecp-logo col p-2">
+        <div class="header-mid-center col-md-auto p-2 mx-auto">
+            Government Engineering College, Patan</div>
+        <img src="images/header/rightlogo.png" class="logo-right col p-2">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fullwidth">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item active-link">
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="vision.html">Vision & Mission</a>
+                            <a class="dropdown-item" href="infrastructure.html">Infrastructure</a>
+                            <a class="dropdown-item active-item" href="principal.html">Principal</a>
+                            <a class="dropdown-item" href="overview.html">Overview</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="#">ADMINISTRATION</a>
+            </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="admission.html">ADMISSION</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COURSES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cseDepartment.html">Computer Science & Engineering</a>
+                            <a class="dropdown-item" href="mechDeapartment.html">Mechanical Engineering</a>
+                            <a class="dropdown-item" href="electricalDepartment.html">Electrical Engineering</a>
+                            <a class="dropdown-item" href="ecDepartment.html">Electronics & Communication
+                                Engineering</a>
+                            <a class="dropdown-item" href="civilDepartment.html">Civil Engineering</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="#">COURSES</a>
+            </li> -->
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="#">COMMITTEES</a>
+            </li> -->
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn nav-link dropdown-toggle text-white text-left" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COMMITTEES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="cells.html">Women cell</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">EVENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Placements.html">TPO CELL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FACULTY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GALLERY</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--  Cell container   -->
+
+    <!-- 1 - background image with title -->
+    <div class="header-block row d-flex align-items-center mx-auto">
+        <img src="images/tpo/tpo.jpg.jpg" alt="Training And Placement Cell">
+        <div class="text-block mx-auto text-block mx-auto d-flex align-items-center justify-content-center ">
+            Training And Placement Cell
+        </div>
+    </div>
+
+    <div class="main my_page ph-new">
+        <div class="top-requter18  col-sm-12 branch">
+            <h4>
+                GEC Patan YEARWISE SELECTION</h4>
+        </div>
+    </div>
+
+
+
+    <div class="rows">
+
+
+        <!-- block 1 -->
+
+        <div class="g1 col-lg-3 col-sm-4">
+            <div class="graph-pnl text-center">
+                <h5>CIVIL DEPARTMENT PLACEMENT OF 2020-21</h5>
+                <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup">
+                    <img src="images/CIVIL1.png" width="289" height="241">
+                    <br>
+                    <span>Click to View Graph</span></a>
+            </div>
+
+        </div>
+
+        <!-- block 2 -->
+
+        <div class="g1 col-lg-3 col-sm-4">
+            <div class="graph-pnl text-center">
+                <h5>MECHANICAL DEPARTMENT PLACEMENT OF 2020-21</h5>
+                <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup1">
+                    <img src="images/MECH1.png" width="289" height="241">
+                    <br>
+                    <span>Click to View Graph</span></a>
+            </div>
+        </div>
+
+        <!-- block 3 -->
+
+        <div class="g1 col-lg-3 col-sm-4">
+            <div class="graph-pnl text-center">
+                <h5>Electrical DEPARTMENT PLACEMENT OF 2020-21</h5>
+                <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup2">
+                    <img src="images/EE1.png" width="289" height="241">
+                    <br>
+                    <span>Click to View Graph</span></a>
+            </div>
+        </div>
+
+        <!-- block 4 -->
+
+        <div class="g1 col-lg-3 col-sm-4">
+            <div class="graph-pnl text-center">
+                <h5>Computer Science DEPARTMENT PLACEMENT OF 2020-21</h5>
+                <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup3">
+                    <img src="images/CSE2.png" width="289" height="241">
+                    <br>
+                    <span>Click to View Graph</span></a>
+            </div>
+        </div>
+
+        <!-- block 5 -->
+
+        <div class="g1 col-lg-3 col-sm-4">
+            <div class="graph-pnl text-center">
+                <h5>Electronics and Communication DEPARTMENT PLACEMENT OF 2020-21</h5>
+                <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup4">
+                    <img src="images/EC1.png" width="289" height="241">
+                    <br>
+                    <span>Click to View Graph</span></a>
+            </div>
+        </div>
+
+        <!-- block 6 -->
+
+        <div class="g1 col-lg-3 col-sm-4">
+            <div class="graph-pnl text-center">
+                <h5>BRANCH-WISE PLACEMENT</h5>
+                <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup5">
+                    <img src="images/BR1.png" width="289" height="241">
+                    <br>
+                    <span>Click to View Graph</span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+
+    <!-- FOR BLOCK 1 -->
+
+    <div id="popup" class="popup">
+        <!-- <div class="popup-text"> -->
+        <div id="chartdiv">
+            <div id="chartContainer3" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <div class="details">
+
+            <div id="chartContainer7" style="width: 100%; height: 300px;display: inline-block;"></div>
+
+        </div>
+        <!-- </div> -->
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+    <!-- FOR BLOCK 2 -->
+
+    <div id="popup1" class="popup">
+        <!-- <div class="popup-text"> -->
+        <div id="chartdiv1">
+            <div id="chartContainer1" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <div class="details">
+            <div id="chartContainer8" style="width: 100%; height: 300px;display: inline-block;"></div>
+
+        </div>
+        <!-- </div> -->
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+    <!-- FOR BLOCK 3 -->
+
+    <div id="popup2" class="popup">
+        <!-- <div class="popup-text"> -->
+        <div id="chartdiv2">
+            <div id="chartContainer2" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <div class="details">
+            <div id="chartContainer9" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <!-- </div> -->
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+    <!-- FOR BLOCK 4 -->
+
+    <div id="popup3" class="popup">
+        <!-- <div class="popup-text"> -->
+
+        <div id="chartdiv3">
+            <div id="chartContainer4" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <div class="details">
+            <div id="chartContainer10" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <!-- </div> -->
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+    <!-- FOR BLOCK 5 -->
+
+    <div id="popup4" class="popup">
+        <!-- <div class="popup-text"> -->
+        <div id="chartdiv4">
+            <div id="chartContainer5" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <div class="details">
+            <div id="chartContainer11" style="width: 100%; height: 300px;display: inline-block;"></div>
+
+        </div>
+        <!-- </div> -->
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+    <!-- FOR BLOCK 6 -->
+
+    <div id="popup5" class="popup">
+        <!-- <div class="popup-text"> -->
+        <div id="chartdiv5">
+            <div id="chartContainer6" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <div class="details">
+
+            <div id="chartContainer12" style="width: 100%; height: 300px;display: inline-block;"></div>
+        </div>
+        <!-- </div> -->
+        <span class="popup-btn-close">&times;</span>
+    </div>
+
+    <script>
+
+        //popup 2
+
+        window.onload = function () {
+
+            CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+
+                    "#7B5DDA",
+                    "#975DDA",
+                    "#BF5DDA",
+                    "#DA5DCC"
+                ]);
+
+            var chart = new CanvasJS.Chart("chartContainer1", {
+                animationEnabled: true,
+                colorSet: "greenShades",
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
+                title: {
+                    text: "MECHANICAL DEPARTMENT PLACEMENT OF 2020-21",
+                    fontSize: 20,
+                },
+                axisY: {
+                    title: "No of Students",
+
+
+                },
+                data: [{
+                    type: "column",
+                    yValueFormatString: "#",
+                    dataPoints: [
+                        { label: "Students Passout", y: 92 },
+                        { label: "Students Placed", y: 12 },
+                        { label: "Further Study", y: 11 },
+                        { label: "Business", y: 4 }
+
+                    ]
+                }]
+            });
+            chart.render();
+        }
+
+
+        //popup 8
+
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+                "#06644D",
+                "#1CB18D",
+                "#44E1BB",
+                "#78FADA"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer8", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "MECHANICAL DEPARTMENT PLACEMENT OF 2021-22",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 114 },
+                    { label: "Students Placed", y: 22 },
+                    { label: "Further Study", y: 3 },
+                    { label: "Business", y: 0 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+
+        //popup 3
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#5DCCDA",
+                "#5D97DA",
+                "#BF5DDA",
+                "#DA5DCC"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer2", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "ELECTRICAL DEPARTMENT PLACEMENT OF 2020-21",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 62 },
+                    { label: "Students Placed", y: 24 },
+                    { label: "Further Study", y: 12 },
+                    { label: "Business", y: 0 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+        //popup 9
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#CB0E56",
+                "#F14759",
+                "#D151F7",
+                "#DA5DCC"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer9", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "ELECTRICAL DEPARTMENT PLACEMENT OF 2021-22",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 51 },
+                    { label: "Students Placed", y: 13 },
+                    { label: "Further Study", y: 0 },
+                    { label: "Business", y: 0 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+
+        // popup 1
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#C71585",
+                "#66CDAA",
+                "#663399",
+                "#2E8B57"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer3", {
+            colorSet: "greenShades",
+            animationEnabled: true,
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "CIVIL DEPARTMENT PLACEMENT OF 2020-21",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 58 },
+                    { label: "Students Placed", y: 17 },
+                    { label: "Further Study", y: 7 },
+                    { label: "Business", y: 2 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+
+        // popup 4
+
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#CB0E56",
+                "#F14759",
+                "#D151F7",
+                "#DA5DCC"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer4", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "COMPUTER DEPARTMENT PLACEMENT OF 2020-21",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 109 },
+                    { label: "Students Placed", y: 42 },
+                    { label: "Further Study", y: 22 },
+                    { label: "Business", y: 9 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+        // popup 10
+
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#8518A5",
+                "#7F3CD5",
+                "#159CC8",
+                "#08CED7"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer10", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "COMPUTER DEPARTMENT PLACEMENT OF 2021-22",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 113 },
+                    { label: "Students Placed", y: 58 },
+                    { label: "Further Study", y: 24 },
+                    { label: "Business", y: 5 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+
+        // popup 5
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#05700A",
+                "#9CDA0E",
+                "#E7EC4D",
+                "#ECAA26"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer5", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "ELECTRONICS AND COMMUNICATION DEPARTMENT PLACEMENT OF 2020-21",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 23 },
+                    { label: "Students Placed", y: 12 },
+                    { label: "Further Study", y: 4 },
+                    { label: "Business", y: 1 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+        // popup 11
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#620814",
+                "#CF085C",
+                "#EA05BD",
+                "#9CDA0E"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer11", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "ELECTRONICS AND COMMUNICATION DEPARTMENT PLACEMENT OF 2021-22",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 23 },
+                    { label: "Students Placed", y: 12 },
+                    { label: "Further Study", y: 4 },
+                    { label: "Business", y: 1 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+
+        // popup 6
+
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+
+                "#C71585",
+                "#66CDAA",
+                "#663399",
+                "#2E8B57",
+                "#FF6347"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer6", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "BRANCHWISE PLACEMENT 2020-21",
+                fontSize: 20,
+            },
+            data: [{
+                type: "pie",
+                startAngle: 240,
+                yValueFormatString: "##0.00'%'",
+                indexLabel: "{label} {y}",
+                dataPoints: [
+                    { label: "CSE", y: 62 },
+                    { label: "EC", y: 74 },
+                    { label: "EE", y: 58 },
+                    { label: "ME", y: 29 },
+                    { label: "CIVIL", y: 45 }
+
+
+                ]
+            }]
+        });
+        chart.render();
+
+        // popup 12
+        CanvasJS.addColorSet("greenShades",
+            [//colorSet Array
+                "#11D7B0",
+                "#620814",
+                "#CF085C",
+                "#EA05BD",
+                "#9CDA0E"
+            ]);
+
+        var chart = new CanvasJS.Chart("chartContainer12", {
+            animationEnabled: true,
+            colorSet: "greenShades",
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "BRANCHWISE PLACEMENT 2021-22",
+                fontSize: 20,
+            },
+            data: [{
+                type: "pie",
+                startAngle: 240,
+                yValueFormatString: "##0.00'%'",
+                indexLabel: "{label} {y}",
+                dataPoints: [
+                    { label: "CSE", y: 77 },
+                    { label: "EC", y: 48 },
+                    { label: "EE", y: 25 },
+                    { label: "ME", y: 22 },
+                    { label: "CIVIL", y: 27 }
+
+
+                ]
+            }]
+        });
+        chart.render();
+
+
+        // 7
+        var chart = new CanvasJS.Chart("chartContainer7", {
+            animationEnabled: true,
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "CIVIL DEPARTMENT PLACEMENT OF 2021-22",
+                fontSize: 20,
+            },
+            axisY: {
+                title: "No of Students",
+
+
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "Students Passout", y: 63 },
+                    { label: "Students Placed", y: 5 },
+                    { label: "Further Study", y: 9 },
+                    { label: "Business", y: 3 }
+
+                ]
+            }]
+        });
+        chart.render();
+
+        function toggleDataSeries(e) {
+            if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                e.dataSeries.visible = false;
+            }
+            else {
+                e.dataSeries.visible = true;
+            }
+            chart.render();
+        }
+
+    </script>
+
+
+
+
+    <script>
+        function popupOpenClose(popup) {
+
+            /* Add div inside popup for layout if one doesn't exist */
+            if ($(".wrapper", popup).length == 0) {
+                $(popup).wrapInner("<div class='wrapper'></div>");
+            }
+
+            /* Open popup */
+            $(popup).show();
+
+            /* Close popup if user clicks on background */
+            $(popup).click(function (e) {
+                if (e.target == this) {
+                    if ($(popup).is(':visible')) {
+                        $(popup).hide();
+                    }
+                }
+            });
+
+            /* Close popup and remove errors if user clicks on cancel or close buttons */
+            $(popup).find(".popup-btn-close").on("click", function () {
+                if ($(".formElementError").is(':visible')) {
+                    $(".formElementError").remove();
+                }
+                $(popup).hide();
+            });
+        }
+
+        $(document).ready(function () {
+            $(".popup-trigger").on("click", function () {
+                var target = $(this).data('target');
+                popupOpenClose($(target));
+            });
+        });
+    </script>
+
+
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="images/Wishtree Technologies1.png" alt=""></div>
+      <div class="item"><img src="images/Tata Consultancy Services.png" alt=""></div>
+      <div class="item"><img src="images/Shaligram Infotech.png" alt=""></div>
+      <div class="item"><img src="images/Evosys Global.png" alt=""></div>
+      <div class="item"><img src="images/Volansys.png" alt=""></div>
+      <div class="item"><img src="images/Pratibha Engineering Service, Baroda.png" alt=""></div>
+      <div class="item"><img src="images/Ordex Technologies.jpg" alt=""></div>
+      <div class="item"><img src="images/Tatvic Analytics.png" alt=""></div>
+      <div class="item"><img src="images/WebOccult Technologies.png" alt=""></div>
+      <div class="item"><img src="images/KNOVOS.jpg" alt=""></div>
+      <div class="item"><img src="images/Sarjen System Pvt Ltd..jpg" alt=""></div>
+      <div class="item"><img src="images/Itaims.jpg" alt=""></div>
+      <div class="item"><img src="images/Radixweb.jpg" alt=""></div>
+      <div class="item"><img src="images/Synoverge Technologies.png" alt=""></div>
+      <div class="item"><img src="images/Webmyne Systems Pvt Ltd.png" alt=""></div>
+      <div class="item"><img src="images/Monarch Innovation Pvt. Ltd..jpg" alt=""></div>
+      <div class="item"><img src="images/Valens DataLabs.png" alt=""></div>
+      <div class="item"><img src="images/TriState Technology.png" alt=""></div>
+      <div class="item"><img src="images/Yiion System Pvt Ltd..jpg" alt=""></div>
+      <div class="item"><img src="images/Maruti Techlabs.jpg" alt=""></div>
+      <div class="item"><img src="images/Simform Solutions.jpg" alt=""></div>
+      <div class="item"><img src="images/Wappnotech.jpg" alt=""></div>
+      <div class="item"><img src="images/MicroLogix Solutions.png" alt=""></div>
+      <div class="item"><img src="images/Jekson Vision.jpg" alt=""></div>
+      <div class="item"><img src="images/Vivansh Infotech.jpg" alt=""></div>
+      <div class="item"><img src="images/AIAB.png" alt=""></div>
+      <div class="item"><img src="images/HypeTeq Software Solutions.jpg" alt=""></div>
+      <div class="item"><img src="images/Matrix Comsec.png" alt=""></div>
+      <div class="item"><img src="images/WeblineIndia.png" alt=""></div>
+      
+     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- latest jquery file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+  (function ($) {
+    'use strict';
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            400:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
+  })(jQuery); 
+  </script>
+
+
+
+
+
+
+    <footer class="bg-color-light page-footer font-small lighten-5">
+        <div class="bg-color-dark py-2"></div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <div class="gecp-logo rounded-circle mx-auto">
+                        <img src="images/gecplogo.jpg" alt="" class="rounded-circle gecp-logo col p-2">
+                    </div>
+                    <p>Government Engineering College,
+                        Patan
+                        At. Katpur,
+                        Pincode: 384265
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+                    <p>
+                        <a class="text-white" href="#!">About US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Contact US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Grievance</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Student Corner</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Placement</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Scholarship</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+                    <p>
+                        <a class="text-white" href="#!">About US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Contact US</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Grievance</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Student Corner</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Placement</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#!">Scholarship</a>
+                    </p>
+                </div>
+
+                <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <div class="client">Our Clients</div>
+                    <div class="bg-color-light company-name">Google</div>
+                    <div class="bg-color-light company-name">Microsoft</div>
+                    <div class="bg-color-light company-name">envato</div>
+                    <div class="bg-color-light company-name">WooCOMMERCE</div>
+                </div>
+
+                <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+                    <div class="client">Our Clients</div>
+                    <div class="bg-color-light company-name fa-google"></div>
+                    <div class="bg-color-light company-name fa-microsoft"></div>
+                    <div class="bg-color-light company-name fa-envato"></div>
+                    <div class="bg-color-light company-name fa-WooCOMMERCE"></div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="row d-flex justify-content-between">
+                <div>Copyright © 2004 GEC Patan. All rights reserved.</div>
+                <div>Terms of Use | Privacy Policy</div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

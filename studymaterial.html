@@ -115,12 +115,24 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active-link">
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
+                            STUDENT CORNER
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item active-item" href="studymaterial.html">STUDY MATERIAL</a>
+                            <a class="dropdown-item" href="StudentCouncil.html">STUDENT COUNCIL</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
                 </li>
                 <li class="nav-item active-link">
                     <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="event.html">EVENT</a>
                 </li>
@@ -132,7 +144,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="Placements.html">TPO Overview</a>
-                            <a class="dropdown-item" href="#">TPO Vision & Mission</a>
+                            <a class="dropdown-item" href="tpo-vision.html">TPO Vision & Mission</a>
                             <a class="dropdown-item" href="plac&cell.html">Placements</a>
                             <a class="dropdown-item" href="graph.html">Graph View</a>
                         </div>
@@ -182,6 +194,7 @@
             </div>
             <div class="row d-flex align-items-center justify-content-center" id="branchId">
 
+                <!-- <button class="department activeBranch" name="ec" onclick="selection('cse',this)"> -->
                 <button class="department activeBranch" name="cse" onclick="openBranch('cse')">
                     <div class="col">
                         <img src="images/studyMaterial/comlogo.png" alt=""
@@ -192,7 +205,7 @@
                     </div>
                 </button>
                 <button class="department" name="ec" onclick="openBranch('ec')">
-                    <!-- <button class="department" name="ec" onclick="selection('ec',this)"> -->
+                <!-- <button class="department" name="ec" onclick="selection('ec',this)"> -->
                     <div class="col">
                         <img src="images/studyMaterial/ec-logo-2.png " alt=""
                             class="department-logos border img-fluid rounded-circle">
@@ -201,6 +214,7 @@
                         </div>
                     </div>
                 </button>
+                <!-- <button class="department" name="ec" onclick="selection('mechanical',this)"> -->
                 <button class="department" onclick="openBranch('mechanical')">
                     <div class="col">
                         <img src="images/studyMaterial/mech-logo.png" alt=""
@@ -233,7 +247,6 @@
     </div>
 
     <!-- Semester - CSE -->
-
     <div class="branch container-fluid mx-auto m-5 p-5" id="cse">
         <div class="text-center d-flex justify-content-center align-items-center">
             <div class="headings h4 mb-4 font-weight-bold"> COMPUTER</div>
@@ -268,7 +281,7 @@
                     </div>
                 </div>
                 <!-- SEM 2 -->
-                <div id="sem2Cse" class="subjects" style="display:none">
+                <div id="sem2Cse" class="subjects p-2" style="display:none">
                     <h2>SEM 2 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -283,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem3Cse" class="subjects" style="display:none">
+                <div id="sem3Cse" class="subjects p-2" style="display:none">
                     <h2>SEM 3 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -298,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem4Cse" class="subjects" style="display:none">
+                <div id="sem4Cse" class="subjects p-2" style="display:none">
                     <h2>SEM 4 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -313,7 +326,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem5Cse" class="subjects" style="display:none">
+                <div id="sem5Cse" class="subjects p-2" style="display:none">
                     <h2>SEM 5 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -328,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem6Cse" class="subjects" style="display:none">
+                <div id="sem6Cse" class="subjects p-2" style="display:none">
                     <h2>SEM 6 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3160601 CNS </button>
                     <button class="sub-button subjects-name"> 3160704 TOC</button>
@@ -343,7 +356,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem7Cse" class="subjects" style="display:none">
+                <div id="sem7Cse" class="subjects p-2" style="display:none">
                     <h2>SEM 7 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -358,7 +371,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem8Cse" class="subjects" style="display:none">
+                <div id="sem8Cse" class="subjects p-2" style="display:none">
                     <h2>SEM 8 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -411,7 +424,7 @@
                     </div>
                 </div>
                 <!-- SEM 2 -->
-                <div id="sem2Ec" class="subjects" style="display:none">
+                <div id="sem2Ec" class="subjects p-2" style="display:none">
                     <h2>SEM 2 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -427,7 +440,7 @@
                     </div>
                 </div>
                 <!-- SEM 3 -->
-                <div id="sem3Ec" class="subjects" style="display:none">
+                <div id="sem3Ec" class="subjects p-2" style="display:none">
                     <h2>SEM 3 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -442,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem4Ec" class="subjects" style="display:none">
+                <div id="sem4Ec" class="subjects p-2" style="display:none">
                     <h2>SEM 4 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -457,7 +470,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem5Ec" class="subjects" style="display:none">
+                <div id="sem5Ec" class="subjects p-2" style="display:none">
                     <h2>SEM 5 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -472,7 +485,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem6Ec" class="subjects" style="display:none">
+                <div id="sem6Ec" class="subjects p-2" style="display:none">
                     <h2>SEM 6 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3160601 CNS </button>
                     <button class="sub-button subjects-name"> 3160704 TOC</button>
@@ -487,7 +500,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem7Ec" class="subjects" style="display:none">
+                <div id="sem7Ec" class="subjects p-2" style="display:none">
                     <h2>SEM 7 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -502,7 +515,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem8Ec" class="subjects" style="display:none">
+                <div id="sem8Ec" class="subjects p-2" style="display:none">
                     <h2>SEM 8 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -555,7 +568,7 @@
                     </div>
                 </div>
                 <!-- SEM 2 -->
-                <div id="sem2Mech" class="subjects" style="display:none">
+                <div id="sem2Mech" class="subjects p-2" style="display:none">
                     <h2>SEM 2 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -571,7 +584,7 @@
                     </div>
                 </div>
                 <!-- SEM 3 -->
-                <div id="sem3Mech" class="subjects" style="display:none">
+                <div id="sem3Mech" class="subjects p-2" style="display:none">
                     <h2>SEM 3 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -586,7 +599,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem4Mech" class="subjects" style="display:none">
+                <div id="sem4Mech" class="subjects p-2" style="display:none">
                     <h2>SEM 4 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -601,7 +614,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem5Mech" class="subjects" style="display:none">
+                <div id="sem5Mech" class="subjects p-2" style="display:none">
                     <h2>SEM 5 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -616,7 +629,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem6Mech" class="subjects" style="display:none">
+                <div id="sem6Mech" class="subjects p-2" style="display:none">
                     <h2>SEM 6 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3160601 CNS </button>
                     <button class="sub-button subjects-name"> 3160704 TOC</button>
@@ -631,7 +644,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem7Mech" class="subjects" style="display:none">
+                <div id="sem7Mech" class="subjects p-2" style="display:none">
                     <h2>SEM 7 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -646,7 +659,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem8Mech" class="subjects" style="display:none">
+                <div id="sem8Mech" class="subjects p-2" style="display:none">
                     <h2>SEM 8 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -663,8 +676,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <!-- semester Civil -->
@@ -701,7 +712,7 @@
                     </div>
                 </div>
                 <!-- SEM 2 -->
-                <div id="sem2Civil" class="subjects" style="display:none">
+                <div id="sem2Civil" class="subjects p-2" style="display:none">
                     <h2>SEM 2 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -717,7 +728,7 @@
                     </div>
                 </div>
                 <!-- SEM 3 -->
-                <div id="sem3Civil" class="subjects" style="display:none">
+                <div id="sem3Civil" class="subjects p-2" style="display:none">
                     <h2>SEM 3 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -732,7 +743,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem4Civil" class="subjects" style="display:none">
+                <div id="sem4Civil" class="subjects p-2" style="display:none">
                     <h2>SEM 4 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -747,7 +758,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem5Civil" class="subjects" style="display:none">
+                <div id="sem5Civil" class="subjects p-2" style="display:none">
                     <h2>SEM 5 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -762,7 +773,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem6Civil" class="subjects" style="display:none">
+                <div id="sem6Civil" class="subjects p-2" style="display:none">
                     <h2>SEM 6 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3160601 CNS </button>
                     <button class="sub-button subjects-name"> 3160704 TOC</button>
@@ -777,7 +788,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem7Civil" class="subjects" style="display:none">
+                <div id="sem7Civil" class="subjects p-2" style="display:none">
                     <h2>SEM 7 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -792,7 +803,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem8Civil" class="subjects" style="display:none">
+                <div id="sem8Civil" class="subjects p-2" style="display:none">
                     <h2>SEM 8 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -845,7 +856,7 @@
                     </div>
                 </div>
                 <!-- SEM 2 -->
-                <div id="sem2Electrical" class="subjects" style="display:none">
+                <div id="sem2Electrical" class="subjects p-2" style="display:none">
                     <h2>SEM 2 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -861,7 +872,7 @@
                     </div>
                 </div>
                 <!-- SEM 3 -->
-                <div id="sem3Electrical" class="subjects" style="display:none">
+                <div id="sem3Electrical" class="subjects p-2" style="display:none">
                     <h2>SEM 3 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -876,7 +887,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem4Electrical" class="subjects" style="display:none">
+                <div id="sem4Electrical" class="subjects p-2" style="display:none">
                     <h2>SEM 4 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -891,7 +902,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem5Electrical" class="subjects" style="display:none">
+                <div id="sem5Electrical" class="subjects p-2" style="display:none">
                     <h2>SEM 5 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -906,7 +917,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem6Electrical" class="subjects" style="display:none">
+                <div id="sem6Electrical" class="subjects p-2" style="display:none">
                     <h2>SEM 6 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3160601 CNS </button>
                     <button class="sub-button subjects-name"> 3160704 TOC</button>
@@ -921,7 +932,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem7Electrical" class="subjects" style="display:none">
+                <div id="sem7Electrical" class="subjects p-2" style="display:none">
                     <h2>SEM 7 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -936,7 +947,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="sem8Electrical" class="subjects" style="display:none">
+                <div id="sem8Electrical" class="subjects p-2" style="display:none">
                     <h2>SEM 8 - Subjects</h2>
                     <button class="sub-button actieSub subjects-name">3110003 PPS </button>
                     <button class="sub-button subjects-name"> 3110005 BEE</button>
@@ -954,7 +965,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="bg-color-light page-footer font-small lighten-5">
@@ -1013,12 +1023,20 @@
                     </p>
                 </div>
 
-                <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
-                    <div class="client">Our Clients</div>
-                    <div class="bg-color-light company-name">Google</div>
-                    <div class="bg-color-light company-name">Microsoft</div>
-                    <div class="bg-color-light company-name">envato</div>
-                    <div class="bg-color-light company-name">WooCOMMERCE</div>
+                <div class="our-client-box mx-auto bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4 py-2">
+                    <div class="text-center font-weight-bold my-1">Our Clients</div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/google.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/woocommerce.png" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
@@ -1031,18 +1049,16 @@
         </div>
 
     </footer>
-
     <!-- JS  -->
     <script>
-
-        function selection(branch, obj) {
-            var id = $('.activeBranch').attr('name');
-            $('.activeBranch').removeClass('activeBranch');
-            $(obj).addClass('activeBranch');
-            // $('#'+branch)
-            $("#" + id).attr('style', 'display:none');
-            $('#' + branch).attr('style', 'display:block');
-        }
+        // function selection(branch, obj) {
+        //     var id = $('.activeBranch').attr('name');
+        //     $('.activeBranch').removeClass('activeBranch');
+        //     $(obj).addClass('activeBranch');
+        //     // $('#'+branch)
+        //     $("#" + id).attr('style', 'display:none');
+        //     $('#' + branch).attr('style', 'display:block');
+        // }
 
         function openSubject(subjectName) {
             var i;
@@ -1052,19 +1068,28 @@
             }
             document.getElementById(subjectName).style.display = "block";
 
+            // var btnContainer = document.getElementById("semId");
+            // var btns = btnContainer.getElementsByClassName("sem-button");
+            // for (var i = 0; i < btns.length; i++) {
+            //     btns[i].addEventListener("click", function () {
+            //         var current = document.getElementsByClassName("activeSem");
+            //         current[0].className = current[0].className.replace(" activeSem", "");
+            //         this.className += " activeSem";
+            //     });
+            // }
+        }
+        $(document).ready(function () {
             var btnContainer = document.getElementById("semId");
-
             var btns = btnContainer.getElementsByClassName("sem-button");
-
             for (var i = 0; i < btns.length; i++) {
                 btns[i].addEventListener("click", function () {
                     var current = document.getElementsByClassName("activeSem");
-                    current[0].className = current[0].className.replace(" activeSem", "");
+                    current[0].className = current[0].className.replace(" activeSem","");
                     this.className += " activeSem";
                 });
             }
-        }
-
+        })
+        
         function openBranch(branchName) {
             var i;
             var x = document.getElementsByClassName("branch");
@@ -1072,11 +1097,11 @@
                 x[i].style.display = "none";
             }
             document.getElementById(branchName).style.display = "block";
+        }
 
+        $(document).ready(function () {
             var btnContainer = document.getElementById("branchId");
-
             var btns = btnContainer.getElementsByClassName("department");
-
             for (var i = 0; i < btns.length; i++) {
                 btns[i].addEventListener("click", function () {
                     var current = document.getElementsByClassName("activeBranch");
@@ -1084,7 +1109,9 @@
                     this.className += " activeBranch";
                 });
             }
-        }
+        })
+
+
     </script>
 </body>
 

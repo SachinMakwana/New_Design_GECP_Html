@@ -59,10 +59,10 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ">
-            <li class="nav-item active-link">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  active-link">
                 <div class="dropdown">
                     <a class="btn nav-link text-white text-left" type="button"
                         id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
@@ -108,11 +108,23 @@
                 </div>
             </li>
             <li class="nav-item">
+                <div class="dropdown">
+                    <a class="btn nav-link text-white text-left" type="button"
+                        id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+                        STUDENT CORNER
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="studymaterial.html">STUDY MATERIAL</a>
+                        <a class="dropdown-item" href="StudentCouncil.html">STUDENT COUNCIL</a>
+                    </div>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="event.html">EVENT</a>
             </li>
@@ -124,7 +136,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="Placements.html">TPO Overview</a>
-                        <a class="dropdown-item" href="">TPO Vision & Mission</a>
+                        <a class="dropdown-item" href="tpo-vision.html">TPO Vision & Mission</a>
                         <a class="dropdown-item" href="plac&cell.html">Placements</a>
                         <a class="dropdown-item" href="graph.html">Graph View</a>
                     </div>
@@ -150,7 +162,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">GALLERY</a>
+                <a class="nav-link" href="gallery1.html">GALLERY</a>
             </li>
         </ul>
     </div>
@@ -166,15 +178,16 @@
   <div class="depaprtment hearderset">
     <img src="images\aboutus\about2.jpg"> 
     <h2 class="centered text-white">ABOUT US</h2> 
+    <p class="speciname">MISSION & VISION</p>
  </div>
 
  <div class="row bg-ghostwhite">
-    <div class="col-md-6 pad-2">
-        <div class="bg-vis principal pad-b-120"></div>
+    <div class="col-md-6 p-4 mt-2">
+        <div class="bg-vis principal"></div>
     </div>
-    <div class="col-md-6 pad-2">
-        <div class="NA-head">Vision</div>
-        <p class="pad-2">
+    <div class="col-md-6 p-4 mt-2">
+        <div class="NA-head h3">Vision</div>
+        <p class="pt-2 text-justify">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking
             at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
             opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
@@ -186,9 +199,9 @@
     </div>
  </div>
  <div class="row bg-ghostwhite">
-    <div class="col-md-6 pad-2">
-        <div class="NA-head">Mission</div>
-        <p class="pad-2">
+    <div class="col-md-6 p-4 mb-2">
+        <div class="NA-head h3">Mission</div>
+        <p class="pt-2 text-justify">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking
             at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
             opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
@@ -198,8 +211,8 @@
           </p>
   
     </div>
-    <div class="col-md-6 pad-2">
-        <div class="bg-mis principal pad-b-120"></div>
+    <div class="col-md-6 p-4 mb-2">
+        <div class="bg-mis principal"></div>
     </div>
  </div>
   <!-- <div class="section-container">
@@ -301,21 +314,29 @@
                     </p>
                 </div>
 
-                <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+                <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
                     <div class="client">Our Clients</div>
                     <div class="bg-color-light company-name">Google</div>
                     <div class="bg-color-light company-name">Microsoft</div>
                     <div class="bg-color-light company-name">envato</div>
                     <div class="bg-color-light company-name">WooCOMMERCE</div>
-                </div>
+                </div> -->
 
-                <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
-                <div class="client">Our Clients</div>
-                <div class="bg-color-light company-name fa-google"></div>
-                <div class="bg-color-light company-name fa-microsoft"></div>
-                <div class="bg-color-light company-name fa-envato"></div>
-                <div class="bg-color-light company-name fa-WooCOMMERCE"></div>
-            </div> -->
+                <div class="our-client-box mx-auto bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4 py-2">
+                    <div class="text-center font-weight-bold my-1">Our Clients</div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/google.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center py-1">
+                        <img src="images/footer/woocommerce.png" alt="" class="img-fluid">
+                    </div>
+                </div>
 
             </div>
         </div>

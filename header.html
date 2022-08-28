@@ -54,7 +54,7 @@
         <img src="images/header/rightlogo.png" class="logo-right col p-2">
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fullwidth">
+    <nav class="nopadding navbar navbar-expand-lg navbar-dark bg-dark container-fullwidth">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
-                <li class="nav-item">
+                <li class="nav-item active-link">
                     <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
@@ -110,12 +110,24 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
+                    <div class="dropdown">
+                        <a class="btn nav-link text-white text-left" type="button"
+                            id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+                            STUDENT CORNER
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="studymaterial.html">STUDY MATERIAL</a>
+                            <a class="dropdown-item" href="StudentCouncil.html">STUDENT COUNCIL</a>
+                        </div>
+                    </div>
                 </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="event.html">EVENT</a>
                 </li>
@@ -127,7 +139,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="Placements.html">TPO Overview</a>
-                            <a class="dropdown-item" href="P">TPO Vision & Mission</a>
+                            <a class="dropdown-item" href="tpo-vision.html">TPO Vision & Mission</a>
                             <a class="dropdown-item" href="plac&cell.html">Placements</a>
                             <a class="dropdown-item" href="graph.html">Graph View</a>
                         </div>

@@ -42,8 +42,8 @@ body {
     /* box-shadow: -1px 3px 12px -3px rgba(0, 0, 0, 7.5); */
 }
 
-.nopadding {
-    padding: 0 !important;
+.nomargin {
+    /* padding: 0 !important; */
     margin: 0 !important;
 }
 
@@ -60,17 +60,6 @@ body {
 .mail-icon {
     color: darkblue;
 }
-/* .faculty img{
-    width: 100%;
-}
-.faculty{
-    margin: 15px;
-    box-shadow: 10px 10px 10px rgb(163, 163, 163);
-    border: 2px solid;
-    white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
-} */
 
 .ourTeam-box {
     border-radius: 8px;
@@ -99,17 +88,16 @@ body {
     color: gray;
 }
 
-.section3 {
-    padding: 10px;
-    background-color: #5db5dd;
-    border-radius: 0px 0px 7px 7px;
-}
-.section3 a{
+a.section3{
     text-decoration: none;
     font-size: 20px;
+    width: 100%;
+    background-color: #5db5dd;
+    border-radius: 0px 0px 7px 7px;
+    padding: 8px;
 }
-/* .section3 i{
-    color: #ffffff !important;
-    padding: 15px;
-    font-size: 15px;
-} */
+a.section3:hover{
+    background-color: #189ddb;
+    color: black !important;
+    font-weight: bold;
+}

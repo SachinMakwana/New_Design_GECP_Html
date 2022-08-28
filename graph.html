@@ -18,11 +18,13 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/graph.css">
+  <link rel="stylesheet" href="css/tpovision.css">
 
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  
 
 
 
@@ -117,11 +119,23 @@
               </div>
           </li>
           <li class="nav-item">
+            <div class="dropdown">
+                <a class="btn nav-link text-white text-left" type="button"
+                    id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+                    STUDENT CORNER
+                </a>
+                <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="studymaterial.html">STUDY MATERIAL</a>
+                    <a class="dropdown-item" href="StudentCouncil.html">STUDENT COUNCIL</a>
+                </div>
+            </div>
+        </li>
+          <!-- <li class="nav-item">
               <a class="nav-link" href="StudentCouncil.html">STUDENT CORNER</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="studymaterial.html">STUDY MATERIAL</a>
-          </li>
+          </li> -->
           <li class="nav-item">
               <a class="nav-link" href="event.html">EVENT</a>
           </li>
@@ -133,7 +147,7 @@
                   </a>
                   <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item" href="Placements.html">TPO Overview</a>
-                      <a class="dropdown-item" href="#">TPO Vision & Mission</a>
+                      <a class="dropdown-item" href="tpo-vision.html">TPO Vision & Mission</a>
                       <a class="dropdown-item" href="plac&cell.html">Placements</a>
                       <a class="dropdown-item active-item" href="graph.html">Graph View</a>
                   </div>
@@ -159,7 +173,7 @@
               </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">GALLERY</a>
+              <a class="nav-link" href="gallery1.html">GALLERY</a>
           </li>
       </ul>
   </div>
@@ -168,10 +182,15 @@
   <!--  Cell container   -->
 
   <!-- 1 - background image with title -->
-  <div class="depaprtment">
-    <img src="images\placement.jpg">
-    <div class="centered white">PLACEMENTS</div>
-  </div>
+
+
+  <div class="header-block d-flex align-items-center mx-auto">
+    <!-- <div class="row">   -->
+      <img src="images/tpo/tpo.jpg.jpg" alt="Training And Placement Cell">
+      <div class="text-block mx-auto text-block mx-auto d-flex align-items-center justify-content-center ">
+          Training And Placement Cell
+      </div>
+</div> 
 
   <div class="main my_page ph-new">
     <div class="top-requter18  col-sm-12 branch">
@@ -184,10 +203,11 @@
 
     <!-- block 1 -->
 
-    <div class="g1 col-lg-2 col-sm-4">
+    <div class="g1 col-lg-4 col-sm-4">
       <div class="graph-pnl text-center">
         <h5>STUDENT PLACED</h5>
-        <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup">
+        <a href="#animatedModal" class="popup-trigger" onclick="openGraph('chart0')" data-target=".popup">
+          <!-- data-target="#popup" -->
           <img src="images/bargraph1.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
@@ -197,10 +217,11 @@
 
     <!-- block 2 -->
 
-    <div class="g1 col-lg-2 col-sm-4">
+    <div class="g1 col-lg-3 col-sm-3">
       <div class="graph-pnl text-center">
         <h5>BRANCH-WISE PLACEMENT</h5>
-        <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup1">
+        <a href="#animatedModal" class="popup-trigger" onclick="openGraph('chart1')" data-target=".popup">
+          <!-- data-target="#popup1" -->
           <img src="images/piechart1.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
@@ -209,10 +230,11 @@
 
     <!-- block 3 -->
 
-    <div class="g1 col-lg-2 col-sm-4">
+    <div class="g1 col-lg-3 col-sm-3">
       <div class="graph-pnl text-center">
         <h5>HIGHEST PACKAGE OFFERED</h5>
-        <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup2">
+        <a href="#animatedModal" class="popup-trigger"  onclick="openGraph('chart2')" data-target=".popup"> 
+          <!-- data-target="#popup2" -->
           <img src="images/bargraph2.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
@@ -221,10 +243,10 @@
 
     <!-- block 4 -->
 
-    <div class="g1 col-lg-2 col-sm-4">
+    <div class="g1 col-lg-3 col-sm-3">
       <div class="graph-pnl text-center">
         <h5>NO. OF COMPANIES VISITED</h5>
-        <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup3">
+        <a href="#animatedModal" class="popup-trigger" onclick="openGraph('chart3')" data-target=".popup">  <!-- data-target="#popup3"-->
           <img src="images/bargraph3.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
@@ -233,604 +255,54 @@
 
     <!-- block 5 -->
 
-    <div class="g1 col-lg-2 col-sm-4">
+    <div class="g1 col-lg-3 col-sm-3">
       <div class="graph-pnl text-center">
         <h5>PLACEMENT RECORD </h5>
-        <a id="myBtn" href="#animatedModal" class="popup-trigger" data-target="#popup4">
+        <a href="#animatedModal" class="popup-trigger"  onclick="openGraph('chart4')" data-target=".popup">
           <img src="images/bargraph4.png" width="289" height="241">
           <br>
           <span>Click to View Graph</span></a>
       </div>
     </div>
 
-    <!-- block 6 -->
-
-    <div class="g1 col-lg-2 col-sm-4">
-      <div class="graph-pnl text-center">
-        <h5>BRANCH-WISE PLACEMENT</h5>
-        <a id="myBtn" href="#animatedModal" class="lightbox" onclick="lightbox_open(this)">
-          <img src="images/Screenshot 1.png" width="289" height="241">
-          <br>
-          <span>Click to View Graph</span></a>
-      </div>
-    </div>
-
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-  <!-- FOR BLOCK 1 -->
+  <!-- FOR POPUP -->
 
-  <div id="popup" class="popup">
+  <div class="popup">
     <!-- <div class="popup-text"> -->
-      <div id="chartdiv">
-        <div id="chartContainer3" style="width: 100%; height: 300px;display: inline-block;"></div>
-      </div>
-      <div class="details">
-
-        <table>
-
-          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>STUDENT PLACED 2016-2022</span> </h3>
-
-          <tr>
-            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
-            <td width="4" align="left">&nbsp;</td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>STUDENT PLACED</strong></td>
-          </tr>
-
-
-          <tr>
-            <td align="left" bgcolor="#D80D95">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2016</td>
-            <td bgcolor="#F7F7F7">150</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#0DCFD8">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2017</td>
-            <td bgcolor="#F7F7F7">200 </td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#9E0DD8">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2018</td>
-            <td bgcolor="#F7F7F7">280</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#0DD87C">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2019</td>
-            <td bgcolor="#F7F7F7">350</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#D2D80D">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2020</td>
-            <td bgcolor="#F7F7F7">390</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#0D65AB">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2021</td>
-            <td bgcolor="#F7F7F7">413</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#D8880D">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2022</td>
-            <td bgcolor="#F7F7F7">500</td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left">
-              <p>&nbsp;</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left" class="placement-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste obcaecati nemo cumque. Ipsum
-                repellendus porro id asperiores itaque eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione, voluptates?
-
-
-
-              </p>
-            </td>
-          </tr>
-
-        </table>
-
-      </div>
+      <!-- <div id="chartdiv0"> -->
+        <!-- <div id="test" style="width:100%; height: 450px;display: inline-block;"></div> -->
+        <div id="test" style="height: 370px; max-width: 920px; margin: 0px auto;overflow-x: scroll;"></div>
+        <script src="../../canvasjs.min.js"></script> 
+      <!-- </div> -->
+      
+     
     <!-- </div> -->
     <span class="popup-btn-close">&times;</span>
   </div>
 
-  <!-- FOR BLOCK 2 -->
+  
 
-  <div id="popup1" class="popup">
-    <!-- <div class="popup-text"> -->
-      <div id="chartdiv1">
-        <div id="chartContainer1" style="width: 100%; height: 300px;display: inline-block;"></div>
-      </div>
-      <div class="details">
-
-        <table>
-
-          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>BRANCHWISE PLACEMENT</span> </h3>
-
-          <tr>
-            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
-            <td width="4" align="left">&nbsp;</td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>STUDENT PLACED</strong></td>
-          </tr>
-
-
-          <tr>
-            <td align="left" bgcolor="#C71585">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">COMPUTER SCIENCE</td>
-            <td bgcolor="#F7F7F7">35.5%</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#66CDAA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">ELECTRICAL</td>
-            <td bgcolor="#F7F7F7">29.87%</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#663399">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">MECHANICAL</td>
-            <td bgcolor="#F7F7F7">18.65%</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#2E8B57">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">ELECTRONICS AND COMMUNICATION</td>
-            <td bgcolor="#F7F7F7">8.00%</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#FF6347">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">CIVIL</td>
-            <td bgcolor="#F7F7F7">7.98%</td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left">
-              <p>&nbsp;</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left" class="placement-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione, voluptates?</p>
-            </td>
-          </tr>
-        </table>
-      </div>
-    <!-- </div> -->
-    <span class="popup-btn-close">&times;</span>
-  </div>
-
-  <!-- FOR BLOCK 3 -->
-
-  <div id="popup2" class="popup">
-    <!-- <div class="popup-text"> -->
-      <div id="chartdiv2">
-        <div id="chartContainer2" style="width: 100%; height: 300px;display: inline-block;"></div>
-      </div>
-      <div class="details">
-
-        <table>
-
-          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>HIGHEST PACKAGE</span> </h3>
-
-          <tr>
-            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
-            <td width="4" align="left">&nbsp;</td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>HIGHEST PACKAGE</strong></td>
-          </tr>
-
-
-          <tr>
-            <td align="left" bgcolor="#5DCCDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2016</td>
-            <td bgcolor="#F7F7F7">5 LPA</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#5D97DA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2017</td>
-            <td bgcolor="#F7F7F7">9 LPA</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#5D6CDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2018</td>
-            <td bgcolor="#F7F7F7">13 LPA</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#7B5DDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2019</td>
-            <td bgcolor="#F7F7F7">18 LPA</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#975DDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2020</td>
-            <td bgcolor="#F7F7F7">22 LPA</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#BF5DDA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2021</td>
-            <td bgcolor="#F7F7F7">27 LPA</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#DA5DCC">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2022</td>
-            <td bgcolor="#F7F7F7">30 LPA</td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left">
-              <p>&nbsp;</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left" class="placement-text">
-              <p>Ratione, voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quisquam odit vitae
-                provident impedit sit voluptates nemo fugit, corporis ducimus.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-    <!-- </div> -->
-    <span class="popup-btn-close">&times;</span>
-  </div>
-
-  <!-- FOR BLOCK 4 -->
-
-  <div id="popup3" class="popup">
-    <!-- <div class="popup-text"> -->
-      <div id="chartdiv3">
-        <div id="chartContainer4" style="width: 100%; height: 300px;display: inline-block;"></div>
-      </div>
-      <div class="details">
-
-        <table>
-
-          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>TOTAL COMPANIES VISITED</span> </h3>
-
-          <tr>
-            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
-            <td width="4" align="left">&nbsp;</td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>COMPANIES VISITED</strong></td>
-          </tr>
-
-
-          <tr>
-            <td align="left" bgcolor="#88C8A5">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2016</td>
-            <td bgcolor="#F7F7F7">85</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#09F591">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2017</td>
-            <td bgcolor="#F7F7F7">100</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#15CF80">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2018</td>
-            <td bgcolor="#F7F7F7">125</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#78FADA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2019</td>
-            <td bgcolor="#F7F7F7">140</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#44E1BB">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2020</td>
-            <td bgcolor="#F7F7F7">170</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#1CB18D">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2021</td>
-            <td bgcolor="#F7F7F7">230</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#06644D">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2022</td>
-            <td bgcolor="#F7F7F7">250</td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left">
-              <p>&nbsp;</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="4" align="left" class="placement-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-    <!-- </div> -->
-    <span class="popup-btn-close">&times;</span>
-  </div>
-
-  <!-- FOR BLOCK 5 -->
-
-  <div id="popup4" class="popup">
-    <!-- <div class="popup-text"> -->
-      <div id="chartdiv4">
-        <div id="chartContainer5" style="width: 100%; height: 300px;display: inline-block;"></div>
-      </div>
-      <div class="details">
-
-        <table>
-
-          <h3 style="text-align: center;">YEARLY PLACEMENT RECORDS : <span>PLACEMENT RECORD</span> </h3>
-
-          <!-- <tr>
-            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
-            <td width="4" align="left">&nbsp;</td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>BATCH</strong></td>
-            <td style="width:80%;background-color:#E6F7FF"><strong>COMPANIES VISITED</strong></td>
-          </tr>
-
-
-          <tr>
-            <td align="left" bgcolor="#88C8A5">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2016</td>
-            <td bgcolor="#F7F7F7">85</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#09F591">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2017</td>
-            <td bgcolor="#F7F7F7">100</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#15CF80">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2018</td>
-            <td bgcolor="#F7F7F7">125</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#78FADA">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2019</td>
-            <td bgcolor="#F7F7F7">140</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#44E1BB">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2020</td>
-            <td bgcolor="#F7F7F7">170</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#1CB18D">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2021</td>
-            <td bgcolor="#F7F7F7">230</td>
-          </tr>
-          <tr>
-            <td align="left" bgcolor="#06644D">&nbsp;</td>
-            <td align="left">&nbsp;</td>
-            <td align="left" bgcolor="#F7F7F7">2022</td>
-            <td bgcolor="#F7F7F7">250</td>
-          </tr> -->
-
-          <tr>
-            <td width="53" height="29" align="left" bgcolor="#E6F7FF"><strong>LEGENDS</strong></td>
-            <td style="width:14%;background-color:#E6F7FF;text-align:center">2016</td>
-            <td style="width:14%;background-color:#E6F7FF;text-align:center">2017</td>
-            <td style="width:14%;background-color:#E6F7FF;text-align:center">2018</td>
-            <td style="width:14%;background-color:#E6F7FF;text-align:center">2019</td>
-            <td style="width:14%;background-color:#E6F7FF;text-align:center">2020</td>
-            <td style="width:14%;background-color:#E6F7FF;text-align:center">2021</td>
-            <td style="width:14%;background-color:#E6F7FF;text-align:center">2022</td>
-          </tr>
-
-          <tr>
-            <td align="left" bgcolor="#4F81BC">&nbsp;</td>
-            <td align="center" bgcolor="#F7F7F7">80</td>
-            <td align="center" bgcolor="#F7F7F7">100</td>
-            <td align="center" bgcolor="#F7F7F7">115</td>
-            <td align="center" bgcolor="#F7F7F7">125</td>
-            <td align="center" bgcolor="#F7F7F7">136</td>
-            <td align="center" bgcolor="#F7F7F7">150</td>
-            <td align="center" bgcolor="#F7F7F7">180</td>
-          </tr>
-
-          <tr>
-            <td align="left" bgcolor="#C0504E">&nbsp;</td>
-            <td align="center" bgcolor="#F7F7F7">55</td>
-            <td align="center" bgcolor="#F7F7F7">79</td>
-            <td align="center" bgcolor="#F7F7F7">100</td>
-            <td align="center" bgcolor="#F7F7F7">116</td>
-            <td align="center" bgcolor="#F7F7F7">129</td>
-            <td align="center" bgcolor="#F7F7F7">145</td>
-            <td align="center" bgcolor="#F7F7F7">176</td>
-          </tr>
-
-          <tr>
-            <td colspan="8" align="left">
-              <p>&nbsp;</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="8" align="left" class="placement-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Tempore, unde.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-    <!-- </div> -->
-    <span class="popup-btn-close">&times;</span>
-  </div>
-
+  
   <script>
 
-    //popup 2
-
-    window.onload = function () {
-
-      CanvasJS.addColorSet("greenShades",
-        [//colorSet Array
-
-          "#C71585",
-          "#66CDAA",
-          "#663399",
-          "#2E8B57",
-          "#FF6347"
-        ]);
-
-      var chart = new CanvasJS.Chart("chartContainer1", {
-        colorSet: "greenShades",
-        animationEnabled: true,
-        title: {
-          text: "BRANCHWISE PLACEMENT"
-        },
-        data: [{
-          type: "pie",
-          startAngle: 240,
-          yValueFormatString: "##0.00'%'",
-          indexLabel: "{label} {y}",
-          dataPoints: [
-            { y: 35.5, label: "CSE" },
-            { y: 29.87, label: "EE" },
-            { y: 18.65, label: "ME" },
-            { y: 8.0, label: "EC" },
-            { y: 7.98, label: "CIVIL" }
-          ]
-        }]
-      });
+    function toggleDataSeries(e) {
+      if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+        e.dataSeries.visible = false;
+      }
+      else {
+        e.dataSeries.visible = true;
+      }
       chart.render();
-
     }
 
-
-
-
-
-    //popup 3
-    CanvasJS.addColorSet("greenShades",
-      [//colorSet Array
-
-        "#5DCCDA",
-        "#5D97DA",
-        "#5D6CDA",
-        "#7B5DDA",
-        "#975DDA",
-        "#BF5DDA",
-        "#DA5DCC"
-      ]);
-    var chart = new CanvasJS.Chart("chartContainer2", {
-      animationEnabled: true,
-      colorSet: "greenShades",
-      theme: "light1", // "light1", "light2", "dark1", "dark2"
-      title: {
-        text: "HIGHEST PACKAGE OFFERED"
-      },
-      axisY: {
-        title: "Highest Package",
-        suffix: "LPA",
-        includeZero: false
-      },
-      axisX: {
-        title: "BATCH"
-      },
-      width: 450,
-      data: [{
-        type: "column",
-        dataPoints: [
-          { y: 5, label: "2016" },
-          { y: 9, label: "2017" },
-          { y: 13, label: "2018" },
-          { y: 18, label: "2019" },
-          { y: 22, label: "2020" },
-          { y: 27, label: "2021" },
-          { y: 30, label: "2022" }
-        ]
-      }]
-    });
-    chart.render();
-
-
-    // popup 1
-
-    CanvasJS.addColorSet("greenShades",
-      [//colorSet Array
-
-        "#D80D95",
-        "#0DCFD8",
-        "#9E0DD8",
-        "#0DD87C",
-        "#D2D80D",
-        "#0D65AB",
-        "#D8880D"
-      ]);
-    var chart = new CanvasJS.Chart("chartContainer3", {
-      animationEnabled: true,
-      colorSet: "greenShades",
-      theme: "light1", // "light1", "light2", "dark1", "dark2"
-      title: {
-        text: "STUDENTS PLACED"
-      },
-      axisY: {
-        title: "No of Students"
-      },
-      axisX: {
-        title: "YEAR"
-      },
-      width: 450,
-      data: [{
-        type: "column",
-        dataPoints: [
-          { y: 150, label: "2016" },
-          { y: 200, label: "2017" },
-          { y: 280, label: "2018" },
-          { y: 350, label: "2019" },
-          { y: 390, label: "2020" },
-          { y: 413, label: "2021" },
-          { y: 500, label: "2022" }
-        ]
-      }]
-    });
-    chart.render();
-
-    // popup 4
-
+    function openGraph(id){
+      var chart;
+      if(id=="chart3"){
+        
     CanvasJS.addColorSet("greenShades",
       [//colorSet Array
 
@@ -842,7 +314,7 @@
         "#1CB18D",
         "#06644D"
       ]);
-    var chart = new CanvasJS.Chart("chartContainer4", {
+    chart = new CanvasJS.Chart("test", {
       animationEnabled: true,
       colorSet: "greenShades",
       theme: "light1", // "light1", "light2", "dark1", "dark2"
@@ -869,10 +341,9 @@
         ]
       }]
     });
-    chart.render();
-
-    // popup 5
-    var chart = new CanvasJS.Chart("chartContainer5", {
+  }
+  else if(id=="chart4"){
+    chart = new CanvasJS.Chart("test", {
       animationEnabled: true,
       title: {
         text: "PLACEMENTS RECORDS"
@@ -930,17 +401,133 @@
         ]
       }]
     });
-    chart.render();
-    function toggleDataSeries(e) {
-      if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-        e.dataSeries.visible = false;
-      }
-      else {
-        e.dataSeries.visible = true;
-      }
-      chart.render();
-    }
+   
+  }
+  else if(id=="chart1"){
+    CanvasJS.addColorSet("greenShades",
+        [//colorSet Array
 
+          "#C71585",
+          "#66CDAA",
+          "#663399",
+          "#2E8B57",
+          "#FF6347"
+        ]);
+
+      var chart = new CanvasJS.Chart("test", {
+        colorSet: "greenShades",
+        animationEnabled: true,
+        title: {
+          text: "BRANCHWISE PLACEMENT"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 240,
+          yValueFormatString: "##0.00'%'",
+          indexLabel: "{label} {y}",
+          dataPoints: [
+            { y: 35.5, label: "CSE" },
+            { y: 29.87, label: "EE" },
+            { y: 18.65, label: "ME" },
+            { y: 8.0, label: "EC" },
+            { y: 7.98, label: "CIVIL" }
+          ]
+        }]
+      });
+   
+  }
+  else if(id=="chart0"){
+    
+    CanvasJS.addColorSet("greenShades",
+      [//colorSet Array
+
+        "#D80D95",
+        "#0DCFD8",
+        "#9E0DD8",
+        "#0DD87C",
+        "#D2D80D",
+        "#0D65AB",
+        "#D8880D"
+      ]);
+    chart = new CanvasJS.Chart("test", {
+      animationEnabled: true,
+      colorSet: "greenShades",
+      theme: "light1", // "light1", "light2", "dark1", "dark2"
+      title: {
+        text: "STUDENTS PLACED"
+      },
+      axisY: {
+        title: "No of Students"
+      },
+      axisX: {
+        title: "YEAR"
+      },
+      options: {
+      maintainAspectRatio: false,
+      
+    },
+      width: 450,
+      data: [{
+        type: "column",
+        dataPoints: [
+          { y: 150, label: "2016" },
+          { y: 200, label: "2017" },
+          { y: 280, label: "2018" },
+          { y: 350, label: "2019" },
+          { y: 390, label: "2020" },
+          { y: 413, label: "2021" },
+          { y: 500, label: "2022" }
+        ]
+      }]
+    });
+  }
+  
+  else if(id=="chart2"){
+    CanvasJS.addColorSet("greenShades",
+      [//colorSet Array
+
+        "#5DCCDA",
+        "#5D97DA",
+        "#5D6CDA",
+        "#7B5DDA",
+        "#975DDA",
+        "#BF5DDA",
+        "#DA5DCC"
+      ]);
+    var chart = new CanvasJS.Chart("test", {
+      animationEnabled: true,
+      colorSet: "greenShades",
+      theme: "light1", // "light1", "light2", "dark1", "dark2"
+      title: {
+        text: "HIGHEST PACKAGE OFFERED"
+      },
+      axisY: {
+        title: "Highest Package",
+        suffix: "LPA",
+        includeZero: false
+      },
+      axisX: {
+        title: "BATCH"
+      },
+      width: 450,
+      data: [{
+        type: "column",
+        dataPoints: [
+          { y: 5, label: "2016" },
+          { y: 9, label: "2017" },
+          { y: 13, label: "2018" },
+          { y: 18, label: "2019" },
+          { y: 22, label: "2020" },
+          { y: 27, label: "2021" },
+          { y: 30, label: "2022" }
+        ]
+      }]
+    });
+   
+  }
+  else{}
+    chart.render();
+    }
   </script>
 
 
@@ -1052,22 +639,29 @@
           </p>
         </div>
 
-        <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
+        <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
           <div class="client">Our Clients</div>
           <div class="bg-color-light company-name">Google</div>
           <div class="bg-color-light company-name">Microsoft</div>
           <div class="bg-color-light company-name">envato</div>
           <div class="bg-color-light company-name">WooCOMMERCE</div>
-        </div>
+        </div> -->
 
-        <!-- <div class="bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4">
-                    <div class="client">Our Clients</div>
-                    <div class="bg-color-light company-name fa-google"></div>
-                    <div class="bg-color-light company-name fa-microsoft"></div>
-                    <div class="bg-color-light company-name fa-envato"></div>
-                    <div class="bg-color-light company-name fa-WooCOMMERCE"></div>
-                </div> -->
-
+        <div class="our-client-box mx-auto bg-color-dark col-md-3 col-lg-3 col-xl-3 mb-4 py-2">
+          <div class="text-center font-weight-bold my-1">Our Clients</div>
+          <div class="text-center py-1">
+              <img src="images/footer/google.png" alt="" class="img-fluid">
+          </div>
+          <div class="text-center py-1">
+              <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+          </div>
+          <div class="text-center py-1">
+              <img src="images/footer/microsoft.png" alt="" class="img-fluid">
+          </div>
+          <div class="text-center py-1">
+              <img src="images/footer/woocommerce.png" alt="" class="img-fluid">
+          </div>
+      </div>
       </div>
     </div>
 
