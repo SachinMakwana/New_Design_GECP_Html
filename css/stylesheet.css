@@ -976,7 +976,7 @@ li button:hover:not(.activeEvent) {
 }
 
 .dropdown1:hover .dropbtn1 {
-    background-color: rgb(246, 7, 59);
+    background-color: rgb(246, 2, 55);
 }
 
 .dropdown-content1 button:hover {
@@ -1001,6 +1001,8 @@ li button:hover:not(.activeEvent) {
 .title1 {
     margin-bottom: 3%;
 }
+  /* new gallery */
+
 
 .popup {
     background: rgba(100, 100, 100, 0.6);

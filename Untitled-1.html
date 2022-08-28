@@ -1,0 +1,30 @@
+<html>
+<body>
+<div class="col-md-4"><br>
+  <span>Please Choose desired Category</span>
+  <select class="SelectType">
+    <option value="3">Category-3</option>
+    <option value="4">Category-4</option>
+    <option value="5">Category-5</option>
+    <option value="6">Category-6</option>
+    <option value="7">Category-7</option>
+    <option value="8">Category-8</option>
+  </select>
+</div>
+<form>
+   Image ID: <input type="text" id="imagename" value="" />
+    <input type="button" id="btn" value="GO" />
+</form>
+    <script type="text/javascript">
+        document.getElementById('btn').onclick = function() {
+            var val = document.getElementById('imagename').value,
+                src = 'www.example.com/Category-3/Images/' + val +'.png',
+                img = document.createElement('img');
+                img.src = src;
+				img.setAttribute('width', '190px');
+				img.setAttribute('height', '190px');
+                document.body.appendChild(img);
+        }
+    </script>
+</body>
+</html>
