@@ -409,9 +409,9 @@ body{
 .wcg:hover .img-container{
     background-color: #87ceeb;
 }
-.wcg:hover .t-500{
+/* .wcg:hover .t-500{
     color:white;
-}
+} */
 .m-custom{
     margin-left: 3%;
 }
@@ -468,7 +468,7 @@ body{
 }
 
 .bg-principal{
-    background-image: url("../images/aboutus/shipman-northcutt-sgZX15Da8YE-unsplash.jpg");
+    background-image: url("../images/dean.jpg");
 }
 .bg-college{
     background-image:url('../images/4.jpg');
@@ -650,14 +650,22 @@ body{
 .feature:hover .t-150{
     color:white;
 }
-.feature:hover .fa-user-circle-o,.feature:hover .fa-th-large,.feature:hover .fa-bookmark,.feature:hover .fa-check-square-o{
+/* .feature:hover .fa-user-circle-o,.feature:hover .fa-th-large,.feature:hover .fa-bookmark,.feature:hover .fa-check-square-o{
     color:#fff;
-}
+} */
 .br-grey{
     border:solid #aec1b7 5px;
 }
 .mr-t-30p{
     margin-top:30px;
+}
+.square-120p img{
+    top: 50%;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    transform: translateY(-50%);
 }
 .square-180p{
     height:180px;
@@ -1122,5 +1130,3 @@ select{
 @media only screen and (min-width: 767px) {
     .doc-box{
         border-left: none;
-    }
-}
